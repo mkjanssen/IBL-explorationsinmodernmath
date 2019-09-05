@@ -1,0 +1,21 @@
+<part xml:id="Part-Play">
+	<title>Play</title>
+	<introduction>
+		<p>
+			Test introduction
+		</p>
+	</introduction>
+
+	<chapter xml:id="Chap-RubiksCube">
+	  <title>The Rubik's Cube</title>
+		  <introduction>
+			<p>
+	  
+			</p>
+		  </introduction>
+	  <section xml:id="Sec-GettingToKnowTheCube">
+		<title>Getting To Know the Cube</title>
+   
+	  </section>
+	</chapter>
+</part>

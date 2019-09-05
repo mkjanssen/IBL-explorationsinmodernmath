@@ -1,0 +1,26 @@
+<part xml:id="Part-Truth">
+	<introduction>
+		<p>
+			Test introduction
+		</p>
+	</introduction>
+
+	<chapter xml:id="Chap-Logic">
+	  <title>Logic</title>
+		  <introduction>
+			<p>
+	  
+			</p>
+		  </introduction>
+	  <section xml:id="Sec-Deductive-Reasoning">
+		<title>Deductive Reasoning</title>
+   
+	  </section>
+	</chapter>
+	
+	<chapter xml:id="Chap-Stat">
+		<title>Statistical Inference</title>
+		
+		
+	</chapter>
+</part>
