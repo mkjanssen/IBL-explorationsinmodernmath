@@ -21,8 +21,8 @@
 \renewcommand{\subsectionmark}[1]{}
 \renewcommand{\sectionmark}[1]{\markboth{{\scriptsize\thesection}.\ \smallcaps{#1}}{}}
 \renewcommand{\subsectionmark}[1]{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\headrulewidth}{0.5pt}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\headrulewidth}{0.5pt}
 \newcommand{\makedefaultsection}[2][true]{
 }
 \newcommand{\timestamp}{{\color{red}Last updated: {\currenttime\ (UTC), \today}}}
@@ -56,6 +56,7 @@
 </macros>
 <latex-image-preamble>
 \usepackage{tikz}
+\usepackage{url}
 \usepackage{tkz-graph}
 \usepackage{tkz-euclide}
 \usetikzlibrary{patterns}
@@ -68,7 +69,7 @@
 </latex-image-preamble>
   </docinfo>
   <book>
-    <title>Explorations in Modern Mathematics</title>
+    <title>Active Mathematics For Human Flourishing</title>
 
     
     	

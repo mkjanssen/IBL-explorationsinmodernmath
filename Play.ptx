@@ -3,6 +3,9 @@
 	<introduction>
 		<p>
 			One of the fundamental human desires is for <em>play</em>.
+			In recent years, ancient games and puzzles such as Go, Nim, and Chess have given way to a slew of <url href="http://boardgamegeek.com">new games</url>, many of which can be understood and analyzed with mathematical thinking.
+			
+			In this part, we explore play in two contexts: the classic Rubik's cube puzzle, and the game of chess.
 		</p>
 	</introduction>
 
@@ -10,12 +13,34 @@
 	  <title>The Rubik's Cube</title>
 		  <introduction>
 			<p>
-	  
+	  			
 			</p>
 		  </introduction>
 	  <section xml:id="Sec-GettingToKnowTheCube">
 		<title>Getting To Know the Cube</title>
-   
+			<introduction>
+				Introduction goes here.
+			</introduction>
+			
+			<assemblage>
+				<title>
+					Question
+				</title>
+				<p>
+					<statement>
+					
+						What does it mean to be <em>playful</em> in your own major discipline?
+					</statement>
+				</p>
+			</assemblage>
+			
+   			<investigation xml:id="firstquestionsaboutthecube">
+				<statement>
+					<p>
+						In pairs, investigate your cubes. What do you notice? What do you wonder? Make a list of as many observations and questions as you can.
+					</p>
+				</statement>
+			</investigation>
 	  </section>
 	</chapter>
 </part>
