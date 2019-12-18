@@ -67,18 +67,19 @@
 \usetikzlibrary{through,intersections,decorations,shadows,fadings}
 \usepackage{pgfplots}
 </latex-image-preamble>
+<rename element="principle">Puzzle</rename>
   </docinfo>
   <book>
-    <title>Active Mathematics For Human Flourishing</title>
+    <title>Explorations in Modern Mathematics</title>
 
     
     	
     	<xi:include href="./frontmatter.ptx" />
     	
       
-
+	<xi:include href="./CourseInfo.ptx" /> 
     <xi:include href="./Play.ptx" />
-    <xi:include href="./Truth.ptx" />
-    <xi:include href="./Justice.ptx" />    
+    <!--<xi:include href="./Truth.ptx" />
+    <xi:include href="./Justice.ptx" />    -->
   </book>
 </pretext>
