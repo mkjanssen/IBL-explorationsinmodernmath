@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-11-17T20:31:16-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>March 23-27: Intro to Discrete Dynamical Systems</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script async="" src="https://cse.google.com/cse.js?cx=017464805646507420634:civa1brpuu6"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_pastel_blue_orange.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\({\labelitemi}{$\diamond$}
+\def\arraystretch{1.5}
+\newcommand{\contentsfinish}{}
+\newcommand{\separator}{\begin{center}\rule{\columnwidth}{\arrayrulewidth}\end{center}}
+\newcommand{\tosay}[1]{\begin{center}\text{\fbox{\scriptsize{#1}}}\end{center}}
+\renewcommand{\cftsecfont}{}
+\renewcommand{\cftsecpagefont}{}
+\renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}\smallcaps{#1}}
+\def\oldequation{\equation}
+\def\endoldequation{\endequation}
+\newcommand{\nl}{
+}
+\newcommand{\runin}[1]{\textls[50]{\otherscshape #1}}
+\renewcommand{\sectionmark}[1]{}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\sectionmark}[1]{\markboth{{\thesection}.\ \smallcaps{#1}}{\thesection.\ \smallcaps{#1}}}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\sectionmark}[1]{\markboth{{\scriptsize\thesection}.\ \smallcaps{#1}}{}}
+\renewcommand{\subsectionmark}[1]{}
+\newcommand{\makedefaultsection}[2][true]{
+}
+\newcommand{\timestamp}{{\color{red}Last updated: {\currenttime\ (UTC), \today}}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\ge}{\geqslant}
+\newcommand{\ideal}[1]{\left\langle\, #1 \,\right\rangle}
+\newcommand{\subgp}[1]{\left\langle\, #1 \,\right\rangle}
+\def\p{\varphi}
+\def\isomorphic{\cong}
+\def\Gal{\text{Gal}}
+\def\im{\text{im}}
+\def\normal{\vartriangleleft}
+\renewcommand{\qedsymbol}{$\checkmark$}
+\def\lcm{{\text{lcm}\,}}
+\newcommand{\q}[1]{{\color{red} {#1}}}
+\newcommand{\startimportant}[1]{\end{[{Hint:} #1]\end}}
+\renewcommand{\textcircled}[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt,color=red] (char) {#1};}}
+\newcommand{\crossout}[1]{\tikz[baseline=(char.base)]{\node[mynode, cross out,draw] (char) {#1};}}
+\newcommand{\set}[1]{\left\{ {#1} \right\}}
+\newcommand{\setof}[2]{{\left\{#1\,\colon\,#2\right\}}}
+\def\C{{\mathbb C}}
+\def\Z{{\mathbb Z}}
+\def\bF{{\mathbb F}}
+\def\Q{{\mathbb Q}}
+\def\N{{\mathbb N}}
+\def\R{{\mathbb R}}
+\newcommand{\h}[1]{{\textbf{#1}}}
+\def\presnotes{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Explorations in Modern Mathematics</span></a></h1>
+<p class="byline">Dr. Michael K. Janssen</p>
+</div>
+<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-6.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-16.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-6.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-16.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="Sec-Introduction.html" data-scroll="Sec-Introduction">Introduction</a></li>
+<li><a href="Sec-NoteToInstructors.html" data-scroll="Sec-NoteToInstructors">A Note to Students</a></li>
+</ul>
+</li>
+<li class="link part"><a href="Part-CourseInfo.html" data-scroll="Part-CourseInfo"><span class="codenumber">I</span> <span class="title">Course information</span></a></li>
+<li class="link"><a href="Chap-BasicInfo.html" data-scroll="Chap-BasicInfo"><span class="codenumber">1</span> <span class="title">Basic Information</span></a></li>
+<li class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">Frequently Asked Questions</span></a></li>
+<li class="link part"><a href="Part-Play.html" data-scroll="Part-Play"><span class="codenumber">II</span> <span class="title">Play</span></a></li>
+<li class="link">
+<a href="Chap-RubiksCube.html" data-scroll="Chap-RubiksCube"><span class="codenumber">3</span> <span class="title">The Rubik's Cube</span></a><ul>
+<li><a href="Sec-GettingToKnowTheCube.html" data-scroll="Sec-GettingToKnowTheCube">January 10, 2020: Getting To Know You (and the Cube)</a></li>
+<li><a href="section-2.html" data-scroll="section-2">January 13, 2020: All About Cubies</a></li>
+<li><a href="section-3.html" data-scroll="section-3">January 20, 2020: Algebraic Notation and Order</a></li>
+<li><a href="section-4.html" data-scroll="section-4">January 22, 2020: Magic Cube Moves I</a></li>
+<li><a href="section-5.html" data-scroll="section-5">January 24, 2020: Magic Cube Moves II</a></li>
+<li><a href="section-6.html" data-scroll="section-6">January 27, 2020: Magic Cube Moves III</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-3.html" data-scroll="part-3"><span class="codenumber">III</span> <span class="title">Truth</span></a></li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Inductive and Deductive Reasoning</span></a><ul>
+<li><a href="section-7.html" data-scroll="section-7">January 31, 2020: What is Truth? / Inductive Reasoning</a></li>
+<li><a href="section-8.html" data-scroll="section-8">February 3, 2020: Deductive Reasoning I: Reasoning from Axioms</a></li>
+<li><a href="section-9.html" data-scroll="section-9">February 5-7, 2020: Deductive Reasoning II: Formal Logic</a></li>
+<li><a href="section-10.html" data-scroll="section-10">February 10-19, 2020 : The Foundational Crisis of Mathematics</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-4.html" data-scroll="part-4"><span class="codenumber">IV</span> <span class="title">Justice</span></a></li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Voting and Elections</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11">February 21, 2020: Elections with Two Candidates</a></li>
+<li><a href="section-12.html" data-scroll="section-12">February 24, 2020: Elections with Three or More Candidates I</a></li>
+<li><a href="section-13.html" data-scroll="section-13">Elections with Three or More Candidates, II: The Condorcet Criterion</a></li>
+<li><a href="section-14.html" data-scroll="section-14">March 2, 2020: Elections with Three or More Candidates III</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-5.html" data-scroll="part-5"><span class="codenumber">V</span> <span class="title">Power</span></a></li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Modeling with Discrete Dynamical Systems</span></a><ul>
+<li><a href="section-15.html" data-scroll="section-15" class="active">March 23-27: Intro to Discrete Dynamical Systems</a></li>
+<li><a href="section-16.html" data-scroll="section-16">March 30-April 3, Discrete Dynamical Systems II: Predator/Prey and SIR</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-6.html" data-scroll="part-6"><span class="codenumber">VI</span> <span class="title">Love</span></a></li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Graph Theory and Human Trafficking</span></a><ul>
+<li><a href="section-17.html" data-scroll="section-17">April 6-10: Introduction to Graphs</a></li>
+<li><a href="section-18.html" data-scroll="section-18">April 13-17: Trees</a></li>
+<li><a href="section-19.html" data-scroll="section-19">April 20-27: Graph Theory and Human Trafficking</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-15"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">March 23-27: Intro to Discrete Dynamical Systems</span>
+</h2>
+<p id="p-298">And now for something completely different.</p>
+<p id="p-299">In the <a href="Sec-Introduction.html" class="internal" title="Preface: Introduction">Introduction </a> to this book, I cited Francis Su's retiring MAA presidential address, <em class="emphasis">Mathematics for Human Flourishing</em>. In his address, Su argues that the practice of mathematics can cultivate virtues that help humans live lives of fullness and <em class="emphasis">shalom</em>. We've explored the ways in which mathematics enables us to play, discern truth, and to evaluate the fairness and justice of systems of voting. We may yet return to the ways in which mathematics is being currently used to argue for justice in our democracy, but first I want to explore the ways in which the <em class="emphasis">power</em> of mathematics can be brought to bear to help us understand our current global health crisis.</p>
+<p id="p-300">As Su writes in his follow-up book <a class="xref" data-knowl="./knowl/Su2020.html" title="Bibliographic Entry 1">[1]</a>, <em class="emphasis">power</em> "often sounds like a bad word," especially when applied to humans. Yet Su, himself a Christian, means power in the sense in which Andy Crouch defines it in his book, <a class="external" href="https://www.ivpress.com/playing-god" target="_blank"><em class="emphasis">Playing God: Redeeming the Gift of Power</em></a>:</p>
+<blockquote class="blockquote" id="blockquote-4">Power is the ability to make something of the world...the ability to participate in that stuff-making, sense-making process that is the most distinctive thing that human beings do.</blockquote>
+<p id="p-301">In this unit, we will focus particularly on the <em class="emphasis">sense-making</em> component of power and ask: how do mathematical explorers make sense of the physical creation via mathematics? We will explore some increasingly advanced discrete mathematical models, with the ultimate goal of understanding a basic model of how infectious disease spreads through a population. Let's start with some definitions and notation.</p>
+<article class="definition definition-like" id="def-dynamical-system"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-302">A <dfn class="terminology">dynamical system</dfn> refers to any fixed mathematical rule which describes how a system changes over time. A <dfn class="terminology">discrete</dfn> dynamical system changes at fixed intervals in time (e.g., each hour), and does not change between the fixed points in time (e.g., a system that changes each hour will view the changing quantity as static between the hours of 1:00pm and 2:00pm).</p></article><p id="p-303">There are two main types of dynamical systems: discrete and continuous. The study of continuous dynamical systems is the domain of calculus and its related disciplines (e.g., differential equations, aka DiffEq's). Continuous dynamical systems treat time as infinitely divisible; discrete dynamical systems do not. Let's look at an example.</p>
+<article class="example example-like" id="example-recursive"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-recursive"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-recursive"><article class="example example-like"><p id="p-304">Joris is a collector of board games. His collection currently has 37 games, and each year he budgets enough to acquire 8 new games. We'll use the notation \(G_t\) to describe how many games Joris has in year \(t\text{,}\) where we consider \(G_0\) (that is, \(t=0\)) to be the number of games he currently has. Thus, \(G_0 = 37\text{.}\) We would also expect \(G_1 = 37 + 8 = 45\text{,}\) and \(G_2 = 45 + 8 = 53\text{.}\) We say that \(37, 45, 53\ldots\) are the first three <dfn class="terminology">terms</dfn> of the dynamical system.</p>
+<p id="p-305">This way of describing the number of games Joris has is known as a <dfn class="terminology">recursive</dfn> description, where each term depends on previous terms. That is, the recursive description is given by the formula</p>
+<div class="displaymath">
+\begin{equation}
+G_{t+1} = G_t + 8, t \ge 1.\label{eq-recursive-games}\tag{6.1.1}
+\end{equation}
+</div></article></div>
+<article class="activity project-like" id="act-games"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-306">A recursive definition is nice, because it is reasonably intuitive and fits with our usual understanding of how things change over time: they start from where they are now, and then change a little. But perhaps we'd like to know how long it will take Joris to accumulate 500 games <aside class="aside aside-like" id="aside-9"><a class="external" href="https://omahamagazine.com/articles/game-on/" target="_blank">People do this</a>, I swear.</aside></p>
+<ol class="decimal">
+<li id="li-361">Clearly describe in 2-3 sentences <em class="emphasis">a process</em> for using the recursive definition in <a class="xref" data-knowl="./knowl/example-recursive.html" title="Example 6.1.2">Example 6.1.2</a> that would allow you to determine how many years it would take Joris to accumulate 500 board games. Please do not use this process to answer the question!</li>
+<li id="li-362">In 2-3 sentences, describe the disadvantage in the process you used in Question 1 for finding how long it would take Joris to accumulate 500 games.</li>
+<li id="li-363">What we want is a <dfn class="terminology">explicit formula</dfn> for \(G_t\text{.}\) That is, we want a formula that allows us to plug in a value for \(t\) that will give us the number of games \(G_t\) that Joris has in year \(t\) without having to know any of the previous terms in the sequence. Find such a formula, and compute the first three terms to convince your group that your formula produces the same sequence as <a class="xref" data-knowl="./knowl/eq-recursive-games.html" title="Equation 6.1.1">(6.1.1)</a>.</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-43" id="solution-43"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-43"><div class="solution solution-like"><ol class="decimal">
+<li id="li-364">Just using the recursive formula provided in , we could find the number of years it would take Joris to accumulate 500 board games by generating the terms of the sequence and seeing when it passes 500. We would do this by first finding \(G_1\text{,}\) then \(G_1\) to find \(G_2\text{,}\) then using \(G_2\) to find \(G_3\text{,}\) etc.</li>
+<li id="li-365">This is highly inefficient! In order to know, e.g., \(G_{500}\text{,}\) you would need to compute <em class="emphasis">all</em> preceding terms.</li>
+<li id="li-366">An explicit formula is given by \(G_t = 37 + 8t\text{.}\) Observe that \(G_1 = 37 + 8\cdot 1 = 45\text{,}\) \(G_2 = 37 + 8\cdot 2 = 37 + 16 = 53\text{,}\) and \(G_3 = 38 + 8\cdot 3 = 61\text{.}\)</li>
+</ol></div></div>
+</div></article><p id="p-307">The dynamical system described in <a class="xref" data-knowl="./knowl/act-games.html" title="Activity 6.1.1">Activity 6.1.1</a> is known as a <dfn class="terminology">linear</dfn> system. This is because, like a line, it grows at a constant rate. Linear growth is extremely useful because it is straightforward to understand and apply. However, it has its shortcomings as well.</p>
+<article class="activity project-like" id="act-linear-growth"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span>
+</h6>
+<p id="p-308">Lila is 4 years old, and is 39 inches tall. Her parents are told to expect her to grow at approximately 2.25 inches/year. Let \(H_t, t\ge 0\) denote Lila's height \(t\) years from now.</p>
+<ol class="decimal">
+<li id="li-367">Predict Lila's height when she turns 6.</li>
+<li id="li-368">Give a recursive description for Lila's height.</li>
+<li id="li-369">Give an explicit formula for Lila's height.</li>
+<li id="li-370">How tall will Lila be when she is 50? Give your answer in feet (remember: there are 12 inches in a foot).</li>
+<li id="li-371">In 2-3 sentences, clearly articulate at least one shortcoming of extrapolating using linear models.</li>
+</ol>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-44" id="solution-44"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-44"><div class="solution solution-like"><ol class="decimal">
+<li id="li-372">Since she is 39 inches tall when she is 4, she should be 41.25 inches tall when she is 5, and 43.5 inches tall when she is 6.</li>
+<li id="li-373">We can recursively describe her height \(t\) years from now by \(H_t = H_{t-1} + 2.25\) for \(t\ge 1\text{.}\)</li>
+<li id="li-374">This model again assumes linear growth: Lila's height is predicted by \(H_t = 39 + 2.25t\text{.}\)</li>
+<li id="li-375">When Lila is 50, the model predicts that she will be \(H_{46} = 39 + 2.25\cdot 50 = 151.5\) inches tall, or 12 feet, 7.5 inches tall.</li>
+<li id="li-376">Almost nothing changes linearly over a long enough time scale. So while linear models are helpful on short time scales, they eventually become unreliable.</li>
+</ol></div></div>
+</div></article><p id="p-309">Populations of people and animals do not grow linearly. Instead, they usually grow by a percentage of the whatever the current population is. So, if that percentage is, say, 10%, and the current population of a group of fish in a pond is 1000, this model predicts a population of \(1000 + 10\%\cdot 1000 = 1000 + 100 = 1100\) fish for next year.</p>
+<p id="p-310">In symbols, if \(P_t\) represents the number of fish \(t\) years from now, then \(P_0 = 1000\text{,}\) \(P_1 = P_0 + 0.1\cdot P_0 = (1+0.1)P_0 = 1.1 P_0\text{.}\) The number 0.1 is called the <dfn class="terminology">growth rate</dfn>, \(r\text{,}\) and the number 1.1 is the <dfn class="terminology">growth multiplier</dfn>.</p>
+<p id="p-311">In what follows, I will occasionally provide Sage cells in which you can do basic computations (and in which I may help get you started). To see how this works, click "Evaluate" in the Sage cell below to see what happens.</p>
+<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">P_0 = 1000
+P_1 = 1.1*P_0
+P_1
+</script></div>
+<article class="exploration project-like" id="expl-exponential-growth"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">6.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-312">Consider a population of 1000 fish growing at 10% per year.</p>
+<ol class="decimal">
+<li id="li-377">Give a formula for \(P_2\) in terms of \(P_1\text{,}\) and then a formula for \(P_3\) in terms of \(P_2\text{.}\)</li>
+<li id="li-378">Using your answer to the previous part as a guide, give a formula for \(P_t\) in terms of \(P_{t-1}\text{.}\)</li>
+<li id="li-379">Again, using your answer to Question 1 and the work in the paragraph preceding this activity, give a formula for \(P_2\) in terms of \(P_0\text{.}\) Use this formula to find \(P_3\) in terms of \(P_0\text{.}\) Why might these formulas be more useful than the ones you found in Question 1?</li>
+<li id="li-380">State your best guess for a formula for \(P_t\) in terms of \(P_0\text{.}\) Use your formula to estimate the number of fish in the pond after 10, 20, and 50 years. What is this model missing?</li>
+<li id="li-381">Press 'Evaluate' below to confirm your response to Question 4. What happens if you increase or decrease the growth rate, \(r\text{?}\) Try it, and reevaluate.</li>
+</ol>
+<div class="sagecell-sage" id="sage-2"><script type="text/x-sage">P_0 = 1000
+r = 0.1
+P(t) = (1+r)^t*P_0
+tt = range(50)
+PP = [P(t) for t in tt]
+tP = list(zip(tt, PP))
+P_dots = points(tP, color='red')
+P_dots
+</script></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-45" id="solution-45"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-45"><div class="solution solution-like"><ol class="decimal">
+<li id="li-382">We have \(P_2 = P_1 + 0.1\cdot P_1 = 1.1\cdot P_1.\) Similarly, \(P_3 = P_2 + 0.1\cdot P_2 = 1.1\cdot P_2\text{.}\)</li>
+<li id="li-383">We may reasonably extrapolate that \(P_t = 1.1\cdot P_{t-1}\text{.}\)</li>
+<li id="li-384">We see \(P_2 = 1.1 P_1 = 1.1 (1.1 P_0) = (1.1)^2 P_0\text{.}\) Similarly, \(P_3 = (1.1)^3 P_0\text{.}\) These formulas are more useful because we only need to know the first term, \(P_0\text{.}\)</li>
+<li id="li-385">Best guess: \(P_t = (1.1)^t P_0\text{.}\) Much like the linear model from the previous activity, this model assumes that the population continues to grow forever.</li>
+<li id="li-386">You should notice that the curve grows more slowly if \(r \lt 0.1\text{,}\) and more quickly if \(r \gt 0.1\text{.}\)</li>
+</ol></div></div>
+</div></article><p id="p-313">The type of growth explored in <a class="xref" data-knowl="./knowl/expl-exponential-growth.html" title="Exploration 6.1.3">Exploration 6.1.3</a> called <dfn class="terminology">exponential</dfn>, as the growth comes from taking the growth multiplier to larger and larger powers (exponents). We saw the danger of extrapolation with linear models in <a class="xref" data-knowl="./knowl/act-linear-growth.html" title="Activity 6.1.2">Activity 6.1.2</a>, and we note a similar danger in extrapolating with exponential models. If nothing else, it's likely that the pond cannot <em class="emphasis">hold</em> 100,000 fish. Thankfully, we can modify our exponential growth model by introducing an upper limit for what the habitat can hold.</p>
+<article class="exploration project-like" id="expl-carrying-capacity"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">6.1.4</span><span class="period">.</span>
+</h6>
+<p id="p-314">Suppose our pond can hold 5000 fish. This is known as the <em class="emphasis">carrying capacity</em>, and we'll denote it with the letter \(K\)<aside class="aside aside-like" id="aside-10">For <em class="emphasis">karrying</em>. :)</aside>. We'll now let \(r = 0.1\) be our <em class="emphasis">maximum</em> growth rate, but we'll let it slowly reduce as the population grows.</p>
+<ol class="decimal">
+<li id="li-387">As \(P_t\) increases and gets closer and closer to \(K\) over time, what happens to the ratio \(P_t/K\text{?}\) What number does it get close to?</li>
+<li id="li-388">Thus, what happens to the expression \(1-\frac{P_t}{K}\) as \(P_t\) increases and gets closer and closer to \(K\text{?}\)</li>
+<li id="li-389">Ecologically speaking, what does it mean for \(P_t\) to get closer and closer to \(K\text{?}\)</li>
+<li id="li-390">As the phenomena described in Question 3 occurs, what do we expect the graph of \(P_t\) over time to look like?</li>
+<li id="li-391">Test your suspicion by Evaluating the Sage code below.</li>
+</ol>
+<div class="sagecell-sage" id="sage-3"><script type="text/x-sage">P_0=1000
+r = 0.1
+K = 5000
+maxterm = 100
+P(t)= K/(1+(K-P_0)/P_0*e^(-r*t))
+tt = range(maxterm)
+PP = [P(t) for t in tt]
+tP = list(zip(tt, PP))
+P_dots = points(tP, color='red')
+P_dots
+</script></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-46" id="solution-46"><span class="type">Solution</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-46"><div class="solution solution-like"><ol class="decimal">
+<li id="li-392">As \(P_t\) gets closer and closer to \(K\text{,}\) the ratio \(P_t/K\) approaches 1.</li>
+<li id="li-393">Since \(P_t/K\) is approaching 1, \(1-P_t/K\) approaches \(1-1=0\text{.}\)</li>
+<li id="li-394">As \(P_t\) approaches \(K\text{,}\) the population of fish is approaching the maximum number of fish that the pond can support (the carrying capacity).</li>
+<li id="li-395">While we expect some sort of growth early (exponential is a good guess), we then expect the population to level off over time as it approaches the carrying capacity.</li>
+<li id="li-396">Suspicion confirmed!</li>
+</ol></div></div>
+</div></article><section class="conclusion" id="conclusion-9"><h6 class="heading">Conclusion.<span></span>
+</h6>
+<p id="p-315">You'll notice we didn't spend much time examining <em class="emphasis">systems</em> in this section. A system often describes how two or more populations interact. Next time, we'll take a look at a basic predator-prey model (involving two populations, the predators and the prey), and then a system of three equations that describes the basic dynamics of the spread of a disease.</p></section></section></div></main>
+</div>
+</body>
+</html>

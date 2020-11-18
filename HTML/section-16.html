@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-11-17T20:31:16-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>March 30-April 3, Discrete Dynamical Systems II: Predator/Prey and SIR</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script async="" src="https://cse.google.com/cse.js?cx=017464805646507420634:civa1brpuu6"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_pastel_blue_orange.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\({\labelitemi}{$\diamond$}
+\def\arraystretch{1.5}
+\newcommand{\contentsfinish}{}
+\newcommand{\separator}{\begin{center}\rule{\columnwidth}{\arrayrulewidth}\end{center}}
+\newcommand{\tosay}[1]{\begin{center}\text{\fbox{\scriptsize{#1}}}\end{center}}
+\renewcommand{\cftsecfont}{}
+\renewcommand{\cftsecpagefont}{}
+\renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}\smallcaps{#1}}
+\def\oldequation{\equation}
+\def\endoldequation{\endequation}
+\newcommand{\nl}{
+}
+\newcommand{\runin}[1]{\textls[50]{\otherscshape #1}}
+\renewcommand{\sectionmark}[1]{}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\sectionmark}[1]{\markboth{{\thesection}.\ \smallcaps{#1}}{\thesection.\ \smallcaps{#1}}}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\sectionmark}[1]{\markboth{{\scriptsize\thesection}.\ \smallcaps{#1}}{}}
+\renewcommand{\subsectionmark}[1]{}
+\newcommand{\makedefaultsection}[2][true]{
+}
+\newcommand{\timestamp}{{\color{red}Last updated: {\currenttime\ (UTC), \today}}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\ge}{\geqslant}
+\newcommand{\ideal}[1]{\left\langle\, #1 \,\right\rangle}
+\newcommand{\subgp}[1]{\left\langle\, #1 \,\right\rangle}
+\def\p{\varphi}
+\def\isomorphic{\cong}
+\def\Gal{\text{Gal}}
+\def\im{\text{im}}
+\def\normal{\vartriangleleft}
+\renewcommand{\qedsymbol}{$\checkmark$}
+\def\lcm{{\text{lcm}\,}}
+\newcommand{\q}[1]{{\color{red} {#1}}}
+\newcommand{\startimportant}[1]{\end{[{Hint:} #1]\end}}
+\renewcommand{\textcircled}[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt,color=red] (char) {#1};}}
+\newcommand{\crossout}[1]{\tikz[baseline=(char.base)]{\node[mynode, cross out,draw] (char) {#1};}}
+\newcommand{\set}[1]{\left\{ {#1} \right\}}
+\newcommand{\setof}[2]{{\left\{#1\,\colon\,#2\right\}}}
+\def\C{{\mathbb C}}
+\def\Z{{\mathbb Z}}
+\def\bF{{\mathbb F}}
+\def\Q{{\mathbb Q}}
+\def\N{{\mathbb N}}
+\def\R{{\mathbb R}}
+\newcommand{\h}[1]{{\textbf{#1}}}
+\def\presnotes{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Explorations in Modern Mathematics</span></a></h1>
+<p class="byline">Dr. Michael K. Janssen</p>
+</div>
+<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-15.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="part-6.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-15.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-6.html" title="Up">Up</a><a class="next-button button toolbar-item" href="part-6.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="Sec-Introduction.html" data-scroll="Sec-Introduction">Introduction</a></li>
+<li><a href="Sec-NoteToInstructors.html" data-scroll="Sec-NoteToInstructors">A Note to Students</a></li>
+</ul>
+</li>
+<li class="link part"><a href="Part-CourseInfo.html" data-scroll="Part-CourseInfo"><span class="codenumber">I</span> <span class="title">Course information</span></a></li>
+<li class="link"><a href="Chap-BasicInfo.html" data-scroll="Chap-BasicInfo"><span class="codenumber">1</span> <span class="title">Basic Information</span></a></li>
+<li class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">Frequently Asked Questions</span></a></li>
+<li class="link part"><a href="Part-Play.html" data-scroll="Part-Play"><span class="codenumber">II</span> <span class="title">Play</span></a></li>
+<li class="link">
+<a href="Chap-RubiksCube.html" data-scroll="Chap-RubiksCube"><span class="codenumber">3</span> <span class="title">The Rubik's Cube</span></a><ul>
+<li><a href="Sec-GettingToKnowTheCube.html" data-scroll="Sec-GettingToKnowTheCube">January 10, 2020: Getting To Know You (and the Cube)</a></li>
+<li><a href="section-2.html" data-scroll="section-2">January 13, 2020: All About Cubies</a></li>
+<li><a href="section-3.html" data-scroll="section-3">January 20, 2020: Algebraic Notation and Order</a></li>
+<li><a href="section-4.html" data-scroll="section-4">January 22, 2020: Magic Cube Moves I</a></li>
+<li><a href="section-5.html" data-scroll="section-5">January 24, 2020: Magic Cube Moves II</a></li>
+<li><a href="section-6.html" data-scroll="section-6">January 27, 2020: Magic Cube Moves III</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-3.html" data-scroll="part-3"><span class="codenumber">III</span> <span class="title">Truth</span></a></li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Inductive and Deductive Reasoning</span></a><ul>
+<li><a href="section-7.html" data-scroll="section-7">January 31, 2020: What is Truth? / Inductive Reasoning</a></li>
+<li><a href="section-8.html" data-scroll="section-8">February 3, 2020: Deductive Reasoning I: Reasoning from Axioms</a></li>
+<li><a href="section-9.html" data-scroll="section-9">February 5-7, 2020: Deductive Reasoning II: Formal Logic</a></li>
+<li><a href="section-10.html" data-scroll="section-10">February 10-19, 2020 : The Foundational Crisis of Mathematics</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-4.html" data-scroll="part-4"><span class="codenumber">IV</span> <span class="title">Justice</span></a></li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Voting and Elections</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11">February 21, 2020: Elections with Two Candidates</a></li>
+<li><a href="section-12.html" data-scroll="section-12">February 24, 2020: Elections with Three or More Candidates I</a></li>
+<li><a href="section-13.html" data-scroll="section-13">Elections with Three or More Candidates, II: The Condorcet Criterion</a></li>
+<li><a href="section-14.html" data-scroll="section-14">March 2, 2020: Elections with Three or More Candidates III</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-5.html" data-scroll="part-5"><span class="codenumber">V</span> <span class="title">Power</span></a></li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Modeling with Discrete Dynamical Systems</span></a><ul>
+<li><a href="section-15.html" data-scroll="section-15">March 23-27: Intro to Discrete Dynamical Systems</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="active">March 30-April 3, Discrete Dynamical Systems II: Predator/Prey and SIR</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-6.html" data-scroll="part-6"><span class="codenumber">VI</span> <span class="title">Love</span></a></li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Graph Theory and Human Trafficking</span></a><ul>
+<li><a href="section-17.html" data-scroll="section-17">April 6-10: Introduction to Graphs</a></li>
+<li><a href="section-18.html" data-scroll="section-18">April 13-17: Trees</a></li>
+<li><a href="section-19.html" data-scroll="section-19">April 20-27: Graph Theory and Human Trafficking</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-16"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.2</span> <span class="title">March 30-April 3, Discrete Dynamical Systems II: Predator/Prey and SIR</span>
+</h2>
+<p id="p-316">This week, we will be diving further into exploring how discrete dynamical models give us the power to understand and make predictions about the Creation. We'll explore a basic predator/prey model and see how even relatively simple models of predator/prey interactions can behave qualitatively similarly to what we observe in the physical world. Then, we will explore a basic compartmental epidemiological model. We will make explicit connections to the ongoing efforts of public health officials and epidemiologists to "flatten the curve" regarding the spread of COVID-19.</p>
+<section class="subsection" id="subsection-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.2.1</span> <span class="title">A discrete predator-prey model</span>
+</h3>
+<p id="p-317">We begin with a classic predator-prey model adapted from the <a class="external" href="https://www.cds.caltech.edu/~murray/amwiki/index.php/Predator_prey" target="_blank">Feedback Systems Wiki</a> at Caltech. For historical reasons, we let \(L_t\) be the size of a population of Canadian lynxes in year \(t\) and \(H_t\) be the size of a population of snowshoe hares, the lynx's primary prey. <aside class="aside aside-like" id="aside-11">Of course, we can carry out the following analysis using any predator/prey pair.</aside></p>
+<article class="definition definition-like" id="def-lotkavolterra"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span>
+</h6>
+<p id="p-318">Let \(H_0\) be the initial population of hares, and \(L_0\) the initial population of lynxes. For \(t\ge 1\text{,}\) the <dfn class="terminology">discrete Lotka-Volterra model</dfn> for the lynx/hare population is given by:</p>
+<div class="displaymath">
+\begin{align*}
+H_{t+1} \amp = H_t + b(u) H_t - a L_t H_t\\
+L_{t+1} \amp = L_t + c L_t H_t - d L_t,
+\end{align*}
+</div>
+<p id="p-319">where \(b\) is the hare birth rate per unit time as a function of the food supply \(u\text{,}\) \(d\) is the lynx mortality rate, and \(a\) and \(c\) are interaction coefficients.</p></article><p id="p-320">Let's carry out some basic analysis of this model.</p>
+<article class="exploration project-like" id="exploration-33"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span>
+</h6>
+<p id="p-321">Consider the predator/prey model introduced in <a class="xref" data-knowl="./knowl/def-lotkavolterra.html" title="Definition 6.2.1">Definition 6.2.1</a>.</p>
+<ol class="decimal">
+<li id="li-397">What do the terms \(L_t\) and \(H_t\) represent?</li>
+<li id="li-398">Which term in the model represents an increase in the hare population? Which term represents a decrease in the hare population? Explain how you know.</li>
+<li id="li-399">Which term in the model represents an increase in the lynx population? Which term represents a decrease in the lynx population? Explain how you know.</li>
+<li id="li-400">What does the product \(L_t H_t\) represent? (The <a class="external" href="https://en.wikipedia.org/wiki/Rule_of_product" target="_blank">multiplication principle</a> may be helpful here; also consider what \(a\) is described to be.)</li>
+<li id="li-401">What simplifying assumptions does this model make about how the populations increase and decrease?</li>
+</ol></article><article class="activity project-like" id="activity-26"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span>
+</h6>
+<p id="p-322">Let's start by assuming that \(H_0 = L_0 = 10\text{.}\) That is, we begin with 10 hares and 10 lynxes. Let's further assume that \(a = c = 0.014\text{,}\) \(b = 0.6\text{,}\) and \(d = 0.7\text{.}\)</p>
+<ol class="decimal">
+<li id="li-402">Compute \(H_1, H_2, L_1,\) and \(L_2\text{.}\) What seems to be happening to the two populations? Confirm using the Sage cell below, which will display the first ten years' worth of predictions. Note that the hare population is given by the blue dots and the lynx population by the red. <div class="sagecell-sage" id="sage-4"><script type="text/x-sage">H_0 = 10
+L_0 = 10
+a = 0.014
+b=0.6
+c=a
+d=0.7
+def H(n):
+	if n==0:
+		return H_0
+	else:
+		return H(n-1) + b*H(n-1)-a*L(n-1)*H(n-1)
+
+def L(n):
+	if n==0:
+		return L_0
+	else:
+		return L(n-1) + c*L(n-1)*H(n-1)-d*L(n-1)
+years=10
+nn=range(years)
+HH = [H(n) for n in nn]
+LL = [L(n) for n in nn]
+nH = list(zip(nn, HH))
+nL = list(zip(nn, LL))
+H_dots = points(nH, color='blue')
+L_dots = points(nL, color='red')
+p = H_dots + L_dots
+p
+</script></div>
+</li>
+<li id="li-403">The interaction coefficients translate to a decrease in the hare population and an increase in the lynx population. What do you expect to happen if we increase it from 0.014 to 0.05?</li>
+<li id="li-404">Test your suspicion using the Sage cell below. <div class="sagecell-sage" id="sage-5"><script type="text/x-sage">H_0 = 10
+L_0 = 10
+a = 0.05
+b=0.6
+c=a
+d=0.7
+def H(n):
+	if n==0:
+		return H_0
+	else:
+		return H(n-1) + b*H(n-1)-a*L(n-1)*H(n-1)
+
+def L(n):
+	if n==0:
+		return L_0
+	else:
+		return L(n-1) + c*L(n-1)*H(n-1)-d*L(n-1)
+years=10
+nn=range(years)
+HH = [H(n) for n in nn]
+LL = [L(n) for n in nn]
+nH = list(zip(nn, HH))
+nL = list(zip(nn, LL))
+H_dots = points(nH, color='blue')
+L_dots = points(nL, color='red')
+p = H_dots + L_dots
+p
+</script></div>
+</li>
+<li id="li-405">Qualitatively describe the dynamics displayed in the Sage output in the previous question.</li>
+</ol></article><p id="p-323">One might reasonably wonder how such a simple model does in making predictions about the long-term dynamics of these populations. The answer is: surprisingly well! In <a class="xref" data-knowl="./knowl/fig-harelynxdata.html" title="Figure 6.2.2">Figure 6.2.2</a>, observe the actual collected data on hare and lynx populations over 90 years, from 1845 to 1935. In <a class="xref" data-knowl="./knowl/fig-harelynxmodel.html" title="Figure 6.2.3">Figure 6.2.3</a>, we see dynamics predicted by the model. Note the same cyclical patterns of an increase in the hare population followed by an increase in the lynx population, which in turn causes a decrease in the hare population, etc.</p>
+<figure class="figure figure-like" id="fig-harelynxdata"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="https://www.cds.caltech.edu/~murray/amwiki/images/0/08/Predprey-graph.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.2<span class="period">.</span></span><span class="space"> </span>Data on hare and lynx populations over time. (<a class="external" href="https://www.cds.caltech.edu/~murray/amwiki/index.php/Predator_prey" target="_blank">Source</a>)</figcaption></figure><figure class="figure figure-like" id="fig-harelynxmodel"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="https://www.cds.caltech.edu/~murray/amwiki/images/9/9a/Predprey-discrete.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.3<span class="period">.</span></span><span class="space"> </span>The predicted dynamics of hare and lynx populations over time. (<a class="external" href="https://www.cds.caltech.edu/~murray/amwiki/index.php/Predator_prey" target="_blank">Source</a>)</figcaption></figure><p id="p-324">To be clear, the purpose of the model is not to make absolutely certain predictions about the precise numbers of hares and lynxes present in the Canadian wilderness. Instead, we want to understand the broad dynamics of how the populations change relative to one another. Mathematical ecologists can then use these models to understand how small changes in the parameters (say, an increase in the rate of predation) affect the broader dynamics of the ecological system.</p></section><section class="subsection" id="subsection-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.2.2</span> <span class="title">The discrete SIR epidemiological model</span>
+</h3>
+<p id="p-325">We now arrive at the main focus of this two-week unit: a basic mathematical model for the spread of an infectious disease. We'll first present the model itself and examine its features and assumptions. As was the case with the predator-prey model, we'll see that while it does make simplifying assumptions, it still allows us to analyze the broader dynamics of the disease transmission. We'll then look at ways of reducing the rate of infection, including the so-called "flattening the curve" method.</p>
+<p id="p-326">We begin with the model. It is known as a <em class="emphasis">compartmental model</em>, as it divides the population into compartments and assumes that every individual in the same compartment has the same characteristics (at least as far as the transmission of the disease is concerned). We'll look at the simplest such model, the discrete SIR model. Many more complex models are built on the SIR model.</p>
+<article class="definition definition-like" id="definition-23"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="period">.</span>
+</h6>
+<p id="p-327">Consider a population of \(N\) people through which a disease is spreading. For some discrete time \(t \ge 0\text{,}\) let \(S_t\) denote the number of individuals <em class="emphasis">susceptible</em> to the disease, \(I_t\) the number of individuals <em class="emphasis">infected</em> with the disease, and \(R_t\) the number of individuals who have <em class="emphasis">recovered</em> from the disease. We assume that that people move through the compartments as follows:</p>
+<div class="displaymath">
+\begin{equation}
+S \to I \to R.\label{eq-compartments}\tag{6.2.1}
+\end{equation}
+</div>
+<p id="p-328">For \(t\ge 1\text{,}\) the model is given by the following equations.</p>
+<div class="displaymath">
+\begin{align*}
+N \amp = S_t + I_t + R_t\\
+S_{t+1} \amp = S_t -b S_t I_t\\
+I_{t+1} \amp = I_t + b S_t I_t - a I_t\\
+R_{t+1} \amp = R_t + a I_t.
+\end{align*}
+</div>
+<p id="p-329">The constant \(a\) is known as the <em class="emphasis">recovery rate</em> parameter, which roughly describes how fast someone moves from the infected compartment to the recovered compartment. The constant \(b\) is known as the <em class="emphasis">infection rate</em>, and roughly describes how fast someone moves from the susceptible compartment to the infected compartment.</p></article><p id="p-330">Let's explore the equations.</p>
+<article class="exploration project-like" id="exploration-34"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">6.2.3</span><span class="period">.</span>
+</h6>
+<ol class="decimal">
+<li id="li-406">What does <a class="xref" data-knowl="./knowl/eq-compartments.html" title="Equation 6.2.1">(6.2.1)</a> mean? What assumptions does this make? How does it simplify our analysis?</li>
+<li id="li-407">What does the first equation in the set of four mean? What assumptions does it make about the population?</li>
+<li id="li-408">The second equation describes how the susceptible population changes over time. It contains the term \(-b S_t I_t\text{.}\) Based on our work above with a predator-prey model and the definition of \(b\text{,}\) what epidemiological event is this term describing?</li>
+<li id="li-409">Explain why it makes sense that we add \(b S_t I_t\) in the equation defining \(I_{t+1}\text{.}\)</li>
+<li id="li-410">What does the term \(-a I_t\) mean in the equation for \(I_{t+1}\text{?}\) Why does it make sense to <em class="emphasis">add</em> \(a I_t\) in the equation for \(R_{t+1}\text{?}\)</li>
+<li id="li-411">Note that there are no terms being subtracted in the equation for \(R_{t+1}\text{.}\) What assumption does this tell us that the model is making?</li>
+</ol></article><article class="activity project-like" id="act-sirnumbers"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="period">.</span>
+</h6>
+<p id="p-331">Let's see what happens when we plug in some numbers. Assume that \(N = 10,000\text{,}\) \(R_0 = 0\text{,}\) and \(I_0 = 50\text{.}\)</p>
+<ol class="decimal">
+<li id="li-412">Why does it make sense that we have \(R_0 = 0\) (assuming we have a new disease entering a population).</li>
+<li id="li-413">What is \(S_0\text{?}\)</li>
+<li id="li-414">Let's assume that \(a = 0.1\) and \(b = 0.0001\text{.}\) Compute \(S_1, I_1\text{,}\) and \(R_1\text{.}\)</li>
+<li id="li-415">Use your answer to the previous part to compute \(S_2, I_2\text{,}\) and \(R_2\text{.}\)</li>
+</ol></article><article class="investigation project-like" id="investigation-23"><h6 class="heading">
+<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">6.2.5</span><span class="period">.</span>
+</h6>
+<p id="p-332">In this and the following activity, we'll use the applet found at <a class="external" href="https://mathinsight.org/applet/discrete_sir_infectious_disease_model_versus_time" target="_blank">MathInsight.org</a>. Play around with the numbers at the top of the applet to change some of the features; e.g., how does increasing/decreasing the number of initial infected individuals change the shape of the curves? What do you notice? What do you wonder? Give at least 2-3 observations or questions.</p></article><p id="p-333">If you've been reading the news around COVID-19, you may have seen reference to a quantity called \(r_0\text{.}\) <aside class="aside aside-like" id="aside-12">Read "R-naught" or "R-zero".</aside> This is known as the <dfn class="terminology">basic reproduction number</dfn>, and is the expected number of new infections <em class="emphasis">directly generated</em> by a single case. So, if I were to get COVID-19, \(r_0\) would be the expected number of people I would <em class="emphasis">directly</em> infect. Generally, if \(r_0 \gt 1\text{,}\) we expect the disease to spread. If \(r_0 \lt 1\text{,}\) we expect it to die out.</p>
+<p id="p-334">The next activity explores the ways in which varying \(r_0\) impacts new cases of the disease caused both directly and indirectly by a single person.</p>
+<article class="activity project-like" id="act-r0"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.6</span><span class="period">.</span>
+</h6>
+<p id="p-335">In this activity, we assume different values for \(r_0\text{.}\) However, we will make two assumptions that don't change.</p>
+<p id="p-336">First, assume that all direct infections are done within a 5-day period. Second, assume that that those infected don't infect others until the next five day period.</p>
+<p id="p-337">Let \(C_t\) be the number of cases I've caused after \(t\) five-day periods. Assume \(C_0 = 1\) (me).</p>
+<ol class="decimal">
+<li id="li-416">Explain why \(C_1 = r_0 C_0 = r_0\text{.}\)</li>
+<li id="li-417">Explain why \(C_2 = C_1 + r_0 C_1 = r_0 + r_0^2\text{.}\)</li>
+<li id="li-418">After 30 days, six five-day periods will have passed. Explain why<div class="displaymath">
+\begin{equation*}
+C_6 = r_0 + r_0^2 + r_0^3 + \cdots + r_0^6.
+\end{equation*}
+</div>
+</li>
+<li id="li-419">Our SIR model approximates \(r_0\) by the formula<div class="displaymath">
+\begin{equation}
+r_0 \approx \frac{bN}{a}.\label{eq-r0}\tag{6.2.2}
+\end{equation}
+</div>Using that formula, what is the approximate \(r_0\) for the situation described in <a class="xref" data-knowl="./knowl/act-sirnumbers.html" title="Activity 6.2.4">Activity 6.2.4</a>?</li>
+<li id="li-420">Given that value of \(r_0\text{,}\) use the Sage cell below (replacing the ? with the value you found) to estimate how many cases I am responsible for over a 30-day period.</li>
+<li id="li-421">As the COVID-19 situation is ongoing, estimates for \(r_0\) vary significantly. <a class="external" href="https://academic.oup.com/jtm/article/27/2/taaa021/5735319" target="_blank">One study from February</a> found an average \(r_0\) of 3.28. If that is the true number, approximately how many cases will a typical infected person be responsible for over the course of a month? Use the Sage cell to determine your answer.</li>
+<li id="li-422">Other studies suggest that, for COVID-19, \(r_0 \approx 2.25\text{.}\) In that case, how many cases would an infected person be responsible for over the course of a month?</li>
+<li id="li-423">The practice of <a class="external" href="https://en.wikipedia.org/wiki/Social_distancing" target="_blank">social distancing</a> is intended to reduce \(r_0\text{.}\) Assume that strict social distancing is observed, and this reduces \(r_0\) to approximately 1.25 (one direct infection fewer). Now how many cases are you responsible for over the course of a 30-day period?</li>
+</ol>
+<div class="sagecell-sage" id="sage-6"><script type="text/x-sage">r_0 = ?
+r_0 + r_0^2 + r_0^3 + r_0^4 + r_0^5 + r_0^6
+</script></div></article><p id="p-338">For our last activity, we'll explore how reducing \(r_0\) "flattens" the curve of infected people at time \(t\text{,}\) \(I_t\text{.}\) There are two main advantages of a flattened infected curve. First, this often corresponds to fewer infected people overall. Second, the lack of a spike in infected persons makes it easier for the healthcare system to effectively treat those who <em class="emphasis">are</em> infected (not to mention anyone with other medical concerns).</p>
+<article class="exploration project-like" id="exploration-35"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">6.2.7</span><span class="period">.</span>
+</h6>
+<p id="p-339">One last time, consider the values for the variables we used in <a class="xref" data-knowl="./knowl/act-sirnumbers.html" title="Activity 6.2.4">Activity 6.2.4</a>; for reference, this was \(S_0 = 10000\text{,}\) \(I_0 = 50\text{,}\) \(R_0 = 0\text{,}\) \(a = 0.1\text{,}\) and \(b = 0.0001\text{.}\) We'll again use the <a class="external" href="https://mathinsight.org/applet/discrete_sir_infectious_disease_model_versus_time" target="_blank">applet from MathInsight.org</a> to answer these questions.</p>
+<ol class="decimal">
+<li id="li-424">What is \(r_0\text{?}\) (Recall <a class="xref" data-knowl="./knowl/eq-r0.html" title="Equation 6.2.2">(6.2.2)</a> from Question 4 of <a class="xref" data-knowl="./knowl/act-r0.html" title="Activity 6.2.6">Activity 6.2.6</a>.)</li>
+<li id="li-425">
+<p id="p-340">This value is pretty high, but is convenient for our purposes as everything fits more nicely into the window of the applet. Nonetheless, we can still explore the ways in which changes in \(r_0\) affect the shape of the curves; our qualitative observations will still apply to real-world situations like the current coronavirus pandemic.</p>
+<p id="p-341">Recall that \(r_0 \approx \frac{bN}{a}\) and assume our population size \(N = 10000\) and recovery rate \(a = 0.1\) are constant. Compute the three values of \(r_0\) that result from infection rates of \(b = 0.00005, 0.0001\text{,}\) and \(0.0002\text{.}\) In turn, plug these values into the <a class="external" href="https://mathinsight.org/applet/discrete_sir_infectious_disease_model_versus_time" target="_blank">applet</a> and comment on the shape of the (green) infection curve: how tall is the spike of infected individuals, and at what time \(t\) is it at its highest point?</p>
+</li>
+<li id="li-426">Similarly, assuming \(N = 10000\) and \(b = 0.0001\) are constant, compute the values of \(r_0\) that result from \(a = 0.05, 0.1\text{,}\) and \(0.2\text{.}\) In turn, plug these values into the <a class="external" href="https://mathinsight.org/applet/discrete_sir_infectious_disease_model_versus_time" target="_blank">applet</a> and comment on the shape of the (green) infection curve: how tall is the spike of infected individuals, and at what time \(t\) is it at its highest point?</li>
+</ol></article></section></section></div></main>
+</div>
+</body>
+</html>
