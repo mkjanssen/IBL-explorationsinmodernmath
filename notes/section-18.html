@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-11-17T22:29:32-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>April 13-17: Trees</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script async="" src="https://cse.google.com/cse.js?cx=017464805646507420634:civa1brpuu6"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_pastel_blue_orange.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\({\labelitemi}{$\diamond$}
+\def\arraystretch{1.5}
+\newcommand{\contentsfinish}{}
+\newcommand{\separator}{\begin{center}\rule{\columnwidth}{\arrayrulewidth}\end{center}}
+\newcommand{\tosay}[1]{\begin{center}\text{\fbox{\scriptsize{#1}}}\end{center}}
+\renewcommand{\cftsecfont}{}
+\renewcommand{\cftsecpagefont}{}
+\renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}\smallcaps{#1}}
+\def\oldequation{\equation}
+\def\endoldequation{\endequation}
+\newcommand{\nl}{
+}
+\newcommand{\runin}[1]{\textls[50]{\otherscshape #1}}
+\renewcommand{\sectionmark}[1]{}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\sectionmark}[1]{\markboth{{\thesection}.\ \smallcaps{#1}}{\thesection.\ \smallcaps{#1}}}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\sectionmark}[1]{\markboth{{\scriptsize\thesection}.\ \smallcaps{#1}}{}}
+\renewcommand{\subsectionmark}[1]{}
+\newcommand{\makedefaultsection}[2][true]{
+}
+\newcommand{\timestamp}{{\color{red}Last updated: {\currenttime\ (UTC), \today}}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\ge}{\geqslant}
+\newcommand{\ideal}[1]{\left\langle\, #1 \,\right\rangle}
+\newcommand{\subgp}[1]{\left\langle\, #1 \,\right\rangle}
+\def\p{\varphi}
+\def\isomorphic{\cong}
+\def\Gal{\text{Gal}}
+\def\im{\text{im}}
+\def\normal{\vartriangleleft}
+\renewcommand{\qedsymbol}{$\checkmark$}
+\def\lcm{{\text{lcm}\,}}
+\newcommand{\q}[1]{{\color{red} {#1}}}
+\newcommand{\startimportant}[1]{\end{[{Hint:} #1]\end}}
+\renewcommand{\textcircled}[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt,color=red] (char) {#1};}}
+\newcommand{\crossout}[1]{\tikz[baseline=(char.base)]{\node[mynode, cross out,draw] (char) {#1};}}
+\newcommand{\set}[1]{\left\{ {#1} \right\}}
+\newcommand{\setof}[2]{{\left\{#1\,\colon\,#2\right\}}}
+\def\C{{\mathbb C}}
+\def\Z{{\mathbb Z}}
+\def\bF{{\mathbb F}}
+\def\Q{{\mathbb Q}}
+\def\N{{\mathbb N}}
+\def\R{{\mathbb R}}
+\newcommand{\h}[1]{{\textbf{#1}}}
+\def\presnotes{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Explorations in Modern Mathematics</span></a></h1>
+<p class="byline">Dr. Michael K. Janssen</p>
+</div>
+<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-17.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-19.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-17.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-19.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="Sec-Introduction.html" data-scroll="Sec-Introduction">Introduction</a></li>
+<li><a href="Sec-NoteToInstructors.html" data-scroll="Sec-NoteToInstructors">A Note to Students</a></li>
+</ul>
+</li>
+<li class="link part"><a href="Part-CourseInfo.html" data-scroll="Part-CourseInfo"><span class="codenumber">I</span> <span class="title">Course information</span></a></li>
+<li class="link"><a href="Chap-BasicInfo.html" data-scroll="Chap-BasicInfo"><span class="codenumber">1</span> <span class="title">Basic Information</span></a></li>
+<li class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">Frequently Asked Questions</span></a></li>
+<li class="link part"><a href="Part-Play.html" data-scroll="Part-Play"><span class="codenumber">II</span> <span class="title">Play</span></a></li>
+<li class="link">
+<a href="Chap-RubiksCube.html" data-scroll="Chap-RubiksCube"><span class="codenumber">3</span> <span class="title">The Rubik's Cube</span></a><ul>
+<li><a href="Sec-GettingToKnowTheCube.html" data-scroll="Sec-GettingToKnowTheCube">January 10, 2020: Getting To Know You (and the Cube)</a></li>
+<li><a href="section-2.html" data-scroll="section-2">January 13, 2020: All About Cubies</a></li>
+<li><a href="section-3.html" data-scroll="section-3">January 20, 2020: Algebraic Notation and Order</a></li>
+<li><a href="section-4.html" data-scroll="section-4">January 22, 2020: Magic Cube Moves I</a></li>
+<li><a href="section-5.html" data-scroll="section-5">January 24, 2020: Magic Cube Moves II</a></li>
+<li><a href="section-6.html" data-scroll="section-6">January 27, 2020: Magic Cube Moves III</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-3.html" data-scroll="part-3"><span class="codenumber">III</span> <span class="title">Truth</span></a></li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Inductive and Deductive Reasoning</span></a><ul>
+<li><a href="section-7.html" data-scroll="section-7">January 31, 2020: What is Truth? / Inductive Reasoning</a></li>
+<li><a href="section-8.html" data-scroll="section-8">February 3, 2020: Deductive Reasoning I: Reasoning from Axioms</a></li>
+<li><a href="section-9.html" data-scroll="section-9">February 5-7, 2020: Deductive Reasoning II: Formal Logic</a></li>
+<li><a href="section-10.html" data-scroll="section-10">February 10-19, 2020 : The Foundational Crisis of Mathematics</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-4.html" data-scroll="part-4"><span class="codenumber">IV</span> <span class="title">Justice</span></a></li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Voting and Elections</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11">February 21, 2020: Elections with Two Candidates</a></li>
+<li><a href="section-12.html" data-scroll="section-12">February 24, 2020: Elections with Three or More Candidates I</a></li>
+<li><a href="section-13.html" data-scroll="section-13">Elections with Three or More Candidates, II: The Condorcet Criterion</a></li>
+<li><a href="section-14.html" data-scroll="section-14">March 2, 2020: Elections with Three or More Candidates III</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-5.html" data-scroll="part-5"><span class="codenumber">V</span> <span class="title">Power</span></a></li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Modeling with Discrete Dynamical Systems</span></a><ul>
+<li><a href="section-15.html" data-scroll="section-15">March 23-27: Intro to Discrete Dynamical Systems</a></li>
+<li><a href="section-16.html" data-scroll="section-16">March 30-April 3, Discrete Dynamical Systems II: Predator/Prey and SIR</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-6.html" data-scroll="part-6"><span class="codenumber">VI</span> <span class="title">Love</span></a></li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Graph Theory and Human Trafficking</span></a><ul>
+<li><a href="section-17.html" data-scroll="section-17">April 6-10: Introduction to Graphs</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="active">April 13-17: Trees</a></li>
+<li><a href="section-19.html" data-scroll="section-19">April 20-27: Graph Theory and Human Trafficking</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-18"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">April 13-17: Trees</span>
+</h2>
+<p id="p-355">Two fundamental questions in the analysis of graphs are: given two vertices, is there a path between them? And if so, how can we find the shortest possible path? Let's consider the second question first.</p>
+<p id="p-356">Notice in the graph in <a class="xref" data-knowl="./knowl/fig-graphexample3.html" title="Figure 7.1.7">Figure 7.1.7</a> that there are several paths between, say, \(a\) and \(f\text{.}\) There is a path spanning two edges: \(a \to c \to f\text{.}\) There is also a path spanning four edges: \(a\to c \to d \to e \to f\text{.}\) In general, by the <dfn class="terminology">distance</dfn> between two vertices, we mean a path consisting of the fewest edges possible, so the distance between \(a\) and \(f\) is 1.</p>
+<article class="activity project-like" id="activity-30"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.2.1</span><span class="period">.</span>
+</h6>
+<p id="p-357">Consider the graph in <a class="xref" data-knowl="./knowl/fig-distance.html" title="Figure 7.2.1">Figure 7.2.1</a>.</p>
+<figure class="figure figure-like" id="fig-distance"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/graph04.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.2.1<span class="period">.</span></span><span class="space"> </span>A graph.</figcaption></figure><ol class="decimal">
+<li id="li-437">Find three paths from vertex \(L\) to vertex \(E\text{.}\)</li>
+<li id="li-438">Determine the distance from vertex \(B\) to vertex \(N\text{.}\) How many paths of this distance can you find?</li>
+</ol></article><p id="p-358">Returning to the first question above, if the graph is connected, the answer is obviously <em class="emphasis">yes</em>. So, given a graph \(G(V,E)\text{,}\) we are often interested in removing superfluous edges in a systematic way to arrive at a smallest (which will be made precise shortly) connected <dfn class="terminology">subgraph</dfn> \(T(V,E')\text{.}\)</p>
+<article class="definition definition-like" id="definition-26"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="period">.</span>
+</h6>
+<p id="p-359">A <dfn class="terminology">cycle</dfn> on \(n\) vertices \(v_1, v_2, \ldots, v_n\) is the graph with \(n+1\) edges \(v_1 v_2, v_2 v_3, \ldots, v_{n-1} v_n, v_n v_1\text{.}\) We denote such a cycle by \(C_n\text{.}\) That is, a cycle consists of a path \(v_1 \to v_2 \to v_3 \to \ldots \to v_n \to v_1\text{,}\) where the only repeated vertex is the first/last one.</p></article><article class="example example-like" id="example-4"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-4"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-4"><article class="example example-like"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-1" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/iu-Zm4xBYw4?&amp;modestbranding=1&amp;rel=0"></iframe></div></article></div>
+<p id="p-360">One of the major questions in theoretical graph theory is: given a graph \(G\text{,}\) is there an algorithm that determines whether \(G\) contains any cycles? There are several such algorithms, and they are relatively efficient. A related question is: given a graph \(G\text{,}\) is there an efficient algorithm which can produce a cycle that visits each vertex exactly once? The answer to this question is currently unknown (as of April 2020), but an active area of research. <aside class="aside aside-like" id="aside-13">This is known as a <dfn class="terminology">Hamiltonian cycle</dfn>.</aside></p>
+<p id="p-361">Our focus for the rest of this section is graphs that do <em class="emphasis">not</em> contain any cycles.</p>
+<article class="definition definition-like" id="def-tree"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.4</span><span class="period">.</span>
+</h6>
+<p id="p-362">A connected graph \(T(V,E)\) that does not contain any cycles is known as a <dfn class="terminology">tree</dfn>. <aside class="aside aside-like" id="aside-14">A graph \(F(V,E)\) that does not contain any cycles is known as a <dfn class="terminology">forest</dfn>. Yes, a forest is a collection of trees.</aside></p></article><article class="example example-like" id="example-5"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-5"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.5</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-5"><article class="example example-like"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-2" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/2Qy8fugua80?&amp;modestbranding=1&amp;rel=0"></iframe></div></article></div>
+<p id="p-363">The description given in <a class="xref" data-knowl="./knowl/def-tree.html" title="Definition 7.2.4">Definition 7.2.4</a> is pretty close to what we want. Given a graph \(G(V,E)\text{,}\) we want a tree \(T(V,E')\) such that every vertex of \(G\) is also a vertex of \(T\text{,}\) and every edge of \(T\) to be an edge of \(G\text{.}\) Such a tree is known as a <dfn class="terminology">spanning tree</dfn> for \(G\text{.}\)</p>
+<article class="exploration project-like" id="exploration-38"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="period">.</span>
+</h6>
+<p id="p-364">Determine whether the given graph is a tree. Justify your answer by making explicit reference to <a class="xref" data-knowl="./knowl/def-tree.html" title="Definition 7.2.4">Definition 7.2.4</a>.</p>
+<ol class="decimal">
+<li id="li-439"><figure class="figure figure-like" id="fig-treeq01"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/tree01.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.2.6<span class="period">.</span></span><span class="space"> </span>The graph for Question 1. Is it a tree, or no?</figcaption></figure></li>
+<li id="li-440"><figure class="figure figure-like" id="fig-treeq02"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/tree02.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.2.7<span class="period">.</span></span><span class="space"> </span>The graph for Question 2. Is it a tree, or no?</figcaption></figure></li>
+<li id="li-441"><figure class="figure figure-like" id="fig-treeq03"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/tree03.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.2.8<span class="period">.</span></span><span class="space"> </span>The graph for Question 3. Is it a tree, or no?</figcaption></figure></li>
+</ol></article><p id="p-365">The last big idea that we need is the notion of a \(weighted\) graph, which we introduce with an example.</p>
+<article class="example example-like" id="example-6"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-6"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.9</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-6"><article class="example example-like"><p id="p-366">Consider the graph in <a class="xref" data-knowl="./knowl/fig-conveyorbelt.html" title="Figure 7.2.10">Figure 7.2.10</a>. Suppose the vertices represent stations in a factory, and the edges represent conveyor belts between the stations.</p>
+<figure class="figure figure-like" id="fig-conveyorbelt"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/graph06.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.2.10<span class="period">.</span></span><span class="space"> </span>A graph representing the arrangements of conveyor belts between four stations in a factory.</figcaption></figure><p id="p-367">A manager in the factory may be interested in how efficiently the conveyor belts can be run. Suppose that belt \(cd\) costs $11/day to run, belt \(de\) costs $8/day to run, belt \(cf\) costs $9/day to run, belt \(df\) costs $12/day to run, and belt \(ef\) costs $11/day to run. We can represent this by labeling each edge with its cost, as seen in <a class="xref" data-knowl="./knowl/fig-weightedbelt.html" title="Figure 7.2.11">Figure 7.2.11</a>.</p>
+<figure class="figure figure-like" id="fig-weightedbelt"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/graph05.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.2.11<span class="period">.</span></span><span class="space"> </span>A <em class="emphasis">weighted</em> graph representing the arrangements of conveyor belts between four stations in a factory.</figcaption></figure><p id="p-368">This is an example of a <dfn class="terminology">weighted graph</dfn>, which is just a graph with the edges labeled. The labels usually represent something meaningful about the problem. For example, we could have weighted the edges in <a class="xref" data-knowl="./knowl/fig-weightedbelt.html" title="Figure 7.2.11">Figure 7.2.11</a> with the time it takes to move an object from one station to another, or the distance between stations (as one might find on a map), etc.</p></article></div>
+<p id="p-369">We tie this all together with the concept of a <dfn class="terminology">minimal spanning tree</dfn>, which is a spanning tree with the smallest total weight.</p>
+<article class="example example-like" id="ex-mwst-elimination"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex-mwst-elimination"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.12</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-mwst-elimination"><article class="example example-like"><p id="p-370">Again, consider the weighted graph representing our conveyor belt in <a class="xref" data-knowl="./knowl/fig-weightedbelt.html" title="Figure 7.2.11">Figure 7.2.11</a>. The total cost to run the belts for one day is $51. Assume that eliminating a belt does not substantially increase the cost of running the others. How could we find a lower-cost arrangement?</p>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-3" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/fXfsHOVSy2U?&amp;modestbranding=1&amp;rel=0"></iframe></div></article></div>
+<p id="p-371">There are several algorithms for finding minimum weight spanning trees in addition to the one presented in <a class="xref" data-knowl="./knowl/ex-mwst-elimination.html" title="Example 7.2.12">Example 7.2.12</a>. A famous such example is <dfn class="terminology">Prim's algorithm</dfn>.</p>
+<article class="algorithm theorem-like" id="alg-prim"><h6 class="heading">
+<span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">7.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Prim's Algorithm.</span>
+</h6>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-4" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/QoF1b9t4DGQ?&amp;modestbranding=1&amp;rel=0"></iframe></div></article><p id="p-372">In the remaining series of tasks, you will explore these techniques in the context of a basic communication network, which will prepare us for exploring human trafficking.</p>
+<p id="p-373">For the tasks that follow, we'll use <a class="xref" data-knowl="./knowl/table-commnetwork.html" title="Table 7.2.14: In-person interactions over the course of a weekend.">Table 7.2.14</a>, which describes the number of times a group of friends interacted over the course of a weekend.</p>
+<figure class="table table-like" id="table-commnetwork"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7.2.14<span class="period">.</span></span><span class="space"> </span>In-person interactions over the course of a weekend.</figcaption><table>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r0 l0 t0 lines">Alexey</td>
+<td class="c m b2 r0 l0 t0 lines">Barbara</td>
+<td class="c m b2 r0 l0 t0 lines">Conan</td>
+<td class="c m b2 r0 l0 t0 lines">David</td>
+<td class="c m b2 r0 l0 t0 lines">Evie</td>
+<td class="c m b2 r0 l0 t0 lines">Fatima</td>
+<td class="c m b2 r0 l0 t0 lines">Gala</td>
+<td class="c m b2 r0 l0 t0 lines" data-braille="last-cell">Hemera</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">Alexey</td>
+<td class="c m b0 r0 l0 t0 lines">X</td>
+<td class="c m b0 r0 l0 t0 lines">11</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">12</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">5</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">Barbara</td>
+<td class="c m b0 r0 l0 t0 lines">11</td>
+<td class="c m b0 r0 l0 t0 lines">X</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">6</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">9</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">1</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">Conan</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">X</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">6</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">David</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">X</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">0</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">Evie</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">6</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">X</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">10</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">10</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">Fatima</td>
+<td class="c m b0 r0 l0 t0 lines">12</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">X</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">10</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">Gala</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+<td class="c m b0 r0 l0 t0 lines">9</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">10</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+<td class="c m b0 r0 l0 t0 lines">X</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">0</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">Hemera</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">6</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines">10</td>
+<td class="c m b0 r0 l0 t0 lines">10</td>
+<td class="c m b0 r0 l0 t0 lines">0</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">X</td>
+</tr>
+</table></figure><article class="activity project-like" id="act-commnetwork1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.2.3</span><span class="period">.</span>
+</h6>
+<p id="p-374">For this activity, use the information in <a class="xref" data-knowl="./knowl/table-commnetwork.html" title="Table 7.2.14: In-person interactions over the course of a weekend.">Table 7.2.14</a>.</p>
+<ol class="decimal">
+<li id="li-442">Use the data to create a graph of these friend interactions over the weekend. The people are your vertices (label each vertex with the first letter of the name) and the edges indicate interaction. [So, e.g., there is an edge between David and Barbara, but not David and Conan.]</li>
+<li id="li-443">If an edge exists, assign its weight to be 1 divided by the number of interactions. Which indicates more interactions: a higher weight, or a lower weight? Explain.</li>
+<li id="li-444">Suppose these students are in my class, and that I forget to make an important announcement, but our technology isn't working. I want to get information to each of them quickly. Whom do you think I should give the information to first? Why?</li>
+<li id="li-445">Are there any isolated vertices? What does this mean for the spread of information?</li>
+</ol></article><article class="activity project-like" id="activity-32"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.2.4</span><span class="period">.</span>
+</h6>
+<p id="p-375">Again, use the information in <a class="xref" data-knowl="./knowl/table-commnetwork.html" title="Table 7.2.14: In-person interactions over the course of a weekend.">Table 7.2.14</a>.</p>
+<ol class="decimal">
+<li id="li-446">Let's assume that maximizing the number of interactions will minimize the amount of time it takes for everyone to receive the message. To accomplish this, we want to find a minimal spanning tree for our graph. Use the elimination method of <a class="xref" data-knowl="./knowl/ex-mwst-elimination.html" title="Example 7.2.12">Example 7.2.12</a> to find the minimal spanning tree. What is the total weight of the tree?</li>
+<li id="li-447">Now use Prim's algorithm to find the minimal spanning tree. Is the tree the same as before? If not, state what has changed. What is the total weight of the tree?</li>
+<li id="li-448">Looking at the two minimal trees, find the degree of each person <em class="emphasis">in the minimal trees</em>. Is it reasonable to assume that if the person in each tree with the highest degree receives the information first that this person will be the fastest way for everyone in the class to get the information? Why or why not? Compare your thoughts here to your group's response to Question 3 of <a class="xref" data-knowl="./knowl/act-commnetwork1.html" title="Activity 7.2.3">Activity 7.2.3</a>.</li>
+<li id="li-449">Now suppose that instead of one of my classes, this network is the communication network for an organization of human traffickers. What could you conclude using the graph? Who should a law officer investigate to learn the most about the organization the quickest? Explain your reasoning.</li>
+</ol></article></section></div></main>
+</div>
+</body>
+</html>
