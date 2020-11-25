@@ -67,11 +67,11 @@
 \usetikzlibrary{through,intersections,decorations,shadows,fadings}
 \usepackage{pgfplots}
 </latex-image-preamble>
-<search>
+<!-- <search>
             <google>
                 <cx>017464805646507420634:civa1brpuu6</cx>
             </google>
-        </search>
+        </search> -->
 <rename element="principle">Discussion</rename>
 <rename element="heuristic">Cube Move</rename>
   </docinfo>

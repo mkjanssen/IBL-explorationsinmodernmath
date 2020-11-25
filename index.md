@@ -8,4 +8,5 @@ author: Mike Janssen, Ph.D.
 
 **Term**: Spring 2021
 
-Course website: [https://prof.mkjanssen.org/emm/](https://prof.mkjanssen.org/emm/)
+* Course website: [https://prof.mkjanssen.org/emm/](https://prof.mkjanssen.org/emm/)
+* Course notes: [https://prof.mkjanssen.org/emm/notes/](https://prof.mkjanssen.org/emm/notes/)
