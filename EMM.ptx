@@ -74,6 +74,7 @@
         </search> -->
 <rename element="principle">Discussion</rename>
 <rename element="heuristic">Cube Move</rename>
+<rename element="insight">Screencast</rename>
   </docinfo>
   <book>
     <title>Explorations in Modern Mathematics</title>
@@ -145,8 +146,36 @@
 		<chapter xml:id="Week-01">
 			<title>Week 1: Jan. 15</title>
 			
-			<section xml:id="0115">
+			<section xml:id="Jan-15">
 				<title>Jan. 15</title>
+				
+				<introduction>
+				
+				<assemblage>
+					<title>Motivating Questions</title>
+					<p>
+					<statement>
+						Here are some questions we'll consider.
+						<ol>
+							<li>Testing 1 2 3</li>
+						</ol>
+					</statement>
+					</p>
+					
+				</assemblage>
+				
+				
+					
+					<insight>
+					testing example test
+					<video ee="YFXFYSH" />
+					</insight>
+				
+				
+				
+				</introduction>
+				
+				
 				
 				
 			</section>
@@ -157,20 +186,24 @@
 		<chapter xml:id="Week-02">
 			<title>Week 2: Jan. 18-22</title>
 			
-			<section xml:id="0118">
+			<section xml:id="Jan-18">
 				<title>Jan. 18</title>
+				
+				<p>
+					testing 1 2 3 4
+				</p>
 				
 				
 			</section>
 			
-			<section xml:id="0120">
+			<section xml:id="Jan-20">
 				<title>Jan. 20</title>
 				
 				
 			</section>
 			
 			
-			<section xml:id="0122">
+			<section xml:id="Jan-22">
 				<title>Jan. 22</title>
 				
 				
@@ -181,20 +214,20 @@
 		<chapter xml:id="Week-03">
 			<title>Week 3: Jan. 25-29</title>
 			
-			<section xml:id="0125">
+			<section xml:id="Jan-25">
 				<title>Jan. 25</title>
 				
 				
 			</section>
 			
-			<section xml:id="0127">
+			<section xml:id="Jan-27">
 				<title>Jan. 27</title>
 				
 				
 			</section>
 			
 			
-			<section xml:id="0129">
+			<section xml:id="Jan-29">
 				<title>Jan. 29</title>
 				
 				
@@ -207,7 +240,7 @@
 	
 
 	
-	<part xml:id="Part-Truth">
+	<!-- <part xml:id="Part-Truth">
 		<title>Truth</title>
 		
 		<introduction>
@@ -322,7 +355,7 @@
 		
 		
 
-	</part>
+	</part> -->
 
 
 
