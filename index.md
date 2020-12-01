@@ -33,8 +33,11 @@ title: 'Explorations in Modern Mathematics'
 
 ### Assignments
 
-The best way to learn mathematics is to _do_ mathematics, and so we will regularly engage in the following items of work to 
+The best way to learn mathematics is to _do_ mathematics, and so we will regularly engage in the following items of work to... 
 
+
+
+### Tentative Schedule
 
 
 | Week | Day                                        | Topic | Work due |
