@@ -240,7 +240,7 @@
 	
 
 	
-	<!-- <part xml:id="Part-Truth">
+	<part xml:id="Part-Truth">
 		<title>Truth</title>
 		
 		<introduction>
@@ -271,20 +271,20 @@
 			<chapter xml:id="Week-04">
 				<title>Week 4: Feb. 1-5</title>
 				
-				<section xml:id="0201">
+				<section xml:id="Feb-01">
 					<title>Feb. 1</title>
 					
 					
 				</section>
 				
-				<section xml:id="0203">
+				<section xml:id="Feb-03">
 					<title>Feb. 3</title>
 					
 					
 				</section>
 				
 				
-				<section xml:id="0205">
+				<section xml:id="Feb-05">
 					<title>Feb. 5</title>
 					
 					
@@ -296,20 +296,20 @@
 			<chapter xml:id="Week-05">
 				<title>Week 5: Feb. 8-12</title>
 				
-				<section xml:id="0208">
+				<section xml:id="Feb-08">
 					<title>Feb. 8</title>
 					
 					
 				</section>
 				
-				<section xml:id="0210">
+				<section xml:id="Feb-10">
 					<title>Feb. 10</title>
 					
 					
 				</section>
 				
 				
-				<section xml:id="0212">
+				<section xml:id="Feb-12">
 					<title>Feb. 12</title>
 					
 					
@@ -320,7 +320,7 @@
 		
 	</part>
 	
-	<part>
+	<!--<part>
 		<title>Justice</title>
 			
 			
