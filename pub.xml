@@ -16,7 +16,7 @@ This file is the "publication file" for producing standard html
 		<!-- override defaults.  Ex: to use "style_oscarlevin.css" -->
 		<!-- put <css style="oscarlevin"/>                         -->
 		<!-- @colors currently unimplementd.                       -->
-		<css style="http://discrete.openmathbooks.org/dmoi3/custom-styles.css"/>
+		<!-- <css style="oscarlevin"/> -->
 		<!-- Magic IDs identify HTML pages to analytics services   -->
 		<!-- Presence implies relevant Javascript will be added    -->
 		<!-- <analytics google-gst="UA-66485406-1"/>			-->
