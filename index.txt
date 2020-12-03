@@ -1,0 +1,112 @@
+---
+title: 'Explorations in Modern Mathematics'
+---
+
+
+## Course Information
+
+* **Course**: Math 149-01 (3 cr.)
+* **Term**: Spring 2021
+* **Instructor**: Dr. Mike Janssen, Associate Professor of Mathematics
+* **Classroom**: CL 2241
+* **Class time**: 1:00-1:50pm MWF
+* **Office**: SB 1612
+* **Student Hours**: [Make an appointment](https://bit.ly/BookProfJanssen) or drop by
+* **Course notes**: [https://prof.mkjanssen.org/emm/notes/](https://prof.mkjanssen.org/emm/notes/) | [PreTeXt source](https://github.com/mkjanssen/IBL-explorationsinmodernmath)
+* **Course website**: [https://prof.mkjanssen.org/emm/](https://prof.mkjanssen.org/emm/)
+* **Catalog Course Description**: This course is focused on exploring college-level mathematics relevant for all students, regardless of discipline. We will investigate modern mathematical topics including number theory, modeling, fractals, infinity, probability, making meaning from data, and decision-making. Mathematical thinking, reasoning, and pattern discovery will be particularly emphasized. A guided discovery approach will be utilized, and we will discuss how a Reformed perspective impacts our view of the quantitative world. **Prerequisite**: an ACT mathematics score of 22 or higher or satisfactory completion of one course from Mathematics 100, 108, 115.
+
+### Required resources
+
+* Access to the [course notes](https://prof.mkjanssen.org/emm/notes)
+* One 3x3 Rubik's cube (any cube will do, but [here is an inexpensive recommendation](https://www.amazon.com/CuberSpeed-JiaoShi-Meilong-stickerless-Classroom/dp/B07QHQYQ9F/ref=sr_1_5_mod_primary_new?dchild=1&keywords=3x3+cubing+classroom&qid=1606835769&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-5))
+* A copy of [_Mathematics for Human Flourishing_](https://www.francissu.com/flourishing), by Francis Su
+
+
+### Learning Objectives
+
+* Students will play with God’s mathematical creation by solving a Rubik’s cube and other mathematical puzzles. (CS)
+* Students will explore the notion of mathematical truth, and assess its place in understanding God’s creation. (RO, CR)
+* Students will apply mathematical thinking to articulate a vision for a more just society. (CD, CR)
+* Students will explore the power and limitations of mathematics for modeling the physical creation. (CS, CR)
+* Students will identify, analyze, and present on a piece of beauty in mathematics. (RO, CS)
+
+### Assignments
+
+The best way to learn mathematics is to _do_ mathematics, and so we will regularly engage in the following items of work to strengthen our mathematical muscles.
+
+#### In-Class Explorations
+
+#### Weekly Checkpoints
+
+
+#### Module Checkpoints
+
+
+#### Reading Reflections/Discussions
+
+
+#### Final Project
+
+
+### Flexible Course Design
+
+
+### Grading
+
+###  
+
+
+
+### Tentative Schedule
+
+
+| Week   | Day                         | Topic        | Work Due |
+|--------|-----------------------------|--------------|----------|
+| 1      | [15-Jan](notes/Jan-15.html) |              |          |
+| 2      | [18-Jan](notes/Jan-18.html) |              |          |
+| 2      | [20-Jan](notes/Jan-20.html) |              |          |
+| 2      | [22-Jan](notes/Jan-22.html) |              |          |
+| 3      | [25-Jan](notes/Jan-25.html) |              |          |
+| 3      | [27-Jan](notes/Jan-27.html) |              |          |
+| 3      | [29-Jan](notes/Jan-29.html) |              |          |
+| 4      | [1-Feb](notes/Feb-01.html)  |              |          |
+| 4      | [3-Feb](notes/Feb-03.html)  |              |          |
+| 4      | [5-Feb](notes/Feb-05.html)  |              |          |
+| 5      | [8-Feb](notes/Feb-08.html)  |              |          |
+| 5      | [10-Feb](notes/Feb-10.html) |              |          |
+| 5      | [12-Feb](notes/Feb-12.html) |              |          |
+| 6      | 15-Feb                      | **No class** |          |
+| 6      | [17-Feb](notes/Feb-17.html) |              |          |
+| 6      | [19-Feb](notes/Feb-19.html) |              |          |
+| 7      | [22-Feb](notes/Feb-22.html) |              |          |
+| 7      | [24-Feb](notes/Feb-24.html) |              |          |
+| 7      | [26-Feb](notes/Feb-26.html) |              |          |
+| 8      | [1-Mar](notes/Mar-01.html)  |              |          |
+| 8      | [3-Mar](notes/Mar-03.html)  |              |          |
+| 8      | [5-Mar](notes/Mar-05.html)  |              |          |
+| 9      | [8-Mar](notes/Mar-08.html)  |              |          |
+| 9      | [10-Mar](notes/Mar-10.html) |              |          |
+| 9      | [12-Mar](notes/Mar-12.html) |              |          |
+| 10     | [15-Mar](notes/Mar-15.html) |              |          |
+| 10     | [17-Mar](notes/Mar-17.html) |              |          |
+| 10     | [19-Mar](notes/Mar-19.html) |              |          |
+| 11     | [22-Mar](notes/Mar-22.html) |              |          |
+| 11     | [24-Mar](notes/Mar-24.html) |              |          |
+| 11     | [26-Mar](notes/Mar-26.html) |              |          |
+| 12     | [29-Mar](notes/Mar-29.html) |              |          |
+| 12     | [31-Mar](notes/Mar-31.html) |              |          |
+| 12     | [2-Apr](notes/Apr-02.html)  |              |          |
+| 13     | [5-Apr](notes/Apr-05.html)  |              |          |
+| 13     | 7-Apr                       | **No class** |          |
+| 13     | [9-Apr](notes/Apr-09.html)  |              |          |
+| 14     | [12-Apr](notes/Apr-12.html) |              |          |
+| 14     | [14-Apr](notes/Apr-14.html) |              |          |
+| 14     | [16-Apr](notes/Apr-16.html) |              |          |
+| 15     | [19-Apr](notes/Apr-19.html) |              |          |
+| 15     | [21-Apr](notes/Apr-21.html) |              |          |
+| 15     | [23-Apr](notes/Apr-23.html) |              |          |
+| 16     | [26-Apr](notes/Apr-26.html) |              |          |
+| 16     | [28-Apr](notes/Apr-28.html) |              |          |
+| 16     | [30-Apr](notes/Apr-30.html) |              |          |
+| Finals |                             |              |          |
