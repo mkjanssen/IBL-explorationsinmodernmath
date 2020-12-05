@@ -36,6 +36,7 @@ title: 'Explorations in Modern Mathematics'
 The best way to learn mathematics is to _do_ mathematics, and so we will regularly engage in the following items of work to...
 
 
+
 ### Flexible Course Design
 
 
