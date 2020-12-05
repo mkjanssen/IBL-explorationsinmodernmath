@@ -2,6 +2,7 @@
 title: 'Explorations in Modern Mathematics'
 ---
 
+Syllabus version 0.1
 
 ## Course Information
 
@@ -11,7 +12,7 @@ title: 'Explorations in Modern Mathematics'
 * **Classroom**: CL 2241
 * **Class time**: 1:00-1:50pm MWF
 * **Office**: SB 1612
-* **Student Hours**: [Make an appointment](https://bit.ly/BookProfJanssen) or drop by
+* **Student Hours**: [Make an appointment](https://calendly.com/mkjanssen/student-hours) or drop by
 * **Course notes**: [https://prof.mkjanssen.org/emm/notes/](https://prof.mkjanssen.org/emm/notes/) | [PreTeXt source](https://github.com/mkjanssen/IBL-explorationsinmodernmath)
 * **Course website**: [https://prof.mkjanssen.org/emm/](https://prof.mkjanssen.org/emm/)
 * **Catalog Course Description**: This course is focused on exploring college-level mathematics relevant for all students, regardless of discipline. We will investigate modern mathematical topics including number theory, modeling, fractals, infinity, probability, making meaning from data, and decision-making. Mathematical thinking, reasoning, and pattern discovery will be particularly emphasized. A guided discovery approach will be utilized, and we will discuss how a Reformed perspective impacts our view of the quantitative world. **Prerequisite**: an ACT mathematics score of 22 or higher or satisfactory completion of one course from Mathematics 100, 108, 115.
@@ -37,6 +38,8 @@ The best way to learn mathematics is to _do_ mathematics, and so we will regular
 
 #### In-Class Explorations
 
+
+
 #### Weekly Checkpoints
 
 
@@ -54,7 +57,6 @@ The best way to learn mathematics is to _do_ mathematics, and so we will regular
 
 ### Grading
 
-###  
 
 
 
@@ -110,3 +112,10 @@ The best way to learn mathematics is to _do_ mathematics, and so we will regular
 | 16     | [28-Apr](notes/Apr-28.html) |              |          |
 | 16     | [30-Apr](notes/Apr-30.html) |              |          |
 | Finals |                             |              |          |
+
+
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/mkjanssen/student-hours?primary_color=6b0fff" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Calendly inline widget end -->
