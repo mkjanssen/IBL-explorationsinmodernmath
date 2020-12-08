@@ -39,16 +39,24 @@ The best way to learn mathematics is to _do_ mathematics, and so we will regular
 
 #### In-Class Explorations
 
-The heart of this course is the in-class work. **It is therefore essential that you participate in class each day** (see also [Flexible Course Design](#flexible-design) below). Group participation will be monitored and 
+The heart of this course is the in-class work. Our class meetings will typically start with a short (5-10 minutes) introduction to the main questions under consideration. You'll then work in groups of approximately 3 to explore the activities posted to the [course notes](notes/) for the day. We'll wrap up with discussions of whatever you found the most interesting, as well as some big-picture takeaways.
+
+This mode of instruction is **highly interactive; it is therefore essential that you participate in class each day** (see also [Flexible Course Design](#flexible-design) below for COVID contingency plans). Group participation will be monitored, and groups will regularly share their thinking with the class. 
 
 
 #### Weekly Checkpoints
 
+On most Fridays on which we do not have a thematic checkpoint, we'll end class with a short _weekly checkpoint_ (approximately 5 points). The purpose of the weekly checkpoint is to get a sense of how well you're understanding the material we discussed that week. They also have space for you to ask questions about the class; points will be awarded for both questions asked and answered.
 
-#### Module Checkpoints
+#### Thematic Checkpoints
 
+At the conclusion of each theme (e.g., _Play_, _Truth_, etc), we'll have a larger thematic checkpoint. The standard format will be as a 50-point "exam", but there may be exceptions to this (such as the Play checkpoint, which will be a Rubik's cube solve). The thematic checkpoints will be held on:
+
+* DATES TO GO HERE
 
 #### Reading Reflections/Discussions
+
+Along the way, we'll read Francis Su's _Mathematics for Human Flourishing_, and consider the ways in which the practice of mathematics can help us lead lives of _shalom_. DETAILS TO ADD: DUE DATES, CHAPTER BUNDLES, SHORT WRITTEN REFLECTIONS, AND CLASS DISCUSSIONS 
 
 
 #### Final Project
@@ -65,55 +73,55 @@ The heart of this course is the in-class work. **It is therefore essential that 
 ### Tentative Schedule
 
 
-| Week   | Day                         | Topic        | Work Due |
-|--------|-----------------------------|--------------|----------|
-| 1      | [15-Jan](notes/Jan-15.html) |              |          |
-| 2      | [18-Jan](notes/Jan-18.html) |              |          |
-| 2      | [20-Jan](notes/Jan-20.html) |              |          |
-| 2      | [22-Jan](notes/Jan-22.html) |              |          |
-| 3      | [25-Jan](notes/Jan-25.html) |              |          |
-| 3      | [27-Jan](notes/Jan-27.html) |              |          |
-| 3      | [29-Jan](notes/Jan-29.html) |              |          |
-| 4      | [1-Feb](notes/Feb-01.html)  |              |          |
-| 4      | [3-Feb](notes/Feb-03.html)  |              |          |
-| 4      | [5-Feb](notes/Feb-05.html)  |              |          |
-| 5      | [8-Feb](notes/Feb-08.html)  |              |          |
-| 5      | [10-Feb](notes/Feb-10.html) |              |          |
-| 5      | [12-Feb](notes/Feb-12.html) |              |          |
-| 6      | 15-Feb                      | **No class** |          |
-| 6      | [17-Feb](notes/Feb-17.html) |              |          |
-| 6      | [19-Feb](notes/Feb-19.html) |              |          |
-| 7      | [22-Feb](notes/Feb-22.html) |              |          |
-| 7      | [24-Feb](notes/Feb-24.html) |              |          |
-| 7      | [26-Feb](notes/Feb-26.html) |              |          |
-| 8      | [1-Mar](notes/Mar-01.html)  |              |          |
-| 8      | [3-Mar](notes/Mar-03.html)  |              |          |
-| 8      | [5-Mar](notes/Mar-05.html)  |              |          |
-| 9      | [8-Mar](notes/Mar-08.html)  |              |          |
-| 9      | [10-Mar](notes/Mar-10.html) |              |          |
-| 9      | [12-Mar](notes/Mar-12.html) |              |          |
-| 10     | [15-Mar](notes/Mar-15.html) |              |          |
-| 10     | [17-Mar](notes/Mar-17.html) |              |          |
-| 10     | [19-Mar](notes/Mar-19.html) |              |          |
-| 11     | [22-Mar](notes/Mar-22.html) |              |          |
-| 11     | [24-Mar](notes/Mar-24.html) |              |          |
-| 11     | [26-Mar](notes/Mar-26.html) |              |          |
-| 12     | [29-Mar](notes/Mar-29.html) |              |          |
-| 12     | [31-Mar](notes/Mar-31.html) |              |          |
-| 12     | [2-Apr](notes/Apr-02.html)  |              |          |
-| 13     | [5-Apr](notes/Apr-05.html)  |              |          |
-| 13     | 7-Apr                       | **No class** |          |
-| 13     | [9-Apr](notes/Apr-09.html)  |              |          |
-| 14     | [12-Apr](notes/Apr-12.html) |              |          |
-| 14     | [14-Apr](notes/Apr-14.html) |              |          |
-| 14     | [16-Apr](notes/Apr-16.html) |              |          |
-| 15     | [19-Apr](notes/Apr-19.html) |              |          |
-| 15     | [21-Apr](notes/Apr-21.html) |              |          |
-| 15     | [23-Apr](notes/Apr-23.html) |              |          |
-| 16     | [26-Apr](notes/Apr-26.html) |              |          |
-| 16     | [28-Apr](notes/Apr-28.html) |              |          |
-| 16     | [30-Apr](notes/Apr-30.html) |              |          |
-| Finals |                             |              |          |
+| Week   | Day                           | Topic        | Work Due |
+|--------|-------------------------------|--------------|----------|
+| 1      | [F 15-Jan](notes/Jan-15.html) |              |          |
+| 2      | [M 18-Jan](notes/Jan-18.html) |              |          |
+| 2      | [W 20-Jan](notes/Jan-20.html) |              |          |
+| 2      | [F 22-Jan](notes/Jan-22.html) |              |          |
+| 3      | [M 25-Jan](notes/Jan-25.html) |              |          |
+| 3      | [W 27-Jan](notes/Jan-27.html) |              |          |
+| 3      | [F 29-Jan](notes/Jan-29.html) |              |          |
+| 4      | [M 1-Feb](notes/Feb-01.html)  |              |          |
+| 4      | [W 3-Feb](notes/Feb-03.html)  |              |          |
+| 4      | [F 5-Feb](notes/Feb-05.html)  |              |          |
+| 5      | [M 8-Feb](notes/Feb-08.html)  |              |          |
+| 5      | [W 10-Feb](notes/Feb-10.html) |              |          |
+| 5      | [F 12-Feb](notes/Feb-12.html) |              |          |
+| 6      | M 15-Feb                      | **No class** |          |
+| 6      | [W 17-Feb](notes/Feb-17.html) |              |          |
+| 6      | [F 19-Feb](notes/Feb-19.html) |              |          |
+| 7      | [M 22-Feb](notes/Feb-22.html) |              |          |
+| 7      | [W 24-Feb](notes/Feb-24.html) |              |          |
+| 7      | [F 26-Feb](notes/Feb-26.html) |              |          |
+| 8      | [M 1-Mar](notes/Mar-01.html)  |              |          |
+| 8      | [W 3-Mar](notes/Mar-03.html)  |              |          |
+| 8      | [F 5-Mar](notes/Mar-05.html)  |              |          |
+| 9      | [M 8-Mar](notes/Mar-08.html)  |              |          |
+| 9      | [W 10-Mar](notes/Mar-10.html) |              |          |
+| 9      | [F 12-Mar](notes/Mar-12.html) |              |          |
+| 10     | [M 15-Mar](notes/Mar-15.html) |              |          |
+| 10     | [W 17-Mar](notes/Mar-17.html) |              |          |
+| 10     | [F 19-Mar](notes/Mar-19.html) |              |          |
+| 11     | [M 22-Mar](notes/Mar-22.html) |              |          |
+| 11     | [W 24-Mar](notes/Mar-24.html) |              |          |
+| 11     | [F 26-Mar](notes/Mar-26.html) |              |          |
+| 12     | [M 29-Mar](notes/Mar-29.html) |              |          |
+| 12     | [W 31-Mar](notes/Mar-31.html) |              |          |
+| 12     | [F 2-Apr](notes/Apr-02.html)  |              |          |
+| 13     | [M 5-Apr](notes/Apr-05.html)  |              |          |
+| 13     | W 7-Apr                       | **No class** |          |
+| 13     | [F 9-Apr](notes/Apr-09.html)  |              |          |
+| 14     | [M 12-Apr](notes/Apr-12.html) |              |          |
+| 14     | [W 14-Apr](notes/Apr-14.html) |              |          |
+| 14     | [F 16-Apr](notes/Apr-16.html) |              |          |
+| 15     | [M 19-Apr](notes/Apr-19.html) |              |          |
+| 15     | [W 21-Apr](notes/Apr-21.html) |              |          |
+| 15     | [F 23-Apr](notes/Apr-23.html) |              |          |
+| 16     | [M 26-Apr](notes/Apr-26.html) |              |          |
+| 16     | [W 28-Apr](notes/Apr-28.html) |              |          |
+| 16     | [F 30-Apr](notes/Apr-30.html) |              |          |
+| Finals |                               |              |          |
 
 
 
