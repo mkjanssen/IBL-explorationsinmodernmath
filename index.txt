@@ -50,7 +50,7 @@ On most Fridays on which we do not have a thematic checkpoint, we'll end class w
 
 #### Thematic Checkpoints
 
-At the conclusion of each theme (e.g., _Play_, _Truth_, etc), we'll have a larger thematic checkpoint. The standard format will be as a 50-point "exam", but there may be exceptions to this (such as the Play checkpoint, which will be a Rubik's cube solve). The thematic checkpoints will be held on:
+At the conclusion of each theme (e.g., _Play_, _Truth_, etc), we'll have a larger thematic checkpoint. The standard format will be as a 50-point "exam", but there may be exceptions to this (such as the Play checkpoint, which will be a solve of the Rubik's cube). The thematic checkpoints will be held on:
 
 * DATES TO GO HERE
 
@@ -61,11 +61,45 @@ Along the way, we'll read Francis Su's _Mathematics for Human Flourishing_, and 
 
 #### Final Project
 
+The final project will be a creative project highlighting some aspect of beauty in mathematics.
+
 
 ### <a id="flexible-design"></a>Flexible Course Design
 
 
 ### Grading
+
+Your final percentage $G$ will be calculated according to the following weights.
+
+| Category 						| Weight |
+|-------------------------------|:------:|
+| Attendance and Participation	|  10%   |
+| Weekly Checkpoints 			|  20%   |
+| Thematic Checkpoints 			|  40%   |
+| Reading Reflections 			|  15%   |
+| Final Project 				|  15%   |
+
+
+Your final grade will then be assigned based on this scale:
+
+| Grade  | Interval 			  |
+|--------|:----------------------:|
+| A      | $92\% \le G \le 100\%$ |
+| A-     | $90\% \le G < 92\%$    |
+| B+     | $87\% \le G < 90\%$    |
+| B      | $83\% \le G < 87\%$    |
+| B-     | $80\% \le G < 83\%$    |
+| C+     | $77\% \le G < 80\%$    |
+| C      | $73\% \le G < 77\%$    |
+| C-     | $70\% \le G < 73\%$    |
+| D+     | $67\% \le G < 70\%$    |
+| D      | $63\% \le G < 67\%$    |
+| D-     | $60\% \le G < 63\%$    |
+
+
+### Other Polices and Advice
+
+
 
 
 
