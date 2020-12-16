@@ -276,3 +276,5 @@ TSWLatexianTemp*
 *.lpz
 
 .nova
+weekly_checkpoints
+thematic_checkpoints
