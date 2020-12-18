@@ -146,6 +146,10 @@
 		<chapter xml:id="Week-01">
 			<title>Week 1: Jan. 15</title>
 			
+			<p>
+				This week, we'll meet one another and discuss the course format and goals. Make sure you have everything you need, including a Rubik's cube and a copy of <em>Mathematics for Human Flourishing</em>.
+			</p>
+			
 			<section xml:id="Jan-15">
 				<title>Jan. 15</title>
 				
@@ -157,7 +161,9 @@
 					<statement>
 						Here are some questions we'll consider.
 						<ol>
-							<li>Testing 1 2 3 4</li>
+							<li>Who are you? Why are we here, together, in this class?</li>
+							<li>What does it mean to play? To explore? We'll answer both in our major disciplines and in the discipline of mathematics.</li>
+							<li>What are some of the superficial qualities of a Rubik's cube? What do you notice? What do you wonder?</li>
 						</ol>
 					</statement>
 					</p>
@@ -168,7 +174,68 @@
 					
 					
 				 
+				<p>
+					Today we start with introductions to the course. Dr. Janssen introduced himself and gave an overview of the course (see the <url href="https://prof.mkjanssen.org/emm/">the syllabus</url> for more!), and then we worked on <xref ref="expl_intro" />.
+				</p>
 				</introduction>
+			
+				<exploration xml:id="expl_intro">
+					<p>
+						<statement>
+							First, introduce yourself to the members of your group. Then, consider the questions:
+							<ol>
+								<li>What are the essential qualities of play? That is, what makes one activity <em>play</em>, and another not?</li> 
+								<li>What does it mean to be <em>playful</em> in your own major disciplines?</li>
+								<li>What does it mean to be an <em>explorer</em> in your major disciplines?</li>
+								<li>What are you excited about this semester? Your answer can be from one of your classes or outside of your classes.</li>
+							</ol>
+							Write your answers in your notes. We'll discuss your responses before working on <xref ref="firstquestionsaboutthecube" />.
+						</statement>
+					</p>
+					<!-- <solution>
+						We only really had time to discuss the first two questions. There were some common themes.
+						
+						<ol>
+							<li>Play: is enjoyable; is fair; will depend on the person; involves actively engaging with body/brain; is voluntary; can be strategic; is a leisure activity; is hands-on.</li>
+							<li>In our major disciplines, playfulness: involves hands-on activities; creativity with lesson plans; uses manipulatives; allows us to play with/try on ideas (thought experiments); is social (involves relationship building); explore mathematical/physicals ideas; is a mindset; must engage the whole person; involves puzzles; etc.</li>
+							<li>We didn't have time to talk about our answers to this question.</li>
+							<li>Things we're excited about: getting into more of our major courses, continuing to learn, making new friends/growing together with old friends, and others.</li>
+							
+						</ol>
+						One answer to question 1 that didn't come up is that an activity is often called play when there are no great stakes in the outcome. We can try to solve the Cube, play chess with our friends, or even play a basketball game, and in the end, it's just play. If it's competitive, it doesn't really matter whether we win or lose, and if it's a puzzle we're playing with of our own volition, the stakes are probably even lower.
+					</solution> -->
+				</exploration>
+				
+				<investigation xml:id="coursequestions">
+					What questions do you have about this course? Brainstorm a list on a piece of paper to be submitted to Dr. Janssen at the end of the class meeting.			
+				</investigation>
+				
+				<investigation xml:id="firstquestionsaboutthecube">
+					<statement>
+						<p>
+							In your groups, investigate your Cubes. What do you notice? What do you wonder? Make a list of as many observations and questions as you can, and write them on your shared whiteboard.
+						</p>
+					</statement>
+					<solution>
+						<p>
+							We noticed several things: there are six sides, and six colors. It seems that the white center is opposite the yellow, the blue center is opposite the green, and the red center is opposite the orange.
+						</p>
+						
+						<p>
+							The main thing we wondered is: why does this exist? Why did Erno Rubik invent it? One person suggested that, well, it's a puzzle. And like we talked about last time, humans have this innate desire for play and creativity that was placed there by God. While some people might find the Cube a fun puzzle to play with, others might prefer a different sort of puzzle or game.
+						</p>
+					</solution>
+
+				</investigation>
+				
+				<conclusion>
+				
+				<title>Conclusion</title>
+				
+					<p>
+						TBD, written after class
+					</p>
+				</conclusion>
 				
 				
 				
