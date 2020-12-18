@@ -6,6 +6,7 @@ Syllabus version 0.9 (Updated: December 16, 2020)
 
 ## Course Information
 
+* **Institution**: Dordt University
 * **Course**: Math 149-01 (3 cr.)
 * **Term**: Spring 2021
 * **Instructor**: Dr. Mike Janssen, Associate Professor of Mathematics
@@ -16,6 +17,8 @@ Syllabus version 0.9 (Updated: December 16, 2020)
 * **Course notes**: [https://prof.mkjanssen.org/emm/notes/](https://prof.mkjanssen.org/emm/notes/) | [PreTeXt source](https://github.com/mkjanssen/IBL-explorationsinmodernmath)
 * **Course website**: [https://prof.mkjanssen.org/emm/](https://prof.mkjanssen.org/emm/)
 * **Catalog Course Description**: This course is focused on exploring college-level mathematics relevant for all students, regardless of discipline. We will investigate modern mathematical topics including number theory, modeling, fractals, infinity, probability, making meaning from data, and decision-making. Mathematical thinking, reasoning, and pattern discovery will be particularly emphasized. A guided discovery approach will be utilized, and we will discuss how a Reformed perspective impacts our view of the quantitative world. **Prerequisite**: an ACT mathematics score of 22 or higher or satisfactory completion of one course from Mathematics 100, 108, 115.
+
+
 
 ### Required resources
 
@@ -30,10 +33,10 @@ Syllabus version 0.9 (Updated: December 16, 2020)
 
 In this course, students will
 
-* be a _communicator_ by working together in groups on mathematical puzzles and sharing their thinking with the class.
-* be an _explorer_ by playing with God's mathematical creation, explicitly with the Rubik's cube, and implicitly with other puzzles and problems. (CS)
-* be a _connector_ by exploring the power and limitations of mathematics for modeling the physical creation, and applying mathematical thinking to articulate a vision for a more just society. Students will also explore the notion of mathematical truth, and assess its place in understanding God’s creation. (RO, CS, CR)
-* be an _ambassador_ by identifying, analyzing, and presenting on an aspect of beauty in mathematics. (RO, CS)
+* be _communicators_ by working together in groups on mathematical puzzles and sharing their thinking with the class. (CD)
+* be _explorers_ by playing with God's mathematical creation, explicitly with the Rubik's cube, and implicitly with other puzzles and problems. (CS)
+* be _connectors_ by exploring the power and limitations of mathematics for modeling the physical creation, and applying mathematical thinking to articulate a vision for a more just society. Students will also explore the notion of mathematical truth, and assess its place in understanding God’s creation. (RO, CS, CR)
+* be _ambassadors_ by identifying, analyzing, and presenting on an aspect of beauty in mathematics. (RO, CS)
 
 
 
@@ -81,17 +84,16 @@ The final project will highlight some aspect of beauty in mathematics. You may c
 1. **Rank the topics** (10% of project grade): You will be presented with a list of possible topics (including space to propose your own) and asked to rank them in order from most to least interesting. Your topic will be assigned based on your rankings in such a way that no one gets the same project topic. **Due March 19.**
 2. **Preliminary Report** (20% of project grade): By April 2, you will submit a 1-2 page description of what you have learned about your topic, what questions you still have, and what artifact you are planning to create. **Due April 2.**
 3. **Artifact** (50% of project grade): By April 30 (last day of class), you will create something that communicates or otherwise explores _meaningful_ mathematics in your topic. That is, you should go deeper than just a surface-level understanding. You have freedom in what, exactly, you create. Here are some preapproved artifacts:
-
- * _A work of fine, visual, or literary art, with a 300-450 word interpretive guide_. You can make or write something that explores the mathematical idea. Much of the work of your interpretive guide is in helping your audience understand the significant mathematics that is being explored so that we can better grasp your work.
- * _A research paper and slide deck_. If you are not so keen to create a work of art, perhaps you’d rather write an 1800-2400 word research paper describing the mathematics you explored, as well as its history and why it is thought to be beautiful. You will cite at least five (5) reputable edited sources and format your paper using MLA guidelines. You should also prepare a short (3-5 minute) slide deck for the presentation (see below).
- * _A lesson plan and activity_. If education is your thing, maybe you’d like to create a lesson plan using the full Dordt Education Department lesson plan template that introduces the students you hope to teach to your particular topic (e.g., if you are hoping to teach middle-level students, aim it at 6-8th graders). You should also create the activity that you would use to help these students explore the topic, as well as a short slide deck to help our class understand your topic and what you’ll ask the students to do.
- * _Other_. In your topic rankings, you may propose to do something not on this list. You should carefully describe what you will do so that I have a clear sense that it will be roughly equivalent in depth and workload to the preapproved options. If I don’t think it is, I will either ask for clarification, suggest an alternative based on your idea, or assign you to one of the preapproved options.
+	* _A work of fine, visual, or literary art, with a 300-450 word interpretive guide_. You can make or write something that explores the mathematical idea. Much of the work of your interpretive guide is in helping your audience understand the significant mathematics that is being explored so that we can better grasp your work.
+    * _A research paper and slide deck_. If you are not so keen to create a work of art, perhaps you’d rather write an 1800-2400 word research paper describing the mathematics you explored, as well as its history and why it is thought to be beautiful. You will cite at least five (5) reputable edited sources and format your paper using MLA guidelines. You should also prepare a short (3-5 minute) slide deck for the presentation (see below).
+    * _A lesson plan and activity_. If education is your thing, maybe you’d like to create a lesson plan using the full Dordt Education Department lesson plan template that introduces the students you hope to teach to your particular topic (e.g., if you are hoping to teach middle-level students, aim it at 6-8th graders). You should also create the activity that you would use to help these students explore the topic, as well as a short slide deck to help our class understand your topic and what you’ll ask the students to do.
+    * _Other_. In your topic rankings, you may propose to do something not on this list. You should carefully describe what you will do so that I have a clear sense that it will be roughly equivalent in depth and workload to the preapproved options. If I don’t think it is, I will either ask for clarification, suggest an alternative based on your idea, or assign you to one of the preapproved options.
 
 4. **Presentation** (20% of your project grade): By the last day of class (April 30), you will submit plans for a short (less than 5 minutes) presentation. We will give our final presentations in person during our assigned final exam slot (TBA).
 
 ### <a id="flexible-design"></a>Flexible Course Design
 
-Assuming Dr. Janssen is not in quarantine/isolation, and fewer than 40% of the class is not in quarantine/isolation, class discussion will be recorded in screencast format and posted to the day's [notes](notes/) homepage shortly after class. Students in quarantine or isolation will participate asynchronously. We will follow the day's notes very closely to ease the burden of remote participation.
+Assuming Dr. Janssen is not in quarantine/isolation, and less than 40% of the class is not in quarantine/isolation, class discussion will be recorded in screencast format and posted to the day's [notes](notes/) homepage shortly after class. Students in quarantine or isolation will participate asynchronously. We will follow the day's notes very closely to ease the burden of remote participation.
 
 If Dr. Janssen is in quarantine/isolation and otherwise feels healthy, or more than 40% of the class is in quarantine/isolation, we will hold synchronous class meetings over Zoom, utilizing breakout rooms for groupwork.
 
@@ -179,42 +181,38 @@ I aim to build a dynamic classroom; as such, the schedule below may be changed a
 | 5      | [12-Feb](notes/Feb-12.html) | Formal Logic                                          | WCP 4                                                   |
 | 6      | 15-Feb                      | **No class**                                          |                                                         |
 | 6      | [17-Feb](notes/Feb-17.html) | The Foundational Crisis of Mathematics                |                                                         |
-| 6      | [19-Feb](notes/Feb-19.html) | Infinity and Incompleteness                           | M4HF Reflection: Chs. 6-7                               |
+| 6      | [19-Feb](notes/Feb-19.html) | Infinity and Incompleteness                           | WCP 5; M4HF Reflection: Chs. 6-7                        |
 | 7      | [22-Feb](notes/Feb-22.html) | **Thematic Checkpoint 2**                             | **Thematic Checkpoint 2**                               |
 | 7      | [24-Feb](notes/Feb-24.html) | **Reading discussion**; Apportionment I               |                                                         |
-| 7      | [26-Feb](notes/Feb-26.html) | Apportionment II                                      | WCP 5; Final in-office attempt at Thematic Checkpoint 1 |
+| 7      | [26-Feb](notes/Feb-26.html) | Apportionment II                                      | WCP 6; Final in-office attempt at Thematic Checkpoint 1 |
 | 8      | [1-Mar](notes/Mar-01.html)  | Apportionment III                                     |                                                         |
 | 8      | [3-Mar](notes/Mar-03.html)  | Electoral College I                                   |                                                         |
-| 8      | [5-Mar](notes/Mar-05.html)  | Electoral College II                                  | WCP 6                                                   |
+| 8      | [5-Mar](notes/Mar-05.html)  | Electoral College II                                  | WCP 7                                                   |
 | 9      | [8-Mar](notes/Mar-08.html)  | Electoral College III                                 |                                                         |
 | 9      | [10-Mar](notes/Mar-10.html) | Electoral College IV                                  |                                                         |
-| 9      | [12-Mar](notes/Mar-12.html) | Math and Democracy Conclusion                         | WCP 7                                                   |
+| 9      | [12-Mar](notes/Mar-12.html) | Math and Democracy Conclusion                         | WCP 8                                                   |
 | 10     | [15-Mar](notes/Mar-15.html) | **Thematic Checkpoint 3**                             | **Thematic Checkpoint 3**                               |
 | 10     | [17-Mar](notes/Mar-17.html) | Discrete Dynamical Systems I                          |                                                         |
-| 10     | [19-Mar](notes/Mar-19.html) | Discrete Dynamical Systems II                         | WCP 8; Project ranking due                              |
+| 10     | [19-Mar](notes/Mar-19.html) | Discrete Dynamical Systems II                         | WCP 9; Project ranking due                              |
 | 11     | [22-Mar](notes/Mar-22.html) | Discrete Dynamical Systems III                        | M4HF Reflection: Chs. 8-11                              |
 | 11     | [24-Mar](notes/Mar-24.html) | **Reading discussion**; Discrete Dynamical Systems IV |                                                         |
-| 11     | [26-Mar](notes/Mar-26.html) | Discrete Dynamical Systems V                          | WCP 9                                                   |
+| 11     | [26-Mar](notes/Mar-26.html) | Discrete Dynamical Systems V                          | WCP 10                                                  |
 | 12     | [29-Mar](notes/Mar-29.html) | Discrete Dynamical Systems VI                         |                                                         |
 | 12     | [31-Mar](notes/Mar-31.html) | Graph Theory I                                        |                                                         |
-| 12     | [2-Apr](notes/Apr-02.html)  | Graph Theory II                                       | WCP 10; Preliminary Report due                          |
+| 12     | [2-Apr](notes/Apr-02.html)  | Graph Theory II                                       | WCP 11; Preliminary Report due                          |
 | 13     | [5-Apr](notes/Apr-05.html)  | Graph Theory III                                      |                                                         |
 | 13     | 7-Apr                       | **No class**                                          |                                                         |
-| 13     | [9-Apr](notes/Apr-09.html)  | Graph Theory IV                                       | WCP 11                                                  |
+| 13     | [9-Apr](notes/Apr-09.html)  | Graph Theory IV                                       | WCP 12                                                  |
 | 14     | [12-Apr](notes/Apr-12.html) | Graph Theory V                                        |                                                         |
 | 14     | [14-Apr](notes/Apr-14.html) | Graph Theory VI                                       |                                                         |
-| 14     | [16-Apr](notes/Apr-16.html) | HT Lab                                                | WCP 12                                                  |
+| 14     | [16-Apr](notes/Apr-16.html) | HT Lab                                                | WCP 13                                                  |
 | 15     | [19-Apr](notes/Apr-19.html) | HT Lab                                                |                                                         |
 | 15     | [21-Apr](notes/Apr-21.html) | HT Lab                                                | M4HF Reflection: Chs. 12-13, Epilogue                   |
 | 15     | [23-Apr](notes/Apr-23.html) | **Thematic Checkpoint 4**                             | **Thematic Checkpoint 4**                               |
 | 16     | [26-Apr](notes/Apr-26.html) | **Reading discussion**; Fractal Geometry I            |                                                         |
 | 16     | [28-Apr](notes/Apr-28.html) | Fractal Geometry II                                   |                                                         |
-| 16     | [30-Apr](notes/Apr-30.html) | Fractal Geometry III                                  | WCP 13                                                  |
+| 16     | [30-Apr](notes/Apr-30.html) | Fractal Geometry III                                  | WCP 14                                                  |
 | Finals |                             | Mathematical beauty presentations                     |                                                         |
 
 
 
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/mkjanssen/student-hours?primary_color=6b0fff" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-<!-- Calendly inline widget end -->
