@@ -145,10 +145,11 @@
 		
 		<chapter xml:id="Week-01">
 			<title>Week 1: Jan. 15</title>
-			
+			<introduction>
 			<p>
 				This week, we'll meet one another and discuss the course format and goals. Make sure you have everything you need, including a Rubik's cube and a copy of <em>Mathematics for Human Flourishing</em>.
 			</p>
+			</introduction>
 			
 			<section xml:id="Jan-15">
 				<title>Jan. 15</title>
