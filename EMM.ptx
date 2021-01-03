@@ -249,8 +249,217 @@
 		<chapter xml:id="Week-02">
 			<title>Week 2: Jan. 18-22</title>
 			
+			<introduction>
+			<p>
+				This week, we'll start exploring our Cubes in depth.
+				We'll start on Monday by asking some questions about the basic structure of the Cube.
+				Then we'll spend time in search of a solution to the white <emph>face</emph> and the white <emph>layer</emph> (once we make precise what those words mean).
+				On Friday, we'll have a weekly checkpoint.
+			</p>
+			</introduction>
+			
 			<section xml:id="Jan-18">
-				<title>Jan. 18</title>
+				<title>Jan. 18: All About Cubies</title>
+				
+				<assemblage>
+				<title>Motivating Questions</title>
+				<p>
+				<statement>
+					Here are some questions we'll consider.
+					<ol>
+						<li>What are the components of a Cube?</li>
+						<li>What are some of the elementary mathematical properties of the Cube?</li>
+						<li>What are faces and layers, and how can we solve them?</li>
+					</ol>
+				</statement>
+				</p>
+				
+				</assemblage>
+				
+				
+				<p>
+					The Rubik's cube<fn>We'll call it the Cube for short.</fn> was invented in 1974 by Erno Rubik, a Hungarian sculptor and professor of architecture. It won the <em>Spiel de Jahres</em> (the German game of the year) in 1980, and it became one of the best-selling toys of all time. It's a great place to begin our exploration of mathematical play. 
+				</p>
+				
+				
+				
+			
+			
+				<investigation xml:id="invest-firstquestionsaboutthecube">
+					<statement>
+						<p>
+							In your groups, investigate your Cubes. What do you notice? What do you wonder? Make a list of as many observations and questions as you can, and write them on your shared whiteboard.
+						</p>
+					</statement>
+					<solution>
+						<p>
+							We noticed several things: there are six sides, and six colors. It seems that the white center is opposite the yellow, the blue center is opposite the green, and the red center is opposite the orange.
+						</p>
+						
+						<p>
+							The main thing we wondered is: why does this exist? Why did Erno Rubik invent it? One person suggested that, well, it's a puzzle. And like we talked about last time, humans have this innate desire for play and creativity that was placed there by God. While some people might find the Cube a fun puzzle to play with, others might prefer a different sort of puzzle or game.
+						</p>
+					</solution>
+
+				</investigation>
+			
+			
+				<activity>
+					<statement>
+						<p>
+							Just by turning the sides of the Cube, there are over 43 quintillion different configurations possible. <aside>43,252,003,274,489,856,000 to be exact.</aside>
+							This is a nigh unimaginably large number.
+							Brainstorm as many ways as you can (at least two!) to make this number concrete. 
+						</p>
+					</statement>
+					<solution>
+						<p>
+							A popular approach involved covering the earth with a carpet of 43 quintillion objects. The estimates were that 43 quintillion pennies would carpet the earth 86 times, while 43 quintillion Rubik's cubes would blanket the earth 275 times. Another group estimated that 43 quintillion seconds is over a trillion years.
+					 </p>
+					 
+					 <p>
+						 Either way, it's huge!
+						 
+					 </p>
+
+					 
+					</solution>
+
+				</activity>
+
+				
+			
+			<definition>
+				<statement>
+					<p>
+						The little cubes which make up the Cube are often called <term>cubies</term>. The cubies located at the corners are imaginatively called <term>corner cubies</term>, the cubies located at the centers <term>center cubies</term>, and the others <term>edge cubies</term>.
+						</p>
+				</statement>
+			</definition>
+
+			<investigation xml:id="invest-corner-cubies">
+				<statement>
+					<p>
+						In this investigation we'll consider the corner cubies. Hold your Cube with the white center cubie facing up and the red center cubie facing you.
+						<ol>
+							<li>How many corners are there?</li>
+							<li>How many stickers does a corner cubie have?</li>
+							<li>Can you move a corner cubie to a position other than a corner? Explain your reasoning.</li>
+							<li>Identify all the positions on the Cube to which a corner cubie can be moved while keeping the white center cubie on top and red in front.</li>
+						</ol>
+						As always, make sure you can explain your answers.
+					</p>
+<image xml:id="moving-corner-cubies" width="50%" source="./images/moving_cubies.svg" />
+				</statement>
+				<solution>
+					There are 8 corners, with three stickers each. Since all corners have three stickers, and other cubies have fewer stickers, we can't move a corner cubie to any location other than another corner. But we <em>can</em> move a given corner to any other corner.
+				</solution>
+
+
+			</investigation>
+			
+			<investigation xml:id="invest-edge-cubies">
+				<statement>
+					<p>
+						In this investigation we'll consider the edge cubies. Hold your Cube with the white center cubie facing up and the red center cubie facing you.
+						<ol>
+							<li>How many edge cubies are there?</li>
+							<li>How many stickers does an edge cubie have?</li>
+							<li>Can you move an edge cubie to a position other than an edge? Explain your reasoning.</li>
+							<li>Identify all the positions on the Cube to which an edge cubie can be moved while keeping the white center cubie on top and red in front.</li>
+						</ol>
+						As always, make sure you can explain your answers.
+					</p>
+<image xml:id="moving-edge-cubies" width="50%" source="./images/moving_cubies.svg" />
+				</statement>
+				<solution>
+					There are twelve edge cubies, with two stickers each. As was the case with corners, we can only put edge cubies in other edge locations, but we can move a given edge cubie to any other edge.
+				</solution>
+
+			</investigation>
+			
+			
+			<investigation xml:id="invest-center-cubies">
+				<statement>
+					<p>
+						In this investigation we'll consider the center cubies. Hold your Cube with the white center cubie facing up and the red center cubie facing you.
+						<ol>
+							<li>How many center cubies are there?</li>
+							<li>How many stickers does an center cubie have?</li>
+							<li>Can you move a center cubie to a position other than a center? Explain your reasoning.</li>
+							<li>Identify all the positions on the Cube to which a center cubie can be moved while keeping the white center cubie on top and red in front.</li>
+						</ol>
+						As always, make sure you can explain your answers.
+					</p>
+<image xml:id="moving-center-cubies" width="50%" source="./images/moving_cubies.svg" />
+				</statement>
+				<solution>
+					Finally, we saw that the six corners (each with one sticker) cannot move relative to the others.
+				</solution>
+
+			</investigation>
+
+			  
+			  <assemblage>
+				  <title>Question</title>
+				  <p>
+					  <statement>
+						  How can you tell when a cubie is in the correct <em>location</em>? How can you tell when it is <em>oriented</em> correctly? Is there a difference?<fn>Does it depend on the cubie?</fn>
+					  </statement>
+
+				  </p>
+				<solution>
+					Since the centers don't move relative to one another, we can use the centers to tell us where a given cubie goes. For instance, the corner cubie at the corner of the white, red, and blue faces must have a white, red and blue sticker. It is properly oriented when the correct sticker is in each face.
+				</solution>
+
+			  </assemblage>
+			  
+			  
+			  
+			  <definition>
+				  <p>
+					A <term>face</term> of the Cube refers to one of its sides.
+					We say a face is <term>solved</term> if all the stickers on that side are the same color.
+				</p>
+			  </definition>
+			  
+			  
+			  
+			  <assemblage>
+					<title>Challenge</title>
+					<p>
+  
+							Scramble your Cube.
+							Then solve the white face (this may take hours or days, not minutes!).
+							When you solve, it congratulations! Now scramble it and do it again.
+							</p>
+  <p>
+							Once you can reliably solve the white face, describe, in writing, your methods as clearly and precisely as you can.
+  
+						
+  
+					</p>
+  
+				</assemblage>
+			  
+			  <assemblage>
+					<title>Challenge</title>
+						<p>
+						
+							Define the white <term>layer</term>.
+						</p>
+						
+						<p>
+							Scramble your cube, and solve the white layer. Again, this may take hours or days.
+							When you solve it, congratulations! Scramble it and do it again.
+						</p>
+	  
+						<p>
+							Once you can reliably solve the white layer, describe, in writing, your methods as clearly and precisely as you can.
+  
+					</p>
+  
+				</assemblage>	
 				
 				
 				
@@ -258,14 +467,74 @@
 			</section>
 			
 			<section xml:id="Jan-20">
-				<title>Jan. 20</title>
+				<title>Jan. 20: Challenge Day 1</title>
+				
+				<assemblage>
+					<title>Motivating Questions</title>
+					<p>
+					<statement>
+						Here are some questions we'll consider.
+						<ol>
+							<li>How can we solve the white face?</li>
+							<li>How can we solve the white layer?</li>
+							<li>Can we precisely describe our methods?</li>
+						</ol>
+					</statement>
+					</p>
+					
+					</assemblage>
+					
+					<exploration>
+						<p>
+							The goal today is to work on solving the white face.
+							If you manage that, then scramble the Cube and do it again.
+							And again.
+							And again.
+						</p>
+						
+						<p>
+							Once you can reliably solve the white face, focus on the white layer, and work to be able to reliably solve it.
+							Then, make sure you can clearly and precisely describe your method. Write it down!
+						</p>
+					</exploration>
+						
 				
 				
 			</section>
 			
 			
 			<section xml:id="Jan-22">
-				<title>Jan. 22</title>
+				<title>Jan. 22: Challenge Day 2</title>
+				
+				
+				<assemblage>
+					<title>Motivating Questions</title>
+					<p>
+					<statement>
+						Here are some questions we'll consider.
+						<ol>
+							<li>How can we solve the white face?</li>
+							<li>How can we solve the white layer?</li>
+							<li>Can we precisely describe our methods?</li>
+						</ol>
+					</statement>
+					</p>
+					
+					</assemblage>
+					
+					<exploration>
+						<p>
+							The goal today is to work on solving the white face.
+							If you manage that, then scramble the Cube and do it again.
+							And again.
+							And again.
+						</p>
+						
+						<p>
+							Once you can reliably solve the white face, focus on the white layer, and work to be able to reliably solve it.
+							Then, make sure you can clearly and precisely describe your method. Write it down!
+						</p>
+					</exploration>
 				
 				
 			</section>
