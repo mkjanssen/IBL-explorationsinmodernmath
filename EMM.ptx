@@ -208,13 +208,13 @@
 				</exploration>
 				
 				<investigation xml:id="coursequestions">
-					What questions do you have about this course? Brainstorm a list on a piece of paper to be submitted to Dr. Janssen at the end of the class meeting.			
+					What questions do you have about this course? Brainstorm a list.			
 				</investigation>
 				
 				<investigation xml:id="firstquestionsaboutthecube">
 					<statement>
 						<p>
-							In your groups, investigate your Cubes. What do you notice? What do you wonder? Make a list of as many observations and questions as you can, and write them on your shared whiteboard.
+							In your groups, investigate your Cubes. What do you notice? What do you wonder? Make a list of as many observations and questions as you can, and write them down. Be ready to share.
 						</p>
 					</statement>
 					<solution>
@@ -544,21 +544,414 @@
 		<chapter xml:id="Week-03">
 			<title>Week 3: Jan. 25-29</title>
 			
+			<introduction>
+				<p>
+					This week, we explore some <term>magic cube moves</term>. These will be essential to our solution of the Cube, as they give us a way of manipulating certain cubies without affecting others.
+				  </p>
+			</introduction>
+			
 			<section xml:id="Jan-25">
-				<title>Jan. 25</title>
+				<title>Jan. 25: Algebraic Notation and Order</title>
+				
+				<assemblage>
+					<title>Motivating Questions</title>
+					<p>
+					<statement>
+						Here are some questions we'll consider.
+						<ol>
+							<li>What is the standard orientation?</li>
+							<li>How can we represent a series of moves with algebraic notation?</li>
+							<li>What is the order of a move?</li>
+						</ol>
+					</statement>
+					</p>
+					
+					</assemblage>
+				
+				
+				<introduction>
+					  <p>
+						  Today, we'll get up to speed on how far everyone has come in solving their white (top) faces and layers. 
+						  We'll be particularly interested in how you talk about/describe your methods. 
+						  Then we'll see how the Cubing community has taken to writing and notating methods for systematically describing the motion of the Cube.
+					</p>
+	
+				</introduction>
+				
+				<principle>
+					<p>
+						Find a partner. Take turns describing verbally <em>and without pointing to your Cube</em> your method for moving a corner cubie into its proper position. Similarly, verbally describe your method for moving an edge cubie into its proper position.
+					</p>
+					<!-- <solution>
+						<p>
+							We identified a few strategies for moving corner cubies to the correct location. If the cubie in question was already in the correct layer and the only thing we cared about was putting it in the correct location, we could just turn the appropriate layer until it was in the correct position.
+						</p>
+						<p>
+							If it wasn't in the correct layer, we can orient the Cube and perform a rotation or two so the correct position for the cubie is the top right and the cubie in question is in the bottom left position. We then turn the right layer toward us, rotate the bottom layer so that the correct cubie is now in the front bottom right, and then turn the right layer away from us so that it is now in the correct location.
+						</p>
+	
+						<p>
+							We can also guess and check. <m>\ddot\smile</m>
+						</p>
+	
+					</solution> -->
+	
+				</principle>
+	
+				
+				<principle>
+					<statement>
+						As you probably noticed, it is challenging to orally describe complex/technical ideas in much detail<aside>A former professor of mine often threw up her hands at the idea of doing "math in the air".</aside>.
+						
+						Is it easier to describe your cubie movements in writing? Why or why not?
+					</statement>
+				</principle>
+				
+				<definition>
+					<p>
+						When the Cube is oriented so the white side is up and the red side is facing you, as in <xref ref="fig-standard-orientation" />, we will say it is in <term>standard orientation</term>.
+					</p>
+				</definition>
+				
+				<figure xml:id="fig-standard-orientation">
+				
+					<caption>A cube in standard orientation.</caption>
+	
+					<image xml:id="cube-faces" width="50%" source="./images/cube_faces.svg" />
+			</figure>
+	
+				<convention>
+					<p>
+						The standard algebraic notation for moving the faces of the Cube is as follows: <m>F, R, L, U, D</m>, and <m>B</m> refer to clockwise quarter-turns (<m>90^\circ</m> rotations) of the front, right, left, up, down, and back faces, respectively, <em>as you look at the face in question</em>.
+					</p>
+					
+					<p>
+						On the other hand, a <m>-1</m> superscript indicates a counterclockwise turn <em>as you look at the face in question</em>.
+					</p>
+					
+					<p>
+						Finally, we can string moves together by writing them left to right, such as <m>R F U L D</m>. If we want to repeat a move, we use exponents in the usual way, such as <m>R F^2 U (LD)^3</m>.
+					</p>
+	
+				</convention>
+				
+				<exploration>
+					<statement>
+						<p>
+							Rather than refer to the faces of the Cube by their orientation, we could have referred to them by color. Compare and contrast the color naming scheme to the orientation naming scheme. What advantages/disadvantages do each present?
+						</p>
+	
+					</statement>
+					<solution>
+						<p>
+							We had a few thoughts. First, not every Cube has the standard coloring that ours do.
+							Second, some people are colorblind, so referring to the faces by color would not be helpful.
+							In short, every Cube has six sides and an orientation when you hold it in front of you that makes it easy to identify the up, down, back, front, left, and right faces. So that is what the Cubing community has adopted.
+						</p>
+	
+					</solution>
+	
+	
+				</exploration>
+	
+				
+				<p>
+					A final concept we'll explore today is that of <em>order</em>.
+				</p>
+	
+				
+				<definition>
+					<p>
+						The <term>order</term> of a sequence of moves <m>M</m> is the least positive number of times <m>n</m> that <m>M</m> can be repeated before your Cube is back where it started. We write <m>| M | = n</m>.
+					</p>
+	
+				</definition>
+	
+				<example>
+					<p>
+						The order of <m>R</m> is 4, since 4 quarter-turns will put my right face back where it started, and no smaller postive number of turns will.
+					</p>
+				</example>
+	
+				
+				<exploration>
+					<statement>
+						<p>
+							Some questions on algebraic notation and order.
+						</p>
+						<ol>
+							<li>How do <m>R</m> and <m>L</m> differ? (Other than that they move different sides of the Cube, of course.)</li>
+							<li>How are <m>R^3</m> and <m>R^{-1}</m> related?</li>
+							<li>What is <m>|F^2|</m>?</li>
+							<li>What is <m>|R D R^{-1} D^{-1}|</m>?</li>
+						</ol>
+						<aside>
+		An algebraic expression of the form <m>XYX^{-1}Y^{-1}</m> is called a <term>commutator</term>. Commutators live deep in the realm of <em>abstract algebra</em>, and have applications as diverse as solving polynomial equations and understanding concepts in quantum mechanics.
+		</aside>
+					</statement>
+	
+					<solution>
+						<ol>
+							<li>Since the <m>R</m> and <m>L</m> faces mirror one another, a clockwise right turn pushes the right layer of the front face to the top, while a clockwise turn of the left face pushes the left layer of the front face to the bottom.</li>
+							<li>They're the same in the sense that applying either one has the same effect on the cube.</li>
+							<li>It's 2. We know that <m>F^2</m> turns the front face twice in the clockwise direction; if we repeat that move, we'll be back where we started.</li>
+							<li>We saw that <m>|R D R^{-1} D^{-1}| = 6</m> by repeating the sequence of four moves over and over again until we got back to where we started. We had to do it 6 times before that was the case.</li>
+						</ol>
+	
+					</solution>
+	
+				</exploration>
 				
 				
 			</section>
 			
 			<section xml:id="Jan-27">
-				<title>Jan. 27</title>
+				<title>Jan. 27: Magic Cube Moves I</title>
+				
+				<assemblage>
+					<title>Motivating Questions</title>
+					<p>
+					<statement>
+						Here are some questions we'll consider.
+						<ol>
+							<li>How can we describe the location of a cubie?</li>
+							<li>Are cube moves commutative?</li>
+							<li>What does Magic Cube Move <m>CR</m> do?</li>
+						</ol>
+					</statement>
+					</p>
+					
+					</assemblage>
+				
+				<introduction>
+					<p>
+						In order to solve the Cube, we need to figure out how to move cubies in carefully controlled ways. Starting in this section, we'll introduce one move at a time and make sure we understand exactly what it does before moving on.
+					</p>
+					<p>
+						As a warning, be aware that what follows might be occasionally frustrating. That's ok! As we saw last time, the order in which moves are executed does matter, so one mistake will throw everything off. You may want to designate one member of the group as the Cube turner, and let the others carefully track the moving cubies.
+						
+						
+					</p>
+	
+				</introduction>
+				
+				
+				<convention xml:id="cubie-notation">
+					<p>
+						We identify a cubie by the faces on which it sits, using lowercase letters, and regardless of how our Cube is oriented.
+						So, for instance, the corner cubie on the upper, front, right face is identified by the notation <em>ufr</em>.
+						The order in which the faces are specified does not matter.
+					</p>
+	
+				</convention>
+				
+				<activity>
+					<statement>
+					<p>
+						Consider the so-called <term>superflip</term> configuration below. <aside>In the superflip, every cubie is in the correct location, but the edges are flipped.</aside>
+						
+						<image xml:id="superflip" width="45%" source="./images/superflip.svg" />
+					</p>
+					<ol>					
+						<li>Name the position of the edge cubie with an orange and blue facelet.</li>
+						<li>What name would we give to the green center cubie in this configuration?</li>
+						<li>Identify the colors of the cubie in the <m>\ell db</m> position.</li>
+					</ol>
+					</statement>
+					<!-- <solution>
+						<p>
+							We first observed that we need three letters to identify corner cubies, two letters to identify edge cubies, and one to identify center cubies. 
+							These numbers correspond to the number of facelets each type of cubie has.
+							In practice, we won't have much reason to refer to center cubies by name, as the centers don't move relative to one another.
+						</p>
+						<ol>
+							<li>This cubie is in the <m>fl</m> position.</li>
+							<li>We could call this cubie <m>r</m>.</li>
+							<li>The colors are red, blue, and yellow.</li>
+						</ol>
+	
+					</solution> -->
+				</activity>
+				
+	
+				
+				<investigation>
+				<title>Cube Moves and the Commutative Property</title>
+				<statement>
+				<p>
+					Suppose <m>X</m> and <m>Y</m> are arbitrary Cube moves. Is it the case that <m>X</m> and <m>Y</m> must always commute? That is, is it true that <m>XY = YX</m> for all choices of Cube moves? If yes, explain why. If it's not always true, give an example. In that case, are there conditions you can put on <m>X</m> and <m>Y</m> for which it is true?
+				</p>		
+				</statement>
+				<!-- <solution>	
+					<p>
+						In general, if the faces we're rotating, say <m>R</m> and <m>D</m>, have any cubies in common, the order in which we rotate matters. In this example, <m>RD \ne DR</m>.
+						However, if the faces have no cubies in common, i.e., they are opposite one another, the order they are rotated does not matter.
+						So, e.g., <m>RL = LR</m>.
+					</p>
+				</solution> -->
+	
+			</investigation>
+	
+				<p>
+					We now turn to a couple of "mathemagical" Cube moves.
+				</p>
+	
+				
+				<heuristic xml:id="cube-move-cr">
+					<statement>
+						Consider the following sequence of Cube moves:
+						<me>
+							CR = U^{-1} R^{-1} D^{-1} R U R^{-1} D R
+						</me>
+					</statement>
+				</heuristic>
+				
+				<exploration xml:id="expl-cr">
+					<statement>
+					<p>
+						The Cube move described in <xref ref="cube-move-cr" /> does something to the front face of the Cube.
+					</p>
+					<ol>
+						<li>By performing this move several times, identify on the diagram below what is happening to the front face of the Cube. </li>
+						<li>Using the cubie notation described in <xref ref="cubie-notation" />, describe what is happening to the front face of the Cube.</li>
+						<li>Given what happens to the front face, exercise your agency as image-bearers and suggest a short name/abbreviation for this move.</li>
+						<li>What is the order of the move?</li>
+					</ol>
+				<image xml:id="corner-rotation" width="35%" source="./images/grey_cube.svg" />
+				</statement>
+				<!-- <solution>
+					<p>
+						We had barely enough time to start talking about this exploration when class ended.
+						It was suggested that the effect of this move on the front face of the Cube is 
+							<me>
+								ufl \to dfr \to ufr \to ufl.
+							</me>
+						<em>Do we agree?</em>
+					</p>
+	
+				</solution> -->
+	
+				</exploration>
+				
+				<activity>
+					<statement>
+						<p>
+							Now that you have identified exactly what <xref ref="cube-move-cr" /> does, use it to solve as much of your Cube as it allows.
+						</p>
+	
+					</statement>
+	
+				</activity>
 				
 				
 			</section>
 			
 			
 			<section xml:id="Jan-29">
-				<title>Jan. 29</title>
+				<title>Jan. 29: Magic Cube Moves II</title>
+				
+				
+				<!-- <exploration>
+					<statement>
+						<p>
+							Last time, we explored <xref ref="cube-move-cr" />, but didn't quite finish <xref ref="expl-cr" />. We'll finish that as a class first before moving on to <xref ref="expl-co" />.
+						</p>
+					</statement>
+					<solution>
+						<p>
+							We clarified that this move cycles three corners on the front face: <m>ufl \to ufr \to dfr \to ufl</m>.
+							All other cubies are left alone, and the orientations of the cycled cubies remain unchanged.
+							After some discussion, the name "Three Corner Tango" seemed to stick.
+							 </p>
+					</solution>
+				</exploration> -->
+	
+	
+	
+				
+				<heuristic xml:id="cube-move-co">
+					<statement>
+						Consider the following sequence of cube moves:
+						<me>
+							CO = (R^{-1} D^2 R B^{-1} U^2 B)^2.
+						</me>
+						Written less compactly, this move is: <m>R^{-1} D^2 R B^{-1} U^2 B R^{-1} D^2 R B^{-1} U^2 B</m>.
+					</statement>
+				</heuristic>
+				
+				<exploration xml:id="expl-co">
+					<statement><p>
+						Consider <xref ref="cube-move-co" />.
+					</p>
+					<ol>
+						<li>Which cubies are affected by this move?</li>
+						<li>By performing this move several times, identify on the diagram below the effects the move has on the Cube. </li>
+						<li>Using the cubie notation described in <xref ref="cubie-notation" />, describe what is happening to the Cube.</li>
+						<li>Given your answer to the previous question, exercise your agency as image-bearers and suggest a two- or three-letter name/abbreviation for this move.</li>
+						<li>What is the order of the move?</li>
+					</ol>
+				<image xml:id="corner-orientation" width="35%" source="./images/grey_cube.svg" /></statement>
+				<!-- <solution>
+					<p>The cubies affected by this move are <m>ufr</m> and <m>dbl</m>.
+						This move reorients the affected cubies, and since the cubies are corners, it has order 3.
+						Due to the effects on the <m>ufr</m> cubie, which has <m>fur</m> as an anagram, the name <term>Corner Bulldog</term> was suggested.
+					</p>
+	
+				</solution> -->
+	
+				</exploration>
+	
+				
+			<convention xml:id="middle-rotate">
+				<p>
+					By <m>M_R</m> we mean the clockwise rotation of the middle layer as you look at the right face of the Cube. That is, <m>M_R</m> rotates the middle layer parallel to <m>R</m>.
+				</p>
+	
+			</convention>
+	
+	
+			<heuristic xml:id="cube-move-er">
+					<statement>
+						Consider the following sequence of Cube moves:
+						<me>
+							ER = M_R^2 U^{-1} M_R^{-1} U^2 M_R U^{-1} M_R^2
+						</me>
+					</statement>
+				</heuristic>
+				
+				<exploration>
+					<statement><p>
+						Consider <xref ref="cube-move-er" />.
+					</p>
+					<ol>
+						<li>By performing this move several times, identify on the diagram below what is happening to the Cube. </li>
+						<li>Using the cubie notation described in <xref ref="cubie-notation" />, describe what is happening to the Cube.</li>
+						<li>Given what happens to the Cube, exercise your agency as image-bearers and suggest a short name/abbreviation for this move.</li>
+						<li>What is the order of the move?</li>
+					</ol>
+				<image xml:id="edge-rotation" width="35%" source="./images/grey_cube.svg" /></statement>
+				<!-- <solution>
+					<p>
+						This moves cycles three edge cubies clockwise on the up face:
+						<me>
+							uf \to ul \to ur \to uf.
+						</me>
+						Since it's a cycle of three cubies, it has order 3.
+						Following our name for <xref ref="cube-move-cr" />, we suggested the name <term>Three Edge Tango</term>.
+						We also observed that if you reverse the direction of the upper rotations, you move the same three cubies, but in counterclockwise fashion.
+						That is, the move
+						<me>
+							M_R^2 U M_R^{-1} U^2 M_R U M_R^2
+						</me>
+						moves 
+						<me>
+							uf \to ur \to ul \to uf.
+						</me>
+					</p>
+	
+				</solution> -->
+	
+				</exploration>
 				
 				
 			</section>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-02T20:30:25-06:00       *-->
+<!--*       on 2021-01-10T16:23:43-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Jan. 25</title>
+<title>Jan. 25: Algebraic Notation and Order</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/x-mathjax-config">
@@ -145,9 +145,9 @@ MathJax.Hub.Config({
 </li>
 <li class="link">
 <a href="Week-03.html" data-scroll="Week-03"><span class="codenumber">3</span> <span class="title">Week 3: Jan. 25-29</span></a><ul>
-<li><a href="Jan-25.html" data-scroll="Jan-25" class="active">Jan. 25</a></li>
-<li><a href="Jan-27.html" data-scroll="Jan-27">Jan. 27</a></li>
-<li><a href="Jan-29.html" data-scroll="Jan-29">Jan. 29</a></li>
+<li><a href="Jan-25.html" data-scroll="Jan-25" class="active">Jan. 25: Algebraic Notation and Order</a></li>
+<li><a href="Jan-27.html" data-scroll="Jan-27">Jan. 27: Magic Cube Moves I</a></li>
+<li><a href="Jan-29.html" data-scroll="Jan-29">Jan. 29: Magic Cube Moves II</a></li>
 </ul>
 </li>
 <li class="link part"><a href="Part-Truth.html" data-scroll="Part-Truth"><span class="codenumber">II</span> <span class="title">Truth</span></a></li>
@@ -243,8 +243,48 @@ MathJax.Hub.Config({
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="Jan-25"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Jan. 25</span>
-</h2></section></div></main>
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Jan. 25: Algebraic Notation and Order</span>
+</h2>
+<article class="assemblage assemblage-like" id="assemblage-8"><h6 class="heading"><span class="title">Motivating Questions.</span></h6>
+<p id="p-42">Here are some questions we'll consider. <ol class="decimal">
+<li id="li-29">What is the standard orientation?</li>
+<li id="li-30">How can we represent a series of moves with algebraic notation?</li>
+<li id="li-31">What is the order of a move?</li>
+</ol></p></article><section class="introduction" id="introduction-6"><p id="p-43">Today, we'll get up to speed on how far everyone has come in solving their white (top) faces and layers. We'll be particularly interested in how you talk about/describe your methods. Then we'll see how the Cubing community has taken to writing and notating methods for systematically describing the motion of the Cube.</p></section><article class="principle theorem-like" id="principle-1"><h6 class="heading">
+<span class="type">Discussion</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-44">Find a partner. Take turns describing verbally <em class="emphasis">and without pointing to your Cube</em> your method for moving a corner cubie into its proper position. Similarly, verbally describe your method for moving an edge cubie into its proper position.</p></article><article class="principle theorem-like" id="principle-2"><h6 class="heading">
+<span class="type">Discussion</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+</h6>As you probably noticed, it is challenging to orally describe complex/technical ideas in much detail<aside class="aside aside-like" id="aside-2">A former professor of mine often threw up her hands at the idea of doing "math in the air".</aside>. Is it easier to describe your cubie movements in writing? Why or why not?</article><article class="definition definition-like" id="definition-3"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-45">When the Cube is oriented so the white side is up and the red side is facing you, as in <a class="xref" data-knowl="./knowl/fig-standard-orientation.html" title="Figure 3.1.4">Figure 3.1.4</a>, we will say it is in <dfn class="terminology">standard orientation</dfn>.</p></article><figure class="figure figure-like" id="fig-standard-orientation"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="./images/cube_faces.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.4<span class="period">.</span></span><span class="space"> </span>A cube in standard orientation.</figcaption></figure><article class="convention remark-like" id="convention-1"><h6 class="heading">
+<span class="type">Convention</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+</h6>
+<p id="p-46">The standard algebraic notation for moving the faces of the Cube is as follows: \(F, R, L, U, D\text{,}\) and \(B\) refer to clockwise quarter-turns (\(90^\circ\) rotations) of the front, right, left, up, down, and back faces, respectively, <em class="emphasis">as you look at the face in question</em>.</p>
+<p id="p-47">On the other hand, a \(-1\) superscript indicates a counterclockwise turn <em class="emphasis">as you look at the face in question</em>.</p>
+<p id="p-48">Finally, we can string moves together by writing them left to right, such as \(R F U L D\text{.}\) If we want to repeat a move, we use exponents in the usual way, such as \(R F^2 U (LD)^3\text{.}\)</p></article><article class="exploration project-like" id="exploration-4"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-49">Rather than refer to the faces of the Cube by their orientation, we could have referred to them by color. Compare and contrast the color naming scheme to the orientation naming scheme. What advantages/disadvantages do each present?</p></article><p id="p-51">A final concept we'll explore today is that of <em class="emphasis">order</em>.</p>
+<article class="definition definition-like" id="definition-4"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
+</h6>
+<p id="p-52">The <dfn class="terminology">order</dfn> of a sequence of moves \(M\) is the least positive number of times \(n\) that \(M\) can be repeated before your Cube is back where it started. We write \(| M | = n\text{.}\)</p></article><article class="example example-like" id="example-1"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span>
+</h6>
+<p id="p-53">The order of \(R\) is 4, since 4 quarter-turns will put my right face back where it started, and no smaller postive number of turns will.</p></article><article class="exploration project-like" id="exploration-5"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+</h6>
+<p id="p-54">Some questions on algebraic notation and order.</p>
+<ol class="decimal">
+<li id="li-32">How do \(R\) and \(L\) differ? (Other than that they move different sides of the Cube, of course.)</li>
+<li id="li-33">How are \(R^3\) and \(R^{-1}\) related?</li>
+<li id="li-34">What is \(|F^2|\text{?}\)</li>
+<li id="li-35">What is \(|R D R^{-1} D^{-1}|\text{?}\)</li>
+</ol>
+<aside class="aside aside-like" id="aside-3">An algebraic expression of the form \(XYX^{-1}Y^{-1}\) is called a <dfn class="terminology">commutator</dfn>. Commutators live deep in the realm of <em class="emphasis">abstract algebra</em>, and have applications as diverse as solving polynomial equations and understanding concepts in quantum mechanics.</aside></article></section></div></main>
 </div>
 </body>
 </html>
