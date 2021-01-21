@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-01-21T14:37:01-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>April 6-10: Introduction to Graphs</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\({\labelitemi}{$\diamond$}
+\def\arraystretch{1.5}
+\newcommand{\contentsfinish}{}
+\newcommand{\separator}{\begin{center}\rule{\columnwidth}{\arrayrulewidth}\end{center}}
+\newcommand{\tosay}[1]{\begin{center}\text{\fbox{\scriptsize{#1}}}\end{center}}
+\renewcommand{\cftsecfont}{}
+\renewcommand{\cftsecpagefont}{}
+\renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}\smallcaps{#1}}
+\def\oldequation{\equation}
+\def\endoldequation{\endequation}
+\newcommand{\nl}{
+}
+\newcommand{\runin}[1]{\textls[50]{\otherscshape #1}}
+\renewcommand{\sectionmark}[1]{}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\sectionmark}[1]{\markboth{{\thesection}.\ \smallcaps{#1}}{\thesection.\ \smallcaps{#1}}}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\sectionmark}[1]{\markboth{{\scriptsize\thesection}.\ \smallcaps{#1}}{}}
+\renewcommand{\subsectionmark}[1]{}
+\newcommand{\makedefaultsection}[2][true]{
+}
+\newcommand{\timestamp}{{\color{red}Last updated: {\currenttime\ (UTC), \today}}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\ge}{\geqslant}
+\newcommand{\ideal}[1]{\left\langle\, #1 \,\right\rangle}
+\newcommand{\subgp}[1]{\left\langle\, #1 \,\right\rangle}
+\def\p{\varphi}
+\def\isomorphic{\cong}
+\def\Gal{\text{Gal}}
+\def\im{\text{im}}
+\def\normal{\vartriangleleft}
+\renewcommand{\qedsymbol}{$\checkmark$}
+\def\lcm{{\text{lcm}\,}}
+\newcommand{\q}[1]{{\color{red} {#1}}}
+\newcommand{\startimportant}[1]{\end{[{Hint:} #1]\end}}
+\renewcommand{\textcircled}[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt,color=red] (char) {#1};}}
+\newcommand{\crossout}[1]{\tikz[baseline=(char.base)]{\node[mynode, cross out,draw] (char) {#1};}}
+\newcommand{\set}[1]{\left\{ {#1} \right\}}
+\newcommand{\setof}[2]{{\left\{#1\,\colon\,#2\right\}}}
+\def\C{{\mathbb C}}
+\def\Z{{\mathbb Z}}
+\def\bF{{\mathbb F}}
+\def\Q{{\mathbb Q}}
+\def\N{{\mathbb N}}
+\def\R{{\mathbb R}}
+\newcommand{\h}[1]{{\textbf{#1}}}
+\def\presnotes{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Explorations in Modern Mathematics</span></a></h1>
+<p class="byline">Dr. Michael K. Janssen</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-7.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-18.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-7.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-7.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-18.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="Sec-Introduction.html" data-scroll="Sec-Introduction">Introduction</a></li>
+<li><a href="Sec-NoteToInstructors.html" data-scroll="Sec-NoteToInstructors">A Note to Students</a></li>
+</ul>
+</li>
+<li class="link part"><a href="Part-CourseInfo.html" data-scroll="Part-CourseInfo"><span class="codenumber">I</span> <span class="title">Course information</span></a></li>
+<li class="link"><a href="Chap-BasicInfo.html" data-scroll="Chap-BasicInfo"><span class="codenumber">1</span> <span class="title">Basic Information</span></a></li>
+<li class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">Frequently Asked Questions</span></a></li>
+<li class="link part"><a href="Part-Play.html" data-scroll="Part-Play"><span class="codenumber">II</span> <span class="title">Play</span></a></li>
+<li class="link">
+<a href="Chap-RubiksCube.html" data-scroll="Chap-RubiksCube"><span class="codenumber">3</span> <span class="title">The Rubik's Cube</span></a><ul>
+<li><a href="Sec-GettingToKnowTheCube.html" data-scroll="Sec-GettingToKnowTheCube">January 10, 2020: Getting To Know You (and the Cube)</a></li>
+<li><a href="section-2.html" data-scroll="section-2">January 13, 2020: All About Cubies</a></li>
+<li><a href="section-3.html" data-scroll="section-3">January 20, 2020: Algebraic Notation and Order</a></li>
+<li><a href="section-4.html" data-scroll="section-4">January 22, 2020: Magic Cube Moves I</a></li>
+<li><a href="section-5.html" data-scroll="section-5">January 24, 2020: Magic Cube Moves II</a></li>
+<li><a href="section-6.html" data-scroll="section-6">January 27, 2020: Magic Cube Moves III</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-3.html" data-scroll="part-3"><span class="codenumber">III</span> <span class="title">Truth</span></a></li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Inductive and Deductive Reasoning</span></a><ul>
+<li><a href="section-7.html" data-scroll="section-7">January 31, 2020: What is Truth? / Inductive Reasoning</a></li>
+<li><a href="section-8.html" data-scroll="section-8">February 3, 2020: Deductive Reasoning I: Reasoning from Axioms</a></li>
+<li><a href="section-9.html" data-scroll="section-9">February 5-7, 2020: Deductive Reasoning II: Formal Logic</a></li>
+<li><a href="section-10.html" data-scroll="section-10">February 10-19, 2020 : The Foundational Crisis of Mathematics</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-4.html" data-scroll="part-4"><span class="codenumber">IV</span> <span class="title">Justice</span></a></li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Voting and Elections</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11">February 21, 2020: Elections with Two Candidates</a></li>
+<li><a href="section-12.html" data-scroll="section-12">February 24, 2020: Elections with Three or More Candidates I</a></li>
+<li><a href="section-13.html" data-scroll="section-13">Elections with Three or More Candidates, II: The Condorcet Criterion</a></li>
+<li><a href="section-14.html" data-scroll="section-14">March 2, 2020: Elections with Three or More Candidates III</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-5.html" data-scroll="part-5"><span class="codenumber">V</span> <span class="title">Power</span></a></li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Modeling with Discrete Dynamical Systems</span></a><ul>
+<li><a href="section-15.html" data-scroll="section-15">March 23-27: Intro to Discrete Dynamical Systems</a></li>
+<li><a href="section-16.html" data-scroll="section-16">March 30-April 3, Discrete Dynamical Systems II: Predator/Prey and SIR</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-6.html" data-scroll="part-6"><span class="codenumber">VI</span> <span class="title">Love</span></a></li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Graph Theory and Human Trafficking</span></a><ul>
+<li><a href="section-17.html" data-scroll="section-17" class="active">April 6-10: Introduction to Graphs</a></li>
+<li><a href="section-18.html" data-scroll="section-18">April 13-17: Trees</a></li>
+<li><a href="section-19.html" data-scroll="section-19">April 20-27: Graph Theory and Human Trafficking</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-17"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">7.1</span> <span class="title">April 6-10: Introduction to Graphs</span>
+</h2>
+<p id="p-342">Our last unit of this course will focus on how we can use the power of mathematical modeling to love our neighbors. Specifically, we'll explore the mathematics of <em class="emphasis">networks</em>. We'll spend the first two weeks working on developing the mathematical framework necessary to understand networks, and the remaining two weeks using our newfound understanding to explore the problem of human trafficking by studying transportation networks.</p>
+<p id="p-343">You've almost certainly encountered the word <em class="emphasis">graph</em> in a math class.</p>
+<article class="principle theorem-like" id="principle-11"><h6 class="heading">
+<span class="type">Discussion</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-344">What is meant by the word <em class="emphasis">graph</em> in a mathematical context? Give as many answers as you can, and be as clear and precise as possible.</p></article><p id="p-345">A relatively new (by mathematical standards) use of the word <em class="emphasis">graph</em> in mathematics involves the notion of connection. It is this notion that we will be exploring in this unit. We present a formal definition below.</p>
+<article class="definition definition-like" id="definition-24"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.2</span><span class="period">.</span>
+</h6>
+<p id="p-346">A <dfn class="terminology">graph</dfn>, \(G\text{,}\) is a collection of <dfn class="terminology">vertices</dfn> (or <dfn class="terminology">nodes</dfn>), \(V\text{,}\) and a collection of edges, \(E\text{,}\) which are pairs of vertices. We denote the graph as \(G(V,E)\text{.}\)</p></article><p id="p-347">This relatively simple, short definition nonetheless has deep consequences. We'll see an example below, but note that the primary defining features of a graph \(G\) are some objects (vertices) and the connections between (some of) the objects (the edges). If a vertex \(v\) is connected to another vertex \(u\) by an edge \(vu\text{,}\) we say \(uv\) is <dfn class="terminology">incident</dfn> to \(v\text{,}\) and we say \(u\) is <dfn class="terminology">adjacent</dfn> to \(v\) and is in the <dfn class="terminology">neighborhood</dfn> of \(v\text{.}\)</p>
+<article class="example example-like" id="example-3"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-348">As a straightforward initial example, consider the graph \(G(V, E)\) where \(V = \{a,b,c,d\}\) and \(E = \{ab,ac,bd\}\text{.}\) This graph has four vertices, and three edges. One <dfn class="terminology">representation</dfn> (drawing) of it is given in <a class="xref" data-knowl="./knowl/fig-graphexample1.html" title="Figure 7.1.4">Figure 7.1.4</a>. <figure class="figure figure-like" id="fig-graphexample1"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/graph01.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.4<span class="period">.</span></span><span class="space"> </span>One (bad) drawing of \(G\text{.}\)</figcaption></figure> As stated above, the most important feature of a graph is the connections it describes. Thus, we would say the graph in <a class="xref" data-knowl="./knowl/fig-graphexample2.html" title="Figure 7.1.5">Figure 7.1.5</a> <em class="emphasis">also</em> represents the graph \(G\) from <a class="xref" data-knowl="./knowl/fig-graphexample1.html" title="Figure 7.1.4">Figure 7.1.4</a>. <figure class="figure figure-like" id="fig-graphexample2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/graph02.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.5<span class="period">.</span></span><span class="space"> </span>Another (bad) drawing of \(G\text{.}\)</figcaption></figure></p></article><article class="activity project-like" id="activity-29"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-349">In this activity, your job is to invent a graph \(G\) with the following properties. Draw it on paper, take a photo of it, and upload the photo as your response. Then explain why your example meets the given criteria (e.g., for Question 4, which vertex has at least three neighbors?).</p>
+<ol class="decimal">
+<li id="li-427">Your graph should have six vertices</li>
+<li id="li-428">Your graph should have ten edges</li>
+<li id="li-429">There should be at least one pair of vertices between which you cannot trace a path of edges</li>
+<li id="li-430">One vertex should should have at least three others in its neighborhood</li>
+</ol></article><article class="exploration project-like" id="exploration-36"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">7.1.2</span><span class="period">.</span>
+</h6>
+<p id="p-350">We saw in the last unit that we could model changing quantities over time using discrete dynamical systems. Graphs, on the other hand, describe connections between objects. Brainstorm or research at least two or three complex, real-world situations which graphs might be helpful to model. That is, can you think of at least two or three situations in which one of the fundamental properties is <em class="emphasis">connection</em>? Briefly describe each situation in 3-4 sentences, and make clear how graphs can be used to describe these situations. If you find examples of such graphs, include those in your discussion board post.</p></article><p id="p-351">In order to discuss the nuances of the connections modeled by a graph, we need a bit more terminology.</p>
+<article class="definition definition-like" id="def-deg"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.6</span><span class="period">.</span>
+</h6>
+<p id="p-352">Let \(G(V,E)\) be a graph. A vertex \(v\) in \(V\) is <dfn class="terminology">isolated</dfn> if it has no neighbors. The number of edges incident to a vertex \(v\) is known as the <dfn class="terminology">degree</dfn> of \(v\text{,}\) denoted \(\deg(v)\text{.}\) If between every pair of vertices in \(V\) there is a path of edges, we say \(G\) is <dfn class="terminology">connected</dfn>. Otherwise, we say \(G\) is not connected. Each of the largest possible connected pieces of \(G\) is known as a <dfn class="terminology">component</dfn> of \(G\text{.}\)</p></article><article class="exploration project-like" id="exploration-37"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">7.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-353">For this exploration, we will consider the graph \(G(V,E)\) in <a class="xref" data-knowl="./knowl/fig-graphexample3.html" title="Figure 7.1.7">Figure 7.1.7</a>.</p>
+<figure class="figure figure-like" id="fig-graphexample3"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/graph03.png" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.7<span class="period">.</span></span><span class="space"> </span>A graph \(G\text{.}\)</figcaption></figure><ol class="decimal">
+<li id="li-431">Is \(G\) connected? How many components does it have?</li>
+<li id="li-432">Does \(G\) have any isolated vertices? If so, what are their degrees?</li>
+<li id="li-433">What is the largest degree of a vertex in \(G\text{?}\) Which vertex/vertices have that degree?</li>
+<li id="li-434">Suppose that \(G\) represents a social network; that is, the vertices represent people, and the edges represent friendship. Who are \(e\)'s friends?</li>
+<li id="li-435">Still viewing \(G\) as the model of a network of friends, which pair of people do you think are more likely to become friends next: \(a\) and \(b\text{,}\) or \(c\) and \(e\text{?}\) Why?</li>
+<li id="li-436">Still viewing \(G\) as the model of a network of friends, which pair of people do you think are more likely to become friends next: \(a\) and \(b\text{,}\) or \(c\) and \(h\text{?}\) Why?</li>
+</ol></article><p id="p-354">Next time, we'll explore the underlying structure of connectedness in graphs in more depth. In particular, we'll search for minimal (in terms of numbers of edges) subgraphs called <em class="emphasis">trees</em> to help us see which edges are most important.</p></section></div></main>
+</div>
+</body>
+</html>

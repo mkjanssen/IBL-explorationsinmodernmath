@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-01-21T14:37:02-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="activity project-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
+</h6>
+<p>In a <a class="external" href="https://www.researchgate.net/publication/263178905_When_Does_Appending_the_Same_Digit_Repeatedly_on_the_Right_of_a_Positive_Integer_Generate_a_Sequence_of_Composite_Integers" target="_blank">recent paper</a>, Lenny Jones introduced an interesting sequence of numbers:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+s_0 \amp = 12\\
+s_1 \amp = 121\\
+s_2 \amp = 1,211\\
+s_3 \amp = 12,111\\
+s_4 \amp = 121,111\\
+\amp \vdots
+\end{align*}
+</div>
+<p data-braille="continuation">Recall that a <dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">prime</dfn> number is a number greater than 1 that is not divisible by any positive number other than 1 and itself. A number greater than 1 is <dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">composite</dfn> if it's not prime.</p>
+<ol class="decimal">
+<li>Are any of \(s_0, s_1, s_2, s_3\text{,}\) or \(s_4\) prime?</li>
+<li>Use computer software (like <a class="external" href="https://www.wolframalpha.com" target="_blank">Wolfram|Alpha</a> and the <code xmlns:svg="http://www.w3.org/2000/svg" class="code-inline tex2jax_ignore">isPrime</code> command) to determine which of the numbers in <a class="xref" data-knowl="./knowl/table-sequence.html" title="Table 4.1.2: An interesting sequence.">Table 4.1.2</a>, if any, are prime.</li>
+<li>Do you think any of the numbers in the (infinite!) sequence \(s_0, s_1, s_2, \ldots\) are prime?</li>
+<li>Can you <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">prove</em>, beyond a shadow of a doubt, that all of the numbers \(s_1, s_3, s_5, \ldots\) are composite? How about the numbers \(s_0, s_3, s_6, \ldots\text{?}\)</li>
+<li>Each of the numbers \(s_0, s_1, \ldots, s_{100}\) are composite. Would you like to change your answer to Question 3?</li>
+<li>Write out \(s_{136}\text{.}\) Do you know anything about \(s_{136}\text{?}\)</li>
+<li>How long do you think it would take to check to see if \(s_{136}\) is prime?</li>
+</ol>
+<figure class="table table-like"><figcaption xmlns:svg="http://www.w3.org/2000/svg"><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.1.2<span class="period">.</span></span><span class="space"> </span>An interesting sequence.</figcaption><table>
+<tr>
+<td class="c m b2 r2 l0 t0 lines">\(n\)</td>
+<td class="l m b2 r2 l0 t0 lines">Term \(s_n\)</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">Factors</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">0</td>
+<td class="l m b0 r2 l0 t0 lines">12</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">1</td>
+<td class="l m b0 r2 l0 t0 lines">121</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="l m b0 r2 l0 t0 lines">1,211</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="l m b0 r2 l0 t0 lines">12,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="l m b0 r2 l0 t0 lines">121,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">5</td>
+<td class="l m b0 r2 l0 t0 lines">1,211,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">6</td>
+<td class="l m b0 r2 l0 t0 lines">12,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">7</td>
+<td class="l m b0 r2 l0 t0 lines">121,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">8</td>
+<td class="l m b0 r2 l0 t0 lines">1,211,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">9</td>
+<td class="l m b0 r2 l0 t0 lines">12,111,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">10</td>
+<td class="l m b0 r2 l0 t0 lines">121,111,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">11</td>
+<td class="l m b0 r2 l0 t0 lines">1,211,111,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">12</td>
+<td class="l m b0 r2 l0 t0 lines">12,111,111,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">13</td>
+<td class="l m b0 r2 l0 t0 lines">121,111,111,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">14</td>
+<td class="l m b0 r2 l0 t0 lines">1,211,111,111,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">15</td>
+<td class="l m b0 r2 l0 t0 lines">12,111,111,111,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">16</td>
+<td class="l m b0 r2 l0 t0 lines">121,111,111,111,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">63, 177322271026517</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">17</td>
+<td class="l m b0 r2 l0 t0 lines">1,211,111,111,111,111,111</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+</table></figure></article><span class="incontext"><a href="section-7.html#activity-5">in-context</a></span>
+</body>
+</html>

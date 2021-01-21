@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-01-21T14:37:05-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script>
+</head>
+<body>
+<article class="activity project-like"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span>
+</h6>
+<p xmlns:svg="http://www.w3.org/2000/svg">Let's start by assuming that \(H_0 = L_0 = 10\text{.}\) That is, we begin with 10 hares and 10 lynxes. Let's further assume that \(a = c = 0.014\text{,}\) \(b = 0.6\text{,}\) and \(d = 0.7\text{.}\)</p>
+<ol class="decimal">
+<li>Compute \(H_1, H_2, L_1,\) and \(L_2\text{.}\) What seems to be happening to the two populations? Confirm using the Sage cell below, which will display the first ten years' worth of predictions. Note that the hare population is given by the blue dots and the lynx population by the red. <div class="sagecell-sage" id="sage-4"><script type="text/x-sage">H_0 = 10
+L_0 = 10
+a = 0.014
+b=0.6
+c=a
+d=0.7
+def H(n):
+	if n==0:
+		return H_0
+	else:
+		return H(n-1) + b*H(n-1)-a*L(n-1)*H(n-1)
+
+def L(n):
+	if n==0:
+		return L_0
+	else:
+		return L(n-1) + c*L(n-1)*H(n-1)-d*L(n-1)
+years=10
+nn=range(years)
+HH = [H(n) for n in nn]
+LL = [L(n) for n in nn]
+nH = list(zip(nn, HH))
+nL = list(zip(nn, LL))
+H_dots = points(nH, color='blue')
+L_dots = points(nL, color='red')
+p = H_dots + L_dots
+p
+</script></div>
+</li>
+<li>The interaction coefficients translate to a decrease in the hare population and an increase in the lynx population. What do you expect to happen if we increase it from 0.014 to 0.05?</li>
+<li>Test your suspicion using the Sage cell below. <div class="sagecell-sage" id="sage-5"><script type="text/x-sage">H_0 = 10
+L_0 = 10
+a = 0.05
+b=0.6
+c=a
+d=0.7
+def H(n):
+	if n==0:
+		return H_0
+	else:
+		return H(n-1) + b*H(n-1)-a*L(n-1)*H(n-1)
+
+def L(n):
+	if n==0:
+		return L_0
+	else:
+		return L(n-1) + c*L(n-1)*H(n-1)-d*L(n-1)
+years=10
+nn=range(years)
+HH = [H(n) for n in nn]
+LL = [L(n) for n in nn]
+nH = list(zip(nn, HH))
+nL = list(zip(nn, LL))
+H_dots = points(nH, color='blue')
+L_dots = points(nL, color='red')
+p = H_dots + L_dots
+p
+</script></div>
+</li>
+<li>Qualitatively describe the dynamics displayed in the Sage output in the previous question.</li>
+</ol></article><span class="incontext"><a href="section-16.html#activity-26">in-context</a></span>
+</body>
+</html>

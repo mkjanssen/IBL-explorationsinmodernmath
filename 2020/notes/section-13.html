@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-01-21T14:37:00-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Elections with Three or More Candidates, II: The Condorcet Criterion</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\({\labelitemi}{$\diamond$}
+\def\arraystretch{1.5}
+\newcommand{\contentsfinish}{}
+\newcommand{\separator}{\begin{center}\rule{\columnwidth}{\arrayrulewidth}\end{center}}
+\newcommand{\tosay}[1]{\begin{center}\text{\fbox{\scriptsize{#1}}}\end{center}}
+\renewcommand{\cftsecfont}{}
+\renewcommand{\cftsecpagefont}{}
+\renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}\smallcaps{#1}}
+\def\oldequation{\equation}
+\def\endoldequation{\endequation}
+\newcommand{\nl}{
+}
+\newcommand{\runin}[1]{\textls[50]{\otherscshape #1}}
+\renewcommand{\sectionmark}[1]{}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\sectionmark}[1]{\markboth{{\thesection}.\ \smallcaps{#1}}{\thesection.\ \smallcaps{#1}}}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\sectionmark}[1]{\markboth{{\scriptsize\thesection}.\ \smallcaps{#1}}{}}
+\renewcommand{\subsectionmark}[1]{}
+\newcommand{\makedefaultsection}[2][true]{
+}
+\newcommand{\timestamp}{{\color{red}Last updated: {\currenttime\ (UTC), \today}}}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\ge}{\geqslant}
+\newcommand{\ideal}[1]{\left\langle\, #1 \,\right\rangle}
+\newcommand{\subgp}[1]{\left\langle\, #1 \,\right\rangle}
+\def\p{\varphi}
+\def\isomorphic{\cong}
+\def\Gal{\text{Gal}}
+\def\im{\text{im}}
+\def\normal{\vartriangleleft}
+\renewcommand{\qedsymbol}{$\checkmark$}
+\def\lcm{{\text{lcm}\,}}
+\newcommand{\q}[1]{{\color{red} {#1}}}
+\newcommand{\startimportant}[1]{\end{[{Hint:} #1]\end}}
+\renewcommand{\textcircled}[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt,color=red] (char) {#1};}}
+\newcommand{\crossout}[1]{\tikz[baseline=(char.base)]{\node[mynode, cross out,draw] (char) {#1};}}
+\newcommand{\set}[1]{\left\{ {#1} \right\}}
+\newcommand{\setof}[2]{{\left\{#1\,\colon\,#2\right\}}}
+\def\C{{\mathbb C}}
+\def\Z{{\mathbb Z}}
+\def\bF{{\mathbb F}}
+\def\Q{{\mathbb Q}}
+\def\N{{\mathbb N}}
+\def\R{{\mathbb R}}
+\newcommand{\h}[1]{{\textbf{#1}}}
+\def\presnotes{}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Explorations in Modern Mathematics</span></a></h1>
+<p class="byline">Dr. Michael K. Janssen</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-12.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-5.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-14.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-12.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-5.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-14.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul>
+<li><a href="Sec-Introduction.html" data-scroll="Sec-Introduction">Introduction</a></li>
+<li><a href="Sec-NoteToInstructors.html" data-scroll="Sec-NoteToInstructors">A Note to Students</a></li>
+</ul>
+</li>
+<li class="link part"><a href="Part-CourseInfo.html" data-scroll="Part-CourseInfo"><span class="codenumber">I</span> <span class="title">Course information</span></a></li>
+<li class="link"><a href="Chap-BasicInfo.html" data-scroll="Chap-BasicInfo"><span class="codenumber">1</span> <span class="title">Basic Information</span></a></li>
+<li class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span> <span class="title">Frequently Asked Questions</span></a></li>
+<li class="link part"><a href="Part-Play.html" data-scroll="Part-Play"><span class="codenumber">II</span> <span class="title">Play</span></a></li>
+<li class="link">
+<a href="Chap-RubiksCube.html" data-scroll="Chap-RubiksCube"><span class="codenumber">3</span> <span class="title">The Rubik's Cube</span></a><ul>
+<li><a href="Sec-GettingToKnowTheCube.html" data-scroll="Sec-GettingToKnowTheCube">January 10, 2020: Getting To Know You (and the Cube)</a></li>
+<li><a href="section-2.html" data-scroll="section-2">January 13, 2020: All About Cubies</a></li>
+<li><a href="section-3.html" data-scroll="section-3">January 20, 2020: Algebraic Notation and Order</a></li>
+<li><a href="section-4.html" data-scroll="section-4">January 22, 2020: Magic Cube Moves I</a></li>
+<li><a href="section-5.html" data-scroll="section-5">January 24, 2020: Magic Cube Moves II</a></li>
+<li><a href="section-6.html" data-scroll="section-6">January 27, 2020: Magic Cube Moves III</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-3.html" data-scroll="part-3"><span class="codenumber">III</span> <span class="title">Truth</span></a></li>
+<li class="link">
+<a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span> <span class="title">Inductive and Deductive Reasoning</span></a><ul>
+<li><a href="section-7.html" data-scroll="section-7">January 31, 2020: What is Truth? / Inductive Reasoning</a></li>
+<li><a href="section-8.html" data-scroll="section-8">February 3, 2020: Deductive Reasoning I: Reasoning from Axioms</a></li>
+<li><a href="section-9.html" data-scroll="section-9">February 5-7, 2020: Deductive Reasoning II: Formal Logic</a></li>
+<li><a href="section-10.html" data-scroll="section-10">February 10-19, 2020 : The Foundational Crisis of Mathematics</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-4.html" data-scroll="part-4"><span class="codenumber">IV</span> <span class="title">Justice</span></a></li>
+<li class="link">
+<a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span> <span class="title">Voting and Elections</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11">February 21, 2020: Elections with Two Candidates</a></li>
+<li><a href="section-12.html" data-scroll="section-12">February 24, 2020: Elections with Three or More Candidates I</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="active">Elections with Three or More Candidates, II: The Condorcet Criterion</a></li>
+<li><a href="section-14.html" data-scroll="section-14">March 2, 2020: Elections with Three or More Candidates III</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-5.html" data-scroll="part-5"><span class="codenumber">V</span> <span class="title">Power</span></a></li>
+<li class="link">
+<a href="chapter-6.html" data-scroll="chapter-6"><span class="codenumber">6</span> <span class="title">Modeling with Discrete Dynamical Systems</span></a><ul>
+<li><a href="section-15.html" data-scroll="section-15">March 23-27: Intro to Discrete Dynamical Systems</a></li>
+<li><a href="section-16.html" data-scroll="section-16">March 30-April 3, Discrete Dynamical Systems II: Predator/Prey and SIR</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-6.html" data-scroll="part-6"><span class="codenumber">VI</span> <span class="title">Love</span></a></li>
+<li class="link">
+<a href="chapter-7.html" data-scroll="chapter-7"><span class="codenumber">7</span> <span class="title">Graph Theory and Human Trafficking</span></a><ul>
+<li><a href="section-17.html" data-scroll="section-17">April 6-10: Introduction to Graphs</a></li>
+<li><a href="section-18.html" data-scroll="section-18">April 13-17: Trees</a></li>
+<li><a href="section-19.html" data-scroll="section-19">April 20-27: Graph Theory and Human Trafficking</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-13"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Elections with Three or More Candidates, II: The Condorcet Criterion</span>
+</h2>
+<p id="p-260">Consider the following situation<a data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-22" id="fn-22"><sup> 1 </sup></a>.</p>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-22"><div class="fn">Borrowed, again, from Hodge and Klima's <a class="external" href="https://bookstore.ams.org/mawrld-30/" target="_blank"><em class="emphasis">The Mathematics of Voting and Elections</em>, 2nd ed.</a>
+</div></div>
+<article class="activity project-like" id="act-10klakes"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span>
+</h6>
+<p id="p-261">Suppose Skip, Norm, and Jesse are all running for President of the 10,000 Lakes Club, with the preferences of the 100 members of the club as shown in <a class="xref" data-knowl="./knowl/table-10000lakes.html" title="Table 5.3.1: The preference schedule schedule for the 10,000 Lakes Club presidency.">Table 5.3.1</a>.</p>
+<figure class="table table-like" id="table-10000lakes"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.3.1<span class="period">.</span></span><span class="space"> </span>The preference schedule schedule for the 10,000 Lakes Club presidency.</figcaption><table>
+<tr>
+<td class="c m b2 r2 l0 t0 lines">Rank</td>
+<td class="c m b2 r0 l0 t0 lines">35</td>
+<td class="c m b2 r0 l0 t0 lines">28</td>
+<td class="c m b2 r0 l0 t0 lines">20</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">17</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">N</td>
+<td class="c m b0 r0 l0 t0 lines">S</td>
+<td class="c m b0 r0 l0 t0 lines">J</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">J</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">S</td>
+<td class="c m b0 r0 l0 t0 lines">N</td>
+<td class="c m b0 r0 l0 t0 lines">N</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">S</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r0 l0 t0 lines">J</td>
+<td class="c m b0 r0 l0 t0 lines">J</td>
+<td class="c m b0 r0 l0 t0 lines">S</td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell">N</td>
+</tr>
+</table></figure><ol class="decimal">
+<li id="li-306">What would be the outcome of the election under majority rule?</li>
+<li id="li-307">What would be the outcome of the election under plurality?</li>
+<li id="li-308">What would be the outcome of the election under the Borda count?</li>
+<li id="li-309">Which candidate is ranked first by the largest number of voters?</li>
+<li id="li-310">Which candidate is ranked last by the largest number of voters?</li>
+<li id="li-311">In a head-to-head contest between just Skip and Norm, who would win?</li>
+<li id="li-312">In a head-to-head contest between just Skip and Jesse, who would win?</li>
+<li id="li-313">In a head-to-head contest between just Norm and Jesse, who would win?</li>
+<li id="li-314">Does anything about your answers to Questions 1-8 strike you as being strange or unusual?</li>
+</ol></article><p id="p-262">In <a class="xref" data-knowl="./knowl/act-10klakes.html" title="Activity 5.3.1">Activity 5.3.1</a>, we saw that the plurality method can fail to elect a candidate who would win a head-to-head matchup against all other candidates. Perhaps worse, we also saw that plurality <em class="emphasis">can</em> elect a candidate who would <em class="emphasis">lose</em> a head-to-head matchup against all other candidates. This has struck voting theorists as unfair, and we make the following definition, named after Marie Jean Antoine Nicolas de Caritat, the Marquis de Condorcet.</p>
+<article class="definition definition-like" id="def-cwcclc"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
+</h6>
+<p id="p-263">A <dfn class="terminology">Condorcet winner</dfn> is a candidate in an election who would win a head-to-head contest (with the winner decided by majority rule) against each of the other candidates.</p>
+<p id="p-264">A <dfn class="terminology">Condorcet loser</dfn> is a candidate in an election who would lose a head-to-head contest (with the winner decided by majority rule) against each of the other candidates.</p>
+<p id="p-265">A voting system that will always elect a Condorcet winner, <em class="emphasis">whenever one exists</em>, is said to satisfy the <dfn class="terminology">Condorcet winner criterion (CWC)</dfn>.</p>
+<p id="p-266">A voting system that will never elect a Condorcet loser is said to satisfy the <dfn class="terminology">Condorcet loser criterion (CLC)</dfn>.</p></article><article class="exploration project-like" id="exploration-27"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
+</h6>
+<p id="p-267">Consider the preference schedule in <a class="xref" data-knowl="./knowl/table-cwcl.html" title="Table 5.3.3: A preference schedule.">Table 5.3.3</a>.</p>
+<figure class="table table-like" id="table-cwcl"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.3.3<span class="period">.</span></span><span class="space"> </span>A preference schedule.</figcaption><table>
+<tr>
+<td class="c m b2 r2 l0 t0 lines">Rank</td>
+<td class="c m b2 r0 l0 t0 lines">1</td>
+<td class="c m b2 r0 l0 t0 lines">1</td>
+<td class="c m b2 r0 l0 t0 lines" data-braille="last-cell">1</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">A</td>
+<td class="c m b0 r0 l0 t0 lines">B</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">C</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">B</td>
+<td class="c m b0 r0 l0 t0 lines">C</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">A</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r0 l0 t0 lines">C</td>
+<td class="c m b0 r0 l0 t0 lines">A</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">B</td>
+</tr>
+</table></figure><ol class="decimal">
+<li id="li-315">In a head-to-head contest between just candidates A and B, who would win?</li>
+<li id="li-316">In a head-to-head contest between just candidates B and C, who would win?</li>
+<li id="li-317">In a head-to-head contest between just candidates A and C, who would win?</li>
+<li id="li-318">Does anything about Questions 1-3 strike you as unusual?</li>
+<li id="li-319">Is there a Condorcet winner and/or loser in this election? Explain.</li>
+</ol></article><article class="investigation project-like" id="investigation-15"><h6 class="heading">
+<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span>
+</h6>
+<ol class="decimal">
+<li id="li-320">Explain why, whenever majority rule does not result in a tie, the majority rule winner will be a Condorcet winner.</li>
+<li id="li-321">Does your answer to Question 1 imply that majority rule satisfies the CWC? If so, explain why. Otherwise, give an example to show that majority rule can violate the CWC.</li>
+<li id="li-322">Does your answer to Question 1 imply that majority rule satisfies the CLC? If so, explain why. Otherwise, give an example to show that majority rule can violate the CLC.</li>
+<li id="li-323">Are there special types of elections for which majority rule does satisfy the CWC? Give a convincing argument to justify your answer.</li>
+<li id="li-324">Use your answer to Question 1 to explain why any voting system that violates the majority criterion (<a class="xref" data-knowl="./knowl/def-majoritycriterion.html" title="Definition 5.2.9">Definition 5.2.9</a>) must also violate the CWC.</li>
+<li id="li-325">Use your answer to Question 5 to explain why the Borda count violates the CWC.</li>
+</ol></article><p id="p-268">In order to find a voting system that satisfies the CWC and CLC, let's return to the Bluth Company presidential election in <a class="xref" data-knowl="./knowl/expl-bcprez.html" title="Exploration 5.2.4">Exploration 5.2.4</a>.</p>
+<article class="exploration project-like" id="expl-spv"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span>
+</h6>
+<p id="p-269">Consider the following proposed voting system, using <a class="xref" data-knowl="./knowl/table-bcprez.html" title="Table 5.2.6: Preference schedule for the presidency of The Bluth Company.">Table 5.2.6</a> as the preference schedule.</p>
+<ul class="disc">
+<li id="li-326">Step 1: First, we'll ask voters to choose between George and Lindsay. Since this is a two-candidate election, we'll use majority rule to decide the winner.</li>
+<li id="li-327">Step 2: Next, we'll ask the voters to choose between Buster and the winner from Step 1, again using majority rule to decide the winner.</li>
+<li id="li-328">Step 3: Finally, we'll ask the voters to choose between Michael and the winner from Step 2. Whoever wins this third head-to-head contest will be declared the overall winner.</li>
+</ul>
+<p id="p-270">Consider the method described above.</p>
+<ol class="decimal">
+<li id="li-329">Under this method, who wins the presidency of the Bluth Company?</li>
+<li id="li-330">Under this method, what societal preference order is produced?</li>
+<li id="li-331">In light of the plurality and Borda count results for this election, does anything about your answers to Questions 1 and 2 strike you as being strange or unusual? Explain.</li>
+<li id="li-332">Is there a Condorcet winner and/or loser in this election? Explain.</li>
+</ol>
+<p id="p-271">The method described above is known as <dfn class="terminology">sequential pairwise voting</dfn>. What strikes you as being different or unusual about it, especially compared to the plurality and Borda count systems we've already explored?</p></article><p id="p-272">We'll finish this section by exploring sequential pairwise voting and the CWC/CLC a bit more.</p>
+<article class="investigation project-like" id="investigation-16"><h6 class="heading">
+<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span>
+</h6>
+<ol class="decimal">
+<li id="li-333">Could a Condorcet winner ever lose a head-to-head contest with another candidate? Why or why not?</li>
+<li id="li-334">What does your answer to Question 1 allow you to conclude about sequential pairwise voting and the CWC?</li>
+<li id="li-335">Does sequential pairwise voting satisfy the CLC? If so, explain why. Otherwise, give an example of a preference schedule for which sequential pairwise voting could elect a Condorcet loser.</li>
+</ol></article><p id="p-273">As we have just seen, SPV satisfies the CWC. This means that it will always elect a Condorcet winner if one exists. However, when a Condorcet winner does not exist, as is the case in the Bluth Company presidential election, strange things can happen.</p>
+<p id="p-274">After the actual preference schedule, the biggest factor deciding the outcome of SPV is the order in which the candidates face off. This order is called the <dfn class="terminology">agenda</dfn>, and is usually specified by listing the candidates in the order into which they are to be introduced to the comparisons. In <a class="xref" data-knowl="./knowl/expl-spv.html" title="Exploration 5.3.4">Exploration 5.3.4</a>, the agenda was G, L, B, M.</p>
+<article class="investigation project-like" id="investigation-17"><h6 class="heading">
+<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">5.3.6</span><span class="period">.</span>
+</h6>
+<p id="p-275">Consider the familiar preference schedule given in <a class="xref" data-knowl="./knowl/table-bcprez.html" title="Table 5.2.6: Preference schedule for the presidency of The Bluth Company.">Table 5.2.6</a>.</p>
+<ol class="decimal">
+<li id="li-336">Who would win the Bluth Company presidency using SPV with the agenda B, G, L, M?</li>
+<li id="li-337">Find a sequential pairwise voting agenda for which Buster would win the presidency.</li>
+<li id="li-338">Find a sequential pairwise voting agenda for which George would win the presidency.</li>
+</ol></article><p id="p-276">We thus see that when there is no Condorcet winner, the agenda can play an outsize role in the outcome of an election decided by sequential pairwise voting. Since the order in which the candidates are presented seems to matter, it's reasonable to guess that SPV violates the neutrality criterion, which we confirm in the next exploration.</p>
+<article class="exploration project-like" id="exploration-29"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">5.3.7</span><span class="period">.</span>
+</h6>
+<p id="p-277">Suppose that all of the voters in the Bluth Company election switches the positions of Lindsay and Michael, yielding the preference schedule in <a class="xref" data-knowl="./knowl/table-bcprez3.html" title="Table 5.3.4: Revised Bluth Company preference schedule.">Table 5.3.4</a>.</p>
+<figure class="table table-like" id="table-bcprez3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.3.4<span class="period">.</span></span><span class="space"> </span>Revised Bluth Company preference schedule.</figcaption><table>
+<tr>
+<td class="c m b2 r2 l0 t0 lines">Rank</td>
+<td class="c m b2 r0 l0 t0 lines">12</td>
+<td class="c m b2 r0 l0 t0 lines">7</td>
+<td class="c m b2 r0 l0 t0 lines">5</td>
+<td class="c m b2 r0 l0 t0 lines" data-braille="last-cell">3</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">B</td>
+<td class="c m b0 r0 l0 t0 lines">G</td>
+<td class="c m b0 r0 l0 t0 lines">M</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">L</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">G</td>
+<td class="c m b0 r0 l0 t0 lines">M</td>
+<td class="c m b0 r0 l0 t0 lines">L</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">M</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">3</td>
+<td class="c m b0 r0 l0 t0 lines">M</td>
+<td class="c m b0 r0 l0 t0 lines">L</td>
+<td class="c m b0 r0 l0 t0 lines">B</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">G</td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">4</td>
+<td class="c m b0 r0 l0 t0 lines">L</td>
+<td class="c m b0 r0 l0 t0 lines">B</td>
+<td class="c m b0 r0 l0 t0 lines">G</td>
+<td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">B</td>
+</tr>
+</table></figure><ol class="decimal">
+<li id="li-339">Using sequential pairwise voting with the agenda G, L, B, M, what societal preference order would result from this new preference schedule?</li>
+<li id="li-340">Explain why your answer to <a class="xref" data-knowl="./knowl/expl-spv.html" title="Exploration 5.3.4">Exploration 5.3.4</a> and Question 1 show that SPV is not neutral.</li>
+</ol></article><article class="exploration project-like" id="exploration-30"><h6 class="heading">
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">5.3.8</span><span class="period">.</span>
+</h6>
+<p id="p-278">Is SPV anonymous? Monotone? Does it satisfy the majority criterion? Justify your answers.</p></article><p id="p-279">Let's take stock of where we're at.</p>
+<article class="activity project-like" id="activity-21"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.9</span><span class="period">.</span>
+</h6>
+<p id="p-280">Fill in <a class="xref" data-knowl="./knowl/table-vsfc1.html" title="Table 5.3.5: Voting systems and fairness criteria">Table 5.3.5</a>, indicating whether each voting system satisfies the given criteria.</p>
+<figure class="table table-like" id="table-vsfc1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.3.5<span class="period">.</span></span><span class="space"> </span>Voting systems and fairness criteria</figcaption><table>
+<tr>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r2 l0 t0 lines">Anonymous</td>
+<td class="c m b2 r2 l0 t0 lines">Neutral</td>
+<td class="c m b2 r2 l0 t0 lines">Monotone</td>
+<td class="c m b2 r2 l0 t0 lines">Majority</td>
+<td class="l m b2 r2 l0 t0 lines">CWC</td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell">CLC</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines">Majority rule</td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="l m b2 r2 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines">Plurality</td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="l m b2 r2 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l0 t0 lines">Borda count</td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="c m b2 r2 l0 t0 lines"><br></td>
+<td class="l m b2 r2 l0 t0 lines"></td>
+<td class="l m b2 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+<tr>
+<td class="c m b0 r2 l0 t0 lines">Sequential pairwise voting</td>
+<td class="c m b0 r2 l0 t0 lines"><br></td>
+<td class="c m b0 r2 l0 t0 lines"><br></td>
+<td class="c m b0 r2 l0 t0 lines"><br></td>
+<td class="c m b0 r2 l0 t0 lines"><br></td>
+<td class="l m b0 r2 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines" data-braille="last-cell"></td>
+</tr>
+</table></figure></article></section></div></main>
+</div>
+</body>
+</html>

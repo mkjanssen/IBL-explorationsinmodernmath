@@ -172,7 +172,9 @@
 				</assemblage>
 				
 				
-					
+				<insight>
+					<video ee="dkbgejp" />
+				</insight>	
 					
 				 
 				<p>
@@ -190,7 +192,7 @@
 								<li>What does it mean to be an <em>explorer</em> in your major disciplines?</li>
 								<li>What are you excited about this semester? Your answer can be from one of your classes or outside of your classes.</li>
 							</ol>
-							Write your answers in your notes. We'll discuss your responses before working on <xref ref="firstquestionsaboutthecube" />.
+							<!-- Write your answers in your notes. We'll discuss your responses before working on <xref ref="firstquestionsaboutthecube" />. -->
 						</statement>
 					</p>
 					<!-- <solution>
@@ -211,23 +213,7 @@
 					What questions do you have about this course? Brainstorm a list.			
 				</investigation>
 				
-				<investigation xml:id="firstquestionsaboutthecube">
-					<statement>
-						<p>
-							In your groups, investigate your Cubes. What do you notice? What do you wonder? Make a list of as many observations and questions as you can, and write them down. Be ready to share.
-						</p>
-					</statement>
-					<solution>
-						<p>
-							We noticed several things: there are six sides, and six colors. It seems that the white center is opposite the yellow, the blue center is opposite the green, and the red center is opposite the orange.
-						</p>
-						
-						<p>
-							The main thing we wondered is: why does this exist? Why did Erno Rubik invent it? One person suggested that, well, it's a puzzle. And like we talked about last time, humans have this innate desire for play and creativity that was placed there by God. While some people might find the Cube a fun puzzle to play with, others might prefer a different sort of puzzle or game.
-						</p>
-					</solution>
-
-				</investigation>
+				
 				
 				<conclusion>
 				
@@ -283,12 +269,12 @@
 				
 				
 				
-			
+				
 			
 				<investigation xml:id="invest-firstquestionsaboutthecube">
 					<statement>
 						<p>
-							In your groups, investigate your Cubes. What do you notice? What do you wonder? Make a list of as many observations and questions as you can, and write them on your shared whiteboard.
+							In your groups, investigate your Cubes. What do you notice? What do you wonder? Make a list of as many observations and questions as you can, and write them in your notes.
 						</p>
 					</statement>
 					<solution>
@@ -459,7 +445,11 @@
   
 					</p>
   
-				</assemblage>	
+				</assemblage>
+				
+				<insight>
+					<video ee="myqqdkk" />
+				</insight>
 				
 				
 				
@@ -497,6 +487,10 @@
 							Then, make sure you can clearly and precisely describe your method. Write it down!
 						</p>
 					</exploration>
+					
+					<insight>
+						<video ee="sazlrhn" />
+					</insight>
 						
 				
 				
@@ -995,20 +989,523 @@
 				<title>Week 4: Feb. 1-5</title>
 				
 				<section xml:id="Feb-01">
-					<title>Feb. 1</title>
+					<title>Feb. 1: Magic Cube Moves III</title>
+					
+					<p>
+						We'll now examine one last Cube move and its effects.
+					</p>
+		
+					<heuristic xml:id="cube-move-eo">
+						<statement>
+							Consider the following sequence of cube moves:
+							<me>
+								\text{EO} = (M_R U)^3 U (M_R^{-1} U)^3 U
+							</me>
+							Written less compactly, this move is: <m>M_R U M_R U M_R U U M_R^{-1} U M_R^{-1} U M_R^{-1} U U</m>.
+						</statement>
+					</heuristic>
+					
+					
+								<exploration>
+						<p>
+							Consider <xref ref="cube-move-eo" />.
+						</p>
+						<ol>
+							<li>Which cubies are affected by this move?</li>
+							<li>By performing this move several times, identify on the diagram below the effects the move has on the Cube. </li>
+							<li>Using the cubie notation described in <xref ref="cubie-notation" />, describe what is happening to the Cube.</li>
+							<li>Given your answer to the previous question, exercise your agency as image-bearers and suggest a two- or three-letter name/abbreviation for this move.</li>
+							<li>What is the order of the move?</li>
+						</ol>
+					<image xml:id="edge-orientation" width="35%" source="./images/grey_cube.svg" />
+					</exploration>
+					
+					<assemblage>
+						  <title>Solving the Cube</title>
+							  
+							  <p>
+								  When you can consistently perform <xref ref="cube-move-cr" />, <xref ref="cube-move-co" />, <xref ref="cube-move-er" />, and <xref ref="cube-move-eo" />, you can use them to solve the Cube. You can use any strategy you want, but here is one to consider.
+							  
+							<ol>
+								<li>Put the corners in the correct <em>location</em>.</li>
+								<li>Put the edges in the correct <em>location</em>.</li>
+								<li><em>Reorient</em> any corners that need reorienting.</li>
+								<li><em>Reorient</em> any edges that need reorienting.</li>
+								<li><em>Celebrate!</em></li>
+								<li>Scramble the Cube and do it again.</li>
+							</ol>
+							
+							
+		</p>
+					  </assemblage>
+					  
+				  <conclusion>
+					<title>Conclusion</title>
+					
+					<p>
+						Today we explored the last move we need to solve the Cube. 
+						We also described a strategy for solving the Cube<fn>Note that when you complete your Rubik's Cube MFA, you can use whatever strategy you want, but you will be asked to demonstrate competence on two of the four moves we explored (randomly chosen at the time of the MFA).</fn>. 
+						Our method of solving the Cube is based on the <em>corners-first</em> (CF) method, which is distinct from the layer-by-layer (LL) method which is often the first solving method people learn. The first solution to the Cube, by Erno Rubik himself, was corners-first, and the first world speed-cubing record (22.95 seconds) was done corners-first.
+					</p>
+					<p>
+						There are advantages and disadvantages to all methods.
+						Advantages to corners-first are:
+						<ul>
+							<li>The move sequences are generally shorter in CF</li>
+							<li>There are just a few important move sequences to memorize</li>
+							<li>You generally don't "break" your existing work and so can recover from mistakes more easily</li>
+							<li>The solution can scale from a leisurely solve of a few minutes or more to quite fast solves</li>
+						</ul>
+		
+					</p>
+		
+		
+				</conclusion>
 					
 					
 				</section>
 				
 				<section xml:id="Feb-03">
-					<title>Feb. 3</title>
+					<title>Feb. 3: Truth and Inductive Reasoning</title>
+					
+					<introduction>
+						
+						<p>
+							Today we'll attempt to define truth, and then explore inductive reasoning. But first, we start with a discussion of the reading.
+						</p>
+					</introduction>
+					
+					<principle>
+						<statement>
+							<p>
+								We'll let the discussion take us where it may, but here are some suggested talking points to get started.
+							</p>
+							<ul>
+								<li>What is matheamtics? What connection do you see between doing mathematics and being human?</li>
+								<li>Think of a time you were captivated by exploring something. What analogies can you draw between doing math and doing this exploration?</li>
+								<li>How does abstraction enrich the meaning of an idea? Give an example from your own experiences.</li>
+								<li>Think of an activity you associate with play. Make a list of all the things you enjoy about its playful aspects. Does your list have analogies in mathematical activities?</li>
+								<li>Why do you think we started this class with the Rubik's cube (as opposed to the other topics planned for the semester)?</li>
+								<li>Where is mathematical beauty found in the world?</li>
+							</ul>
+						</statement>
+					</principle>
+				
+					<principle>
+						<statement>
+							<p>
+								What is truth? What is fact? How are the two concepts related? How are they different? Under which category does the sentence <m>1+1=2</m> fall?
+							</p>
+	
+						</statement>	
+						
+						<!-- <solution>
+							<p>
+								<em>Truth</em> refers to propositions which are correct and valid for all time, places, and people. It never changes. <em>Facts</em> refer to propositions supported by evidence. They are subject to change based on new evidence.
+								There was some debate about the nature of truth relative to belief. 
+								For instances, Christians believe that the historical person of Jesus is the Son of God. 
+								Muslims do not. 
+								Is this statement true for Christians but not for Muslims?
+								Or is the proposition that the historical person of Jesus is the Son of God <em>true</em>, but Christians and Muslims have differing beliefs on its truth?
+							</p>
+	
+						</solution> -->
+	
+	
+					</principle>
+	
+					<activity xml:id="act-whats-my-world">
+						<title>What's my world?</title>
+						<statement>
+							<p>
+								In the game <em>What's my World?</em>, one person thinks of a single law that defines a hypothetical world (e.g., ``My world does not contain things that start with the letter `C'.''). The other players attempt to guess this governing law by taking turns asking questions of the creator, such as ``Does your world contain dogs? Does it contain cats?'' and so on. When one of the guessers believe they can identify the governing law, they ask the creator.
+							</p>
+							<p>
+								Play a few rounds of this game, taking turns in the role of creator. <em>Other than asking the creator directly</em>, how could you be certain that you had determined the law of the world?
+							</p>
+						</statement>
+						
+						<solution>
+							<p>
+								We played various rounds of this game, but the only way we identified that we could know <em>for certain</em> that we had guessed the governing law correctly is by asking the creator. We can amass evidence and develop facts and a theory based on those facts, but we can only know for certain by asking the creator directly.
+							</p>
+	
+						</solution>
+	
+	
+					</activity>
+					
+					
+					
+					<definition>
+						<p>
+							<term>Inductive reasoning</term> is the process of drawing general conclusions from particular instances.
+						</p>
+					</definition>
+					
+					<p>
+						The work of the guesser in <xref ref="act-whats-my-world" /> is to employ inductive reasoning to determine the general law put in place by the creator.
+						This is the scientific process at its best: looking at the creation its orderliness and our creatureliness to infer larger governing principles.
+						If you have taken a statistics course, this is the type of reasoning employed therein. If we have time in this unit, we may explore some examples of statistical reasoning.
+					</p>
+					<p>
+						But how does this work in mathematics?
+					</p>
+	
+	
+	
+					
+					<exploration xml:id="expl-goldbach">
+						<statement>
+							<p>
+								Consider the following equations.
+							</p>
+							<md>
+								<mrow>6 \amp = 3 + 3</mrow>
+								<mrow>8 \amp = 3 + 5</mrow>
+								<mrow>10 \amp = 5 + 5</mrow>
+								<mrow>12 \amp = 5 + 7</mrow>
+								<mrow> \amp \vdots </mrow>
+							</md>
+							
+							<ol>
+								<li>The vertical ellipsis <m>\vdots</m> appearing below the four equations suggests that the equations form a pattern that continues. What do you think the next five equations are in this pattern?</li>
+								<li>Your answer to the previous question may fit the data, but it may not be what we are ultimately looking for. Let's impose another rule: the number 9 is never allowed. Can you find a (possibly different) pattern that fits this new clue in addition to the existing data?</li>
+								<li>What if we further restrict ourselves by outlawing the use of 15 and any even numbers? Can you find a pattern that fits these new clues in addition to the equations above? What are the next five equations in this case?</li>
+							</ol>
+	
+	
+						</statement>
+						
+						<solution>
+							<p>
+								A reasonable guess for the next five equations is:
+							</p>
+							<md>
+								<mrow>14 \amp = 7+7</mrow>
+								<mrow>16 \amp = 7+9</mrow>
+								<mrow>18 \amp = 9+9</mrow>
+								<mrow>20 \amp = 9+11</mrow>
+								<mrow>22 \amp = 11+11</mrow>
+							</md>
+							<p>
+								If we don't allow 9's, we could do:
+							</p>
+	
+								<md>
+								<mrow>14 \amp = 7+7</mrow>
+								<mrow>16 \amp = 5+11</mrow>
+								<mrow>18 \amp = 7+11</mrow>
+								<mrow>20 \amp = 7+13</mrow>
+								<mrow>22 \amp = 11+11</mrow>
+							</md>
+							<p>
+								Since I didn't use 15, I don't have to change anything.
+							</p>
+							
+							<p>
+								The pattern described by the equations suggests a famous mathematical conjecture due to Goldbach: that every even whole number greater than or equal to 6 can be written as the sum of two (possibly equal) primes.
+								Mathematicians have gathered a <em>lot</em> of evidence for this conjecture<fn>It's been verified for the first 4 quintillion even integers (which still isn't as many integers as there are configurations of the Cube!).</fn>, but until we have a conclusive <em>proof</em>, we won't know for sure if the pattern continues.
+							</p>
+	
+							
+	
+	
+	
+						</solution>
+	
+						
+	
+					</exploration>
+					
+					<p>
+						Let's look at one more activity.
+					</p>
+					
+					<activity>
+						<statement>
+							<p>
+								In a <url href="https://www.researchgate.net/publication/263178905_When_Does_Appending_the_Same_Digit_Repeatedly_on_the_Right_of_a_Positive_Integer_Generate_a_Sequence_of_Composite_Integers">recent paper</url>, Lenny Jones introduced an interesting sequence of numbers:
+								<md>
+									<mrow>s_0 \amp = 12</mrow>
+									<mrow> s_1 \amp = 121</mrow>
+									<mrow> s_2 \amp = 1,211</mrow>
+									<mrow> s_3 \amp = 12,111</mrow>
+									<mrow> s_4 \amp = 121,111</mrow>
+									<mrow> \amp \vdots</mrow>
+								</md>
+								Recall that a <term>prime</term> number is a number greater than 1 that is not divisible by any positive number other than 1 and itself. A number greater than 1 is <term>composite</term> if it's not prime.
+							</p>
+							<ol>
+								<li>Are any of <m>s_0, s_1, s_2, s_3</m>, or <m>s_4</m> prime?</li>
+								<li>Use computer software (like <url href="https://www.wolframalpha.com">Wolfram|Alpha</url> and the <c>isPrime</c> command) to determine which of the numbers in <xref ref="table-sequence" />, if any, are prime.</li>
+								<li>Do you think any of the numbers in the (infinite!) sequence <m>s_0, s_1, s_2, \ldots</m> are prime?</li>
+								<li>Can you <em>prove</em>, beyond a shadow of a doubt, that all of the numbers <m>s_1, s_3, s_5, \ldots</m> are composite? How about the numbers <m>s_0, s_3, s_6, \ldots</m>?</li>
+								<li>Each of the numbers <m>s_0, s_1, \ldots, s_{100}</m> are composite. Would you like to change your answer to Question 3?</li>
+								<li>Write out <m>s_{136}</m>. Do you know anything about <m>s_{136}</m>?</li>
+								<li>How long do you think it would take to check to see if <m>s_{136}</m> is prime?</li>
+							</ol>
+							<table xml:id="table-sequence">
+	  <title>
+		An interesting sequence.
+	  </title>
+	  <tabular>
+		<row bottom="medium">
+		  <cell halign="center" right="medium">
+			<m>n</m>
+		  </cell>
+		  <cell right="medium">
+			Term <m>s_n</m>
+		  </cell>
+		  <cell>
+			Factors
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			0
+		  </cell>
+		  <cell right="medium">
+			12
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			1
+		  </cell>
+		  <cell right="medium">
+			121
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			2
+		  </cell>
+		  <cell right="medium">
+			1,211
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			3
+		  </cell>
+		  <cell right="medium">
+			12,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			4
+		  </cell>
+		  <cell right="medium">
+			121,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			5
+		  </cell>
+		  <cell right="medium">
+			1,211,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			6
+		  </cell>
+		  <cell right="medium">
+			12,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			7
+		  </cell>
+		  <cell right="medium">
+			121,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			8
+		  </cell>
+		  <cell right="medium">
+			1,211,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			9
+		  </cell>
+		  <cell right="medium">
+			12,111,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			10
+		  </cell>
+		  <cell right="medium">
+			121,111,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			11
+		  </cell>
+		  <cell right="medium">
+			1,211,111,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			12
+		  </cell>
+		  <cell right="medium">
+			12,111,111,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			13
+		  </cell>
+		  <cell right="medium">
+			121,111,111,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			14
+		  </cell>
+		  <cell right="medium">
+			1,211,111,111,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			15
+		  </cell>
+		  <cell right="medium">
+			12,111,111,111,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			16
+		  </cell>
+		  <cell right="medium">
+			121,111,111,111,111,111
+		  </cell>
+		  <cell>
+			63, 177322271026517
+		  </cell>
+		</row>
+		<row>
+		  <cell halign="center" right="medium">
+			17
+		  </cell>
+		  <cell right="medium">
+			1,211,111,111,111,111,111
+		  </cell>
+		  <cell>
+		  </cell>
+		</row>
+	  </tabular>
+	</table>
+						</statement>
+						<!-- 
+	<solution>
+							<ol>
+								<li>No.</li>
+								<li>None.</li>
+								<li>There is no evidence at this point that any are prime.</li>
+								<li>Note that <m>121 = 11^2</m>, so it is not prime. Then <m>s_3 = 11^2\cdot 10 + 11= 11(11\cdot 10+1)</m>, <m>s_5 = 11(11^2\cdot 10^2 + 11\cdot 10 + 1)</m>, etc. Further, each of the <m>s_{3k}</m>'s are divisible by 3.</li>
+								<li>No.</li>
+								<li>It doesn't fit either of the cases from Question 4.</li>
+								<li>A long time (by hand)!</li>
+							</ol>
+	
+						</solution>
+	 -->
+	
+					</activity>
+					
+					<activity>
+						<statement>
+							<p>
+								What are the strengths and weaknesses of inductive reasoning?
+								Brainstorm as many as you can.
+								What could you do to minimize the effect(s) of the weaknesses?
+							</p>
+	
+						</statement>
+						
+	 
+	<solution>
+							<p>
+								The main weakness of inductive reasoning is that no matter how many data points you gather for your theory, it is possible to find another data point which blows it all up.
+							</p>
+							<p>
+								The strengths are that it's easy to get started. You just gather data and study it. More data generally indicates stronger evidence for your conclusions. It also applies in realms in which pure deduction via axioms does not work.
+							</p>
+	
+						</solution>
+	
+	
+	
+					</activity>
+	
+					<p>
+						Mathematicians tend to be most interested in determining when a given property <em>always</em> holds for whatever collection of objects it purports to describe.
+						Such properties are usually established <em>deductively</em>; we'll look at this next time.
+					</p>
+					
+					<insight>
+					
+					</insight>
 					
 					
 				</section>
 				
 				
 				<section xml:id="Feb-05">
-					<title>Feb. 5</title>
+					<title>Feb. 5: Thematic Checkpoint 1</title>
+					
+					<p>
+						Today you'll have the opportunity to take your first thematic checkpoint. If you're not ready, don't worry! You can delay a bit (but not indefnitely). More information on the <url href="https://dordt.instructure.com/courses/3078129/assignments/30469497">assignment page</url>.
+					</p>
 					
 					
 				</section>
@@ -1020,7 +1517,198 @@
 				<title>Week 5: Feb. 8-12</title>
 				
 				<section xml:id="Feb-08">
-					<title>Feb. 8</title>
+					<title>Feb. 8: Reasoning from Axioms</title>
+					
+					<introduction>
+						<p>
+							We saw last time that inductive reasoning was the process of drawing general conclusions from (usually empirical, observational) evidence.
+							When we have more/stronger evidence, we have more certainty in the correctness of our conclusions.
+						</p>
+	
+					</introduction>
+					
+					
+					
+					<p>
+						Mathematical reasoning is generally deductive<fn>Though we have our own <url href="https://ringswithinquiry.org/SubSec-WellOrdering.html">special version of induction.</url></fn> (defined momentarily), and begins with <term>axioms</term>, which are statements that should be self-evident and taken to be true.
+					</p>
+					
+					<investigation>
+						<statement>
+						<p>
+							The most famous set of axioms are Euclid's postulates for geometry, defined in <em><url href="https://en.wikipedia.org/wiki/Euclid's_Elements">The Elements</url></em>, which not only shaped thousands of years of geometry, but solidified the deductive approach to doing and explaining mathematics that we will explore in this unit.
+							At the beginning of Book I of <em>The Elements</em>, Euclid identified five postulates and five axioms.
+						</p>
+						<p>
+							Euclid's <em>postulates</em> are:
+						</p>
+						<ol>
+							<li>A straight line segment can be drawn joining any two points.</li>
+							<li>Any straight line segment can be extended indefinitely in a straight line.</li>
+							<li>Any circle can be described given a center and (radial) distance.</li>
+							<li>All right angles are equal to one another.</li>
+							<li>If a straight line intersecting two straight lines make the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet on the side on which the angles are less than two right angles.</li>
+						</ol>
+						
+						<p>
+							Euclid's <em>axioms</em> (or <em>common notions</em>) are:
+						</p>
+						<ol>
+							<li>Things which are equal to the same thing are also equal to one another.</li>
+							<li>If equals are added to equals, the wholes are equal.</li>
+							<li>If equals are subtracted from equals, the remainders are equal.</li>
+							<li>Things which coincide with one another are equal to one another.</li>
+							<li>The whole is greater than the part.</li>
+						</ol>
+						
+						<p>
+							The desired qualities of a system of axioms are:
+						</p>
+							<ol>	
+								<li><term>consistency</term>: we cannot deduce contradictory propositions, such as "God exists" and "God does not exist" from the same set of axioms</li>
+								<li><term>simplicity</term>: we have as few axioms as possible, and they are no more complicated than they need to be</li>
+								<li><term>completeness</term>: the system can answer every question we can think to ask</li>
+							</ol>
+	
+						
+	
+	
+						<p>
+							In your groups, discuss Euclid's postulates and common notions, perhaps in view of the desired qualities of an axiomatic system.
+							What strikes you as being interesting or noteworthy? Make a list of at least 2-3 observations.
+							Then consider: what are the axioms on which you base your life?
+						</p>
+						</statement>
+						
+						<solution>
+							<p>
+								Axioms are unproved, self-evident propositions on top of which logical deductions can be made, and entire fields of study rest.
+								They should be as simple as possible; all except Euclid's fifth postulate (the parallel postulate) are considered quite straightforward.
+								The parallel postulate has a fascinating history; it turns out be independent of the other postulates, and one can create new geometries (on the surface of a sphere, for instance), by rejecting it.
+							</p>
+							<p>
+								There are lots of unproved assumptions that we make in life.
+								Many Christian mathematicians make explicit that they view the authority of Scripture as an axiom; they can't use logic to conclusively deduce that Scripture is the only authority for Christian faith and life, but they <em>assume</em> it in order to draw conclusions <em>about</em> faith and life.
+							</p>
+	
+								
+	
+						</solution>
+	
+	
+	
+	
+	
+					</investigation>
+					
+					
+	
+					<p>
+						The process of <term>deductive reasoning</term> in mathematics begins from a set of generally agreed-upon axioms of <url href="https://en.wikipedia.org/wiki/Zermelo–Fraenkel_set_theory">set theory</url><fn>It should be noted that there is disagreement about the Axiom of Choice, mostly due to some of its surprising consequences.</fn> and uses logic to make inevitable conclusions from those axioms. These conclusions are generally called <term>theorems</term>. They are usually given as conditional statements of the form "If <m>P</m>, then <m>Q</m>," where <m>P</m> and <m>Q</m> are sensible<aside>Up to some definition of the word "sensible".</aside> statements.
+					</p>
+					
+					<p>
+						The author Lewis Carroll loved logic puzzles (he was actually a mathematics professor!), and wrote many of them. Here is one, axiomatized for easy reference.
+					</p>
+	
+					
+					<axiom xml:id="axiom-kittens">
+						<title>(Carroll)</title>
+						<statement>
+							<p>
+								Consider the axioms:
+							</p>
+							<ol>
+								<li>If a kitten loves fish, then it is teachable.</li>
+								<li>Every kitten without a tail will play with a gorilla.</li>
+								<li>All kittens with whiskers love fish.</li>
+								<li>If a kitten has green eyes, then it is not teachable.</li>
+								<li>All kittens have whiskers or do not have tails.</li>
+							</ol>
+							
+						</statement>
+					</axiom>
+					
+					<p>
+						Now, prove the theorems that follow using <xref ref="axiom-kittens" />.
+					</p>
+	
+					
+					<theorem>
+						<statement>
+							<p>
+								All kittens with whiskers are teachable.
+							</p>
+						</statement>
+						<proof>
+							<p>
+								Suppose we have a kitten with whiskers. Let's call him Arthur. By <xref ref="axiom-kittens" /> #3, Arthur loves fish. Since Arthur loves fish, <xref ref="axiom-kittens" /> #1 implies that Arthur is teachable.
+							</p>
+							
+							<p>
+								Therefore, all kittens with whiskers are teachable.
+							</p>
+	
+	
+						</proof>
+	
+					</theorem>
+					
+					
+					<theorem>
+						<statement>
+							<p>
+								If a kitten has green eyes, then it does not love fish.
+							</p>
+						</statement>
+					</theorem>
+					
+					<theorem>
+						<statement>
+							<p>
+								If a kitten has a tail, then it does not have green eyes.
+							</p>
+						</statement>
+						<proof>
+							<p>
+								TBD! We tried some things, but there are issues. We'll look at it again after we study <xref ref="def-implications" />.
+							</p>
+	
+						</proof>
+	
+					</theorem>
+					
+					<theorem>
+						<statement>
+							<p>
+								Every kitten with green eyes will play with a gorilla.
+							</p>
+						</statement>
+					</theorem>
+					
+					
+	
+					
+					<activity>
+						<statement>
+							<p>
+								Invent one or two additional theorems that can be deduced from <xref ref="axiom-kittens" />.
+								Prove them.
+							</p>
+						</statement>
+					</activity>
+					
+					<activity>
+						<statement>
+							<p>
+								Try to write down/clarify the general reasoning patterns you used to prove the preceding theorems.
+							</p>
+	
+						</statement>
+	
+					</activity>
+					
+					
 					
 					
 				</section>
