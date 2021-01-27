@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-21T14:35:16-06:00       *-->
+<!--*       on 2021-01-27T09:57:59-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -161,7 +161,7 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="Week-05.html" data-scroll="Week-05"><span class="codenumber">5</span> <span class="title">Week 5: Feb. 8-12</span></a><ul>
 <li><a href="Feb-08.html" data-scroll="Feb-08">Feb. 8: Reasoning from Axioms</a></li>
-<li><a href="Feb-10.html" data-scroll="Feb-10">Feb. 10</a></li>
+<li><a href="Feb-10.html" data-scroll="Feb-10">Feb. 10: Statements and Logical Connectives</a></li>
 <li><a href="Feb-12.html" data-scroll="Feb-12">Feb. 12</a></li>
 </ul>
 </li>
@@ -246,46 +246,32 @@ MathJax.Hub.Config({
 <span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Jan. 27: Magic Cube Moves I</span>
 </h2>
 <article class="assemblage assemblage-like" id="assemblage-9"><h6 class="heading"><span class="title">Motivating Questions.</span></h6>
-<p id="p-52">Here are some questions we'll consider. <ol class="decimal">
-<li id="li-40">How can we describe the location of a cubie?</li>
-<li id="li-41">Are cube moves commutative?</li>
-<li id="li-42">What does Magic Cube Move \(CR\) do?</li>
-</ol></p></article><section class="introduction" id="introduction-7"><p id="p-53">In order to solve the Cube, we need to figure out how to move cubies in carefully controlled ways. Starting in this section, we'll introduce one move at a time and make sure we understand exactly what it does before moving on.</p>
-<p id="p-54">As a warning, be aware that what follows might be occasionally frustrating. That's ok! As we saw last time, the order in which moves are executed does matter, so one mistake will throw everything off. You may want to designate one member of the group as the Cube turner, and let the others carefully track the moving cubies.</p></section><article class="convention remark-like" id="cubie-notation"><h6 class="heading">
-<span class="type">Convention</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
-</h6>
-<p id="p-55">We identify a cubie by the faces on which it sits, using lowercase letters, and regardless of how our Cube is oriented. So, for instance, the corner cubie on the upper, front, right face is identified by the notation <em class="emphasis">ufr</em>. The order in which the faces are specified does not matter.</p></article><article class="activity project-like" id="activity-2"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
-</h6>
-<p id="p-56">Consider the so-called <dfn class="terminology">superflip</dfn> configuration below. <aside class="aside aside-like" id="aside-4">In the superflip, every cubie is in the correct location, but the edges are flipped.</aside> <div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="./images/superflip.svg" style="width: 100%; height: auto;" alt=""></div></p>
-<ol class="decimal">
-<li id="li-43">Name the position of the edge cubie with an orange and blue facelet.</li>
-<li id="li-44">What name would we give to the green center cubie in this configuration?</li>
-<li id="li-45">Identify the colors of the cubie in the \(\ell db\) position.</li>
-</ol></article><article class="investigation project-like" id="investigation-6"><h6 class="heading">
-<span class="type">Investigation</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Cube Moves and the Commutative Property.</span>
-</h6>
-<p id="p-57">Suppose \(X\) and \(Y\) are arbitrary Cube moves. Is it the case that \(X\) and \(Y\) must always commute? That is, is it true that \(XY = YX\) for all choices of Cube moves? If yes, explain why. If it's not always true, give an example. In that case, are there conditions you can put on \(X\) and \(Y\) for which it is true?</p></article><p id="p-58">We now turn to a couple of "mathemagical" Cube moves.</p>
+<p id="p-55">Here are some questions we'll consider. <ol class="decimal">
+<li id="li-43">How can we describe the location of a cubie?</li>
+<li id="li-44">Are cube moves commutative?</li>
+<li id="li-45">What does Magic Cube Move \(CR\) do?</li>
+</ol></p></article><section class="introduction" id="introduction-7"><p id="p-56">In order to solve the Cube, we need to figure out how to move cubies in carefully controlled ways. Starting in this section, we'll introduce one move at a time and make sure we understand exactly what it does before moving on.</p>
+<p id="p-57">As a warning, be aware that what follows might be occasionally frustrating. That's ok! As we saw last time, the order in which moves are executed does matter, so one mistake will throw everything off. You may want to designate one member of the group as the Cube turner, and let the others carefully track the moving cubies.</p></section><p id="p-58">We now turn to a couple of "mathemagical" Cube moves.</p>
 <article class="heuristic theorem-like" id="cube-move-cr"><h6 class="heading">
-<span class="type">Cube Move</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
+<span class="type">Cube Move</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
 </h6>Consider the following sequence of Cube moves:<div class="displaymath">
 \begin{equation*}
 CR = U^{-1} R^{-1} D^{-1} R U R^{-1} D R
 \end{equation*}
 </div></article><article class="exploration project-like" id="expl-cr"><h6 class="heading">
-<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span>
+<span class="type">Exploration</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
 </h6>
-<p id="p-59">The Cube move described in <a class="xref" data-knowl="./knowl/cube-move-cr.html" title="Cube Move 3.2.2">Cube Move 3.2.2</a> does something to the front face of the Cube.</p>
+<p id="p-59">The Cube move described in <a class="xref" data-knowl="./knowl/cube-move-cr.html" title="Cube Move 3.2.1">Cube Move 3.2.1</a> does something to the front face of the Cube.</p>
 <ol class="decimal">
 <li id="li-46">By performing this move several times, identify on the diagram below what is happening to the front face of the Cube.</li>
-<li id="li-47">Using the cubie notation described in <a class="xref" data-knowl="./knowl/cubie-notation.html" title="Convention 3.2.1">Convention 3.2.1</a>, describe what is happening to the front face of the Cube.</li>
+<li id="li-47">Using the cubie notation described in <a class="xref" data-knowl="./knowl/cubie-notation.html" title="Convention 3.1.8">Convention 3.1.8</a>, describe what is happening to the front face of the Cube.</li>
 <li id="li-48">Given what happens to the front face, exercise your agency as image-bearers and suggest a short name/abbreviation for this move.</li>
 <li id="li-49">What is the order of the move?</li>
 </ol>
 <div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="./images/grey_cube.svg" style="width: 100%; height: auto;" alt=""></div></article><article class="activity project-like" id="activity-3"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
 </h6>
-<p id="p-60">Now that you have identified exactly what <a class="xref" data-knowl="./knowl/cube-move-cr.html" title="Cube Move 3.2.2">Cube Move 3.2.2</a> does, use it to solve as much of your Cube as it allows.</p></article></section></div></main>
+<p id="p-60">Now that you have identified exactly what <a class="xref" data-knowl="./knowl/cube-move-cr.html" title="Cube Move 3.2.1">Cube Move 3.2.1</a> does, use it to solve as much of your Cube as it allows.</p></article></section></div></main>
 </div>
 </body>
 </html>

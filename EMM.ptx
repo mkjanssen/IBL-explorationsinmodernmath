@@ -530,8 +530,11 @@
 						</p>
 					</exploration>
 				
-				
+				<insight>
+					<video ee="akwnwkc" />
+				</insight>
 			</section>
+			
 			
 		</chapter>
 		
@@ -696,40 +699,6 @@
 	
 				</exploration>
 				
-				
-			</section>
-			
-			<section xml:id="Jan-27">
-				<title>Jan. 27: Magic Cube Moves I</title>
-				
-				<assemblage>
-					<title>Motivating Questions</title>
-					<p>
-					<statement>
-						Here are some questions we'll consider.
-						<ol>
-							<li>How can we describe the location of a cubie?</li>
-							<li>Are cube moves commutative?</li>
-							<li>What does Magic Cube Move <m>CR</m> do?</li>
-						</ol>
-					</statement>
-					</p>
-					
-					</assemblage>
-				
-				<introduction>
-					<p>
-						In order to solve the Cube, we need to figure out how to move cubies in carefully controlled ways. Starting in this section, we'll introduce one move at a time and make sure we understand exactly what it does before moving on.
-					</p>
-					<p>
-						As a warning, be aware that what follows might be occasionally frustrating. That's ok! As we saw last time, the order in which moves are executed does matter, so one mistake will throw everything off. You may want to designate one member of the group as the Cube turner, and let the others carefully track the moving cubies.
-						
-						
-					</p>
-	
-				</introduction>
-				
-				
 				<convention xml:id="cubie-notation">
 					<p>
 						We identify a cubie by the faces on which it sits, using lowercase letters, and regardless of how our Cube is oriented.
@@ -785,6 +754,46 @@
 				</solution> -->
 	
 			</investigation>
+				
+			<insight>
+				<video ee="jkwjbjt" />
+			</insight>
+				
+				
+			</section>
+			
+			<section xml:id="Jan-27">
+				<title>Jan. 27: Magic Cube Moves I</title>
+				
+				<assemblage>
+					<title>Motivating Questions</title>
+					<p>
+					<statement>
+						Here are some questions we'll consider.
+						<ol>
+							<li>How can we describe the location of a cubie?</li>
+							<li>Are cube moves commutative?</li>
+							<li>What does Magic Cube Move <m>CR</m> do?</li>
+						</ol>
+					</statement>
+					</p>
+					
+					</assemblage>
+				
+				<introduction>
+					<p>
+						In order to solve the Cube, we need to figure out how to move cubies in carefully controlled ways. Starting in this section, we'll introduce one move at a time and make sure we understand exactly what it does before moving on.
+					</p>
+					<p>
+						As a warning, be aware that what follows might be occasionally frustrating. That's ok! As we saw last time, the order in which moves are executed does matter, so one mistake will throw everything off. You may want to designate one member of the group as the Cube turner, and let the others carefully track the moving cubies.
+						
+						
+					</p>
+	
+				</introduction>
+				
+				
+				
 	
 				<p>
 					We now turn to a couple of "mathemagical" Cube moves.
@@ -1576,7 +1585,7 @@
 						<p>
 							In your groups, discuss Euclid's postulates and common notions, perhaps in view of the desired qualities of an axiomatic system.
 							What strikes you as being interesting or noteworthy? Make a list of at least 2-3 observations.
-							Then consider: what are the axioms on which you base your life?
+							Then consider: on what axioms or assumptions do you make decisions (e.g., about how to spend your time, resources, etc)?
 						</p>
 						</statement>
 						
@@ -1714,7 +1723,481 @@
 				</section>
 				
 				<section xml:id="Feb-10">
-					<title>Feb. 10</title>
+					<title>Feb. 10: Statements and Logical Connectives</title>
+					
+					<p>
+						Today we carefully describe the fundamental aspects of matheamtical reasoning, beginning with a visit to Smullyan Island<fn>Named for American mathematician and logician, <url href="https://en.wikipedia.org/wiki/Raymond_Smullyan">Raymond Smullyan</url>.</fn>.
+						We'll then consider propositions and their truth values, as well as ways of combining elementary propositions into more complex propositions via logical connectives.
+						One of the most important and subtle connectives is the conditional implication, described in <xref ref="def-implications" />.
+					</p>
+					
+					
+					<axiom xml:id="axiom-smullyan">
+						<statement>
+							Consider the axioms of Smullyan Island:
+							<ol>
+								<li>All citizens of Smullyan Island are either knights or knaves.</li>
+								<li>Knights always tell the truth.</li>
+								<li>Knaves always lie.</li>
+							</ol>
+						</statement>
+					</axiom>
+	
+					<exploration>
+						<statement>
+							<p>
+								You find yourself on Smullyan Island, talking to two citizens, Priyanka and Gretchen.
+								Gretchen says, "We are both knaves."
+							</p>
+							<ol>
+								<li>Can Gretchen be a knight? Explain.</li>
+								<li>What can you conclude about the validity of Gretchen's statement? Explain.</li>
+								<li>Deductively establish whether Priyanka is a knight or a knave.</li>
+							</ol>
+						</statement>
+						<solution>
+							<p>
+								If Gretchen were a knight, she would be lying when she said "We are both knaves." Thus, she is a knave.
+								Since she is a knave, her statement must be false, which means that they are not <em>both</em> knaves.
+								Therefore, Priyanka is a knight.
+							</p>
+	
+						</solution>
+	
+					</exploration>
+					
+					<p>
+					A hallmark of mathematical thinking and research is to abstract from a collection of examples to make a deeper structural conjecture, for which we then attempt to supply a deductive proof.
+					As an example, consider <xref ref="expl-goldbach" />.
+					We collected examples of a pattern (the equations) and suggested the conjecture that all even whole numbers greater than or equal to 6 can be written as the sum of two primes.
+				</p>
+				
+				<p>
+					In the late 19th and early 20th centuries, mathematicians began mathematize and formalize logic itself. Today we begin to explore these foundational issues. We'll start with some definitions.
+				</p>
+	
+				
+				<definition>
+					<p>
+						A <term>proposition</term> is a declarative sentence which is either true or false, but not both.
+						An <term>elementary proposition</term> is a sentence with a subject and a verb, but no connectives (such as <em>and, or, not, if-then,</em> or <em>if-and-only-if</em>).
+					</p>
+	
+				</definition>
+				
+				<activity xml:id="act-statements">
+					<statement>
+						<p>
+							Determine which of the following are propositions (elementary or otherwise).
+							If a given sentence is a statement, determine its truth value.
+							If it isn't, explain why not.
+						</p>
+						<ol>
+							<li>Erik Hoekstra is the president of Dordt University.</li>
+							<li>The square root of a whole number is always a whole number.</li>
+							<li>The Green Bay Packers are the worst football team.</li>
+							<li>Why is this class so much fun?</li>
+							<li>This sentence is false.</li>
+							<li>A group of crows is called a murder.</li>
+							<li>Everyone likes cats.</li>
+						</ol>
+	
+					</statement>
+					
+					<solution>
+						<ol>
+							<li>This is a true proposition.</li>
+							<li>This is a false proposition. As an example, <m>\sqrt{21}</m> is not a whole number.</li>
+							<li>This one is harder (though it's an easy "true" from your instructor). But it's likely either a false proposition (due to the Packers not having the worst record in the league) or not a proposition at all, as agreement with the sentence is a matter of subjective taste.</li>
+							<li>This is an interrogative, not a declaration.</li>
+							<li>This is a declarative sentence, but it's neither true nor false; it's a paradox.</li>
+							<li>This is a true proposition! Who knew?</li>
+							<li>This is a false proposition.</li>
+						</ol>
+	
+					</solution>
+	
+	
+				</activity>
+				
+				<p>
+					Now that we have a sense for what a proposition is, we'll take old propositions and make new ones using logical connectives.
+					In order to describe how the connectives work, mathematicians define the truth values of the new propositions <em>formally</em> in terms of the possible combinations of truth values from the constituent propositions.
+					This gives us an abstract way of considering the truth values of propositions.
+				</p>
+	
+				<definition>
+					<p>
+						Suppose <m>P</m> and <m>Q</m> are statements (e.g., like those in <xref ref="act-statements" />).
+						The <term>negation</term> of <m>P</m>, denoted <m>\neg P</m> and read "not <m>P</m>", has the opposite truth value of <m>P</m> and is defined by <xref ref="table-negation" />.
+					</p>
+					
+					<table xml:id="table-negation">
+					  <title>
+						The negation of <m>P</m>.
+					  </title>
+					  <tabular halign="center">
+						<row bottom="medium">
+						  <cell halign="left" right="medium">
+							<m>​P</m>
+						  </cell>
+						  <cell halign="left">
+							<m>​\neg P</m>
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell>
+							F
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell>
+							T
+						  </cell>
+						</row>
+					  </tabular>
+					</table>
+					
+					<p>
+						The <term>conjunction</term> of <m>P</m> and <m>Q</m>, denoted <m>P \land Q</m> and read "<m>P</m> and <m>Q</m>", is true when both <m>P</m> and <m>Q</m> are true, and false otherwise. See <xref ref="table-and" />.
+					</p>
+					
+					<table xml:id="table-and">
+					  <title>
+						The conjunction of <m>P</m> and <m>Q</m>.
+					  </title>
+					  <tabular halign="center">
+						<row bottom="medium">
+						  <cell halign="left" right="medium">
+							<m>​P</m>
+						  </cell>
+						  <cell halign="left" right="medium">
+							<m>​Q</m>
+						  </cell>
+						  <cell halign="left">
+							<m>P \land Q​</m>
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell>
+							T
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell>
+							F
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell>
+							F
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell>
+							F
+						  </cell>
+						</row>
+					  </tabular>
+					</table>
+					
+					
+					
+					<p>
+						The <term>disjunction</term> of <m>P</m> and <m>Q</m>, denoted <m>P \lor Q</m> and read "<m>P</m> or <m>Q</m>", is true when <m>P</m> is true, <m>Q</m> is true, or both are true, and false otherwise. See <xref ref="table-or" />.
+					</p>
+					
+					<table xml:id="table-or">
+					  <title>
+						The disjunction of <m>P</m> and <m>Q</m>.
+					  </title>
+					  <tabular halign="center">
+						<row bottom="medium">
+						  <cell halign="left" right="medium">
+							<m>​P</m>
+						  </cell>
+						  <cell halign="left" right="medium">
+							<m>​Q</m>
+						  </cell>
+						  <cell halign="left">
+							<m>P \lor Q​</m>
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell>
+							T
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell>
+							T
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell>
+							T
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell>
+							F
+						  </cell>
+						</row>
+					  </tabular>
+					</table>
+	
+					
+	
+				
+				</definition>
+				
+				<activity>
+					<statement>
+						<p>
+							Meaningfully negate the following propositions (without just saying "It is not the case that...").
+						</p>
+						<ol>
+							<li><m>e</m> is a negative real number.</li>
+							<li>Iowa is the tenth largest state.</li>
+							<li>17 is a prime number.</li>
+						</ol>
+						<solution>
+							<ol>
+								<li><m>e</m> is a nonnegative real number.</li>
+								<li>Iowa is not the tenth largest state.</li>
+								<li>17 is a composite number.</li>
+							</ol>
+	
+	
+						</solution>
+	
+	
+	
+					</statement>
+	
+				
+				</activity>
+	
+				
+				<exploration>
+					<statement>
+						<p>
+							Determine the truth values of the following propositions.
+						</p>
+						<ol>
+							<li>Math 149 meets on Mondays and the capital of Iowa is Des Moines.</li>
+							<li>Math 149 meets on Mondays and the capital of Minnesota is Minneapolis.</li>
+							<li>Math 149 meets on Mondays or the capital of Minnesota is Minneapolis.</li>
+						</ol>
+						
+	
+					</statement>
+					
+					<solution>
+						<p>We want to emphasize that the truth of the conjunction or disjunction depends <em>only on the truth of the constituent statements</em>. It doesn't matter whether it makes sense semantically to combine the constituents this way.</p>
+						
+						<ol>
+							<li>This is true, as both constituents are true.</li>
+							<li>This is false; the capital of Minnesota is St. Paul, not Minneapolis.</li>
+							<li>This is true, since it's a disjunctive statement and one of the constituents is true (Math 149 meets on Mondays).</li>
+						</ol>
+	
+					
+					</solution>
+	
+	
+	
+				
+				</exploration>
+				
+				<p>
+					The last connective we'll consider (for now) is <em>implication</em>.
+				</p>
+	
+				<definition xml:id="def-implications">
+					<p>
+						Let <m>P</m> and <m>Q</m> be statements.
+						The <term>implication</term>, "<m>P</m> implies <m>Q</m>" (or "if <m>P</m>, then <m>Q</m>") is denoted <m>P\Rightarrow Q</m>, and is false only when <m>P</m> is true but <m>Q</m> is false.
+						See <xref ref="table-implication" />.
+					</p>
+					
+					<table xml:id="table-implication">
+					  <title>
+						The implication <m>P\Rightarrow Q</m>.
+					  </title>
+					  <tabular halign="center">
+						<row bottom="medium">
+						  <cell halign="left" right="medium">
+							<m>​P</m>
+						  </cell>
+						  <cell halign="left" right="medium">
+							<m>​Q</m>
+						  </cell>
+						  <cell halign="left">
+							<m>P\Rightarrow Q​</m>
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell>
+							T
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell>
+							F
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell right="medium">
+							T
+						  </cell>
+						  <cell>
+							T
+						  </cell>
+						</row>
+						<row>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell right="medium">
+							F
+						  </cell>
+						  <cell>
+							T
+						  </cell>
+						</row>
+					  </tabular>
+					</table>
+				</definition>
+				
+				<exploration>
+					<statement>
+						<p>
+							Determine the truth values of the following statements. Identify which row of <xref ref="table-implication" /> you are in.
+						</p>
+						<ol>
+							<li>If <m>x</m> is negative, then <m>-5x</m> is positive.</li>
+							<li>If we have Math 149 today, then it is Wednesday.</li>
+							<li>If <m>9 > 5</m>, then dogs do not have wings.</li>
+							<li>If <m>2=4</m>, then Calvin Coolidge is our greatest president.</li>
+						</ol>
+	
+					</statement>
+					<!-- 
+	<solution>
+						<p>As with conjunction and disjunction, there need be no causal relationship (or any relationship at all) between the constituents in an implication. To actually deduce the implication, however, usually does require a causal link to be established.</p>
+						<ol>
+							<li>This is true.</li>
+						</ol>
+	
+					</solution>
+	 -->
+	
+	
+				</exploration>
+	
+	
+				
+				<p>
+					The formalization of mathematical logic ramps up a bit when we consider conditional statements.
+					It is important to remember that we define the truth value of the proposition <m>P \Rightarrow Q</m> <em>purely formally</em> based on the structure of the conditional statement and the truth values of the constituents <m>P</m> and <m>Q</m>.
+					There need not be a causal relationship between <m>P</m> and <m>Q</m>!
+				</p>
+				
+				<p>
+					The last two rows of <xref ref="table-implication" /> are also worth a moment of our time.
+					They state that if the statement <m>P</m><fn>Often called the <em>antecedent.</em></fn> is false, then the <em>implication</em> <m>P\Rightarrow Q</m> is <em>true</em>.
+					Note that this is different than saying that <m>Q</m><fn>Often called the <em>consequent.</em></fn> is true.
+					When the implication <m>P\Rightarrow Q</m> is true because <m>P</m> is false, we usually say that <m>P\Rightarrow Q</m> is <term>vacuously true</term>.
+				</p>
+				
+				<activity>
+					<statement>
+						<p>
+							Suppose Dr. Janssen promises that, if everyone has solved their Rubik's Cube by Friday, then he will bring Defenders (on pretzel with everything) to class<fn>This is purely hypothetical.</fn>.
+							Unfortunately, a few students do not solve the Cube by Friday, so Dr. Janssen does not bring Defenders.
+						</p>
+	
+						<p>
+							Determine the truth value of the implication "If everyone can solve their Cubes by Friday, Dr. Janssen will bring Defenders to class".
+							How does this help you think about vacuous truth?
+						</p>
+						
+						
+	
+	
+					</statement>
+	
+				</activity>
 					
 					
 				</section>
