@@ -846,6 +846,10 @@
 	
 				</activity>
 				
+				<insight>
+					<video ee="rqvtklw" />
+				</insight>
+				
 				
 			</section>
 			
@@ -1524,6 +1528,19 @@
 			
 			<chapter xml:id="Week-05">
 				<title>Week 5: Feb. 8-12</title>
+				
+				<introduction>
+					<p>
+						This week, our focus is squarely on deductive reasoning.
+						We'll explore axioms and consider what our own unproved assumptions are.
+						We'll consider formal logic (that is, reasonign about compound statements whose truth values depend only on their structure and constituent elementary statements).
+						We'll close the week with some time spent playing the social deduction game, <em>The Resistance</em>, and considering some deductive puzzles based on it.
+					  </p>
+					  <p>
+					  	If you haven't passed your Cube checkpoint yet, make sure you're working on it! And please schedule a time to attempt it soon.
+						  Also, the second reflection on M4HF is due next week, so start reading Chapters 6-7 now.
+					  </p>
+				</introduction>
 				
 				<section xml:id="Feb-08">
 					<title>Feb. 8: Reasoning from Axioms</title>
@@ -2204,7 +2221,467 @@
 				
 				
 				<section xml:id="Feb-12">
-					<title>Feb. 12</title>
+					<title>Feb. 12: The Resistance</title>
+					
+					<p>
+						Today, we continue exploring logical/deductive reasoning. We'll first do it in the context of a game and related puzzles<fn>The puzzles are courtesy of <url href="https://www.taylor.edu/employees/faculty/derek-thompson">Derek Thompson</url> of Taylor University.</fn>.
+						Given time, we'll start setting the stage for what became known as the <em>foundational crisis of mathematics</em>.
+					</p>
+					
+					<subsection>
+						<title>The Resistance</title>
+						
+						<p>
+							To set the stage for a few puzzles, we'll play the social deduction game, <em><url href="https://boardgamegeek.com/boardgame/41114/resistance">The Resistance</url></em>.
+							If you've ever played Werewolf or Mafia, this won't be too much of a stretch.
+						</p>
+						<p>
+							The Resistance is set in a futuristic world where Rebels are trying to overthrow a sinister government, but Spies have invaded The Resistance.
+							The Spies know who the other Spies are, but the Rebels don't know who anyone is.
+							In the game, 5-10 players will pick teams to go on 5 <q>missions</q>.
+							The Rebels win if three missions are successful.
+							The Spies are trying to be put on the missions in order to sabotage them.
+							If three missions are unsuccessful, the Spies win.
+						</p>
+						
+						<subsubsection>
+							<title>Setting up a mission</title>
+							
+							<p>
+								At the beginning of the game, the Spies reveal themselves to each other, while the Rebels know no one's identity but their own.
+								A leader is then nominated, who proposes a team to go on a mission (the teams vary in size from round to round).
+								The group votes simultaneously and openly about whether to approve the proposed team for the mission.
+								If the team is rejected, leadership is passed clockwise; otherwise, the team goes on the mission.
+								If five teams are rejected in the same round, the Spies win <em>the entire game</em> automatically.
+							</p>
+						
+						</subsubsection>
+						
+						<subsubsection>
+							<title>Going on a mission</title>
+							
+							<p>
+								There is nothing to <em>do</em> on a mission; each participant simply decides whether the mission <em>Succeeds</em> or <em>Fails</em> by playing the appropriate card.
+								Rebels <em>must</em> play a Pass card; Spies may choose either card.
+								If <em>any</em> card is a Fail card, the mission fails (unless playing with 7+, in which case two Fail cards are required).
+								Players are free to say whatever they like, whether it is true or false.
+								However, players may <em>not</em> reveal their identity card that indicates if they are a Spy or a Rebel.
+							</p>
+						
+						</subsubsection>
+						
+						<subsubsection>
+							<title>Playing the Game</title>
+							
+							<example>
+								<statement>
+									<p>
+										Two people, Amanda and Bob, are elected to go on a mission.
+										One Pass card is played, while one Fail card is played.
+										
+										If Amanda is a Rebel, what can we (validly) conclude about Bob? Is this sound?
+									</p>
+								</statement>
+							</example>
+							
+							<p>
+								Now, let's get into groups and play! Remember:
+							</p>
+							<ol>
+								<li>Leader proposes a team for the mission.</li>
+								<li> Everyone votes whether or not to accept the team for the mission.</li>
+								<li>If the mission is not accepted, leadership rotates and the new leader proposes a team.</li>
+								<li>If the mission is a go, those on the mission vote for it to succeed or fail.</li>
+								<li>Rebels win if three missions succeed; Spies win if three fail or five consecutive teams are not accepted for the mission.</li>
+								<li>Once you get the hang of the structure, try to think strategically and logically about the choices you're presented.</li>
+							</ol>
+							
+							
+						
+						</subsubsection>
+						
+						<subsubsection>
+							<title>Explorations</title>
+							
+							<exploration>
+								<statement>
+									<p>
+										Suppose there are six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (then there are two spies).
+									</p>
+									<p>
+										Amanda and Bob go on the first mission; one Fail card and one Success card appear.
+									</p>
+									<p>
+										Carla, Derek, and Fred go on the second mission; one Fail card and two Success cards appear.
+									</p>
+									<p>
+										Who is definitely a Rebel?
+									</p>
+								</statement>
+							</exploration>
+							
+							<exploration>
+								<statement>
+									<p>
+										Again, suppose there are six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (then there are two spies).
+									</p>
+									<p>
+										Amanda and Derek go on the first mission; two Success cards appear.
+									</p>
+									<p>
+										Carla, Fred, and Derek go on the second mission; one Fail card and two Success cards appear.
+									</p>
+									<p>
+										Derek, Bob, Ellie, and Amanda go on the third mission; two Fail cards and two Success cards appear.
+									</p>
+									<p>
+										Who is definitely a Spy?
+									</p>
+								</statement>
+							</exploration>
+							
+							<exploration>
+								<statement>
+									<p>
+										Suppose there are six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (then there are two spies).
+									</p>
+									<p>
+										We introduce a new rule: when voting on a mission, Spies vote yes <em>if and only if</em> a Spy is on the proposed team.
+										The voting for round one went like this:
+									</p>
+									<table>
+										  <tabular halign="center">
+											<row bottom="medium">
+											  <cell right="medium">
+											  </cell>
+											  <cell right="medium">
+												Amanda
+											  </cell>
+											  <cell right="medium">
+												Bob
+											  </cell>
+											  <cell right="medium">
+												Carla
+											  </cell>
+											  <cell right="medium">
+												Derek
+											  </cell>
+											  <cell right="medium">
+												Ellie
+											  </cell>
+											  <cell>
+												Fred
+											  </cell>
+											</row>
+											<row bottom="medium">
+											  <cell halign="left" right="medium">
+												Team 1: Amanda, Derek
+											  </cell>
+											  <cell right="medium">
+												Y
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell>
+												N
+											  </cell>
+											</row>
+											<row>
+											  <cell halign="left" right="medium">
+												Team 2: Bob, Derek
+											  </cell>
+											  <cell right="medium">
+												Y
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell right="medium">
+												Y
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell>
+												N
+											  </cell>
+											</row>
+										  </tabular>
+										</table>
+										<p>
+											A team has not been picked yet, but Derek claims he knows exactly who the two spies are. Who are they?
+										</p>
+								</statement>
+							</exploration>
+							
+						
+						</subsubsection>
+						
+						<subsubsection>
+							<title>A New Wrinkle: The Inquisitor</title>
+							
+							<p>
+								The game can also be played with an additional role, known as the Inquisitor. 
+							</p>
+							<ol>
+								<li>At the beginning of the game, the Inquisitor token is given to the player to the right of the leader.</li>
+								<li>Immediately after the 2nd, 3rd, and 4th mission is resolved, the player with the Inquisitor token will choose one player to examine.</li>
+								<li>The player being examined passes their Character card to the Inquisitor.</li>
+								<li>The Inquisitor may discuss but cannot reveal/show the Character card passed.</li>
+								<li>The player being examined receives the Inquisitor token.
+								 A player that uses the Inquisitor cannot have the Inquisitor used on them.</li>
+							</ol>
+							
+							<exploration>
+								<statement>
+									<p>
+										Again, assume we have six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (two are spies). Assume further that Rebels always tell the truth and Spies always lie.
+									</p>
+									<ul>
+										<li><em>Round 1</em>: Amanda and Derek go on the first mission; Two Success cards appear.</li>
+										<li><em>Round 2</em>: At the start of Round 2, Ellie looks at Derek's card and says he is a Spy. Amanda, Ellie, and Fred go on the second mission. One Fail and two Success cards appear.</li>
+										<li><em>Round 3</em>: At the start of Round 3, Derek looks at Carla's card and says she is a Spy.  
+										Carla, Bob, Amanda, and Fred go on the third mission. One Fail card and three Success cards appear.</li>
+										<li><em>Round 4</em>: At the start of Round 4, Carla looks at Fred's card and says he is a Rebel.
+										One of the Rebels pipes up that (s)he knows who everyone is!</li>
+									</ul>
+									<p>
+										Who are the Spies? Who are the Rebels?
+									</p>
+								</statement>
+							</exploration>
+						
+						</subsubsection>
+						
+					</subsection>
+					
+					<subsection>
+						<title>The Foundational Crisis of Mathematics</title>
+					
+						<exploration>
+										<statement>
+											<p>
+												Let <m>P</m> and <m>Q</m> be statements.
+												The <term>contrapositive</term> of the implication <m>P\Rightarrow Q</m> is the implication <m>(\neg Q) \Rightarrow (\neg P)</m>.
+												Complete <xref ref="table-contrap" />. Is the contrapositive equivalent to anything we've looked at thus far?
+											</p>
+											<table xml:id="table-contrap">
+											  <title>
+												The contrapositive of <m> P\Rightarrow Q</m>.
+											  </title>
+											  <tabular>
+												<row bottom="medium">
+												  <cell right="medium">
+													<m>P</m>
+												  </cell>
+												  <cell right="medium">
+													<m>Q</m>
+												  </cell>
+												  <cell right="medium">
+													<m>\neg P​</m>
+												  </cell>
+												  <cell right="medium">
+													<m>\neg Q​</m>
+												  </cell>
+												  <cell>
+													<m>(\neg Q) \Rightarrow (\neg P)</m>
+												  </cell>
+												</row>
+												<row>
+												  <cell halign="center" right="medium">
+													T
+												  </cell>
+												  <cell halign="center" right="medium">
+													T
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell halign="center">
+													<line>
+													</line>
+													<line>
+													</line>
+												  </cell>
+												</row>
+												<row>
+												  <cell halign="center" right="medium">
+													T
+												  </cell>
+												  <cell halign="center" right="medium">
+													F
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell halign="center">
+													<line>
+													</line>
+													<line>
+													</line>
+												  </cell>
+												</row>
+												<row>
+												  <cell halign="center" right="medium">
+													F
+												  </cell>
+												  <cell halign="center" right="medium">
+													T
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell halign="center">
+													<line>
+													</line>
+													<line>
+													</line>
+												  </cell>
+												</row>
+												<row>
+												  <cell halign="center" right="medium">
+													F
+												  </cell>
+												  <cell halign="center" right="medium">
+													F
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell halign="center">
+													<line>
+													</line>
+													<line>
+													</line>
+												  </cell>
+												</row>
+											  </tabular>
+											</table>
+										</statement>
+									</exploration>
+									
+									
+									
+									<activity>
+										<statement>
+											<p>
+												Write the contrapositives of the following statements. Be ready to explain why the contrapositives are equivalent to the original implications.
+											</p>
+											<ol>
+												<li>If a kitten loves fish, then it is teachable.</li>
+												<li>If a kitten does not have a tail, then it will play with a gorilla.</li>
+												<li>If a kitten has green eyes, then it is not teachable.</li>
+												<li>If today is Wednesday, then we have math class.</li>
+											</ol>
+										</statement>
+						
+									</activity>
+									
+						 
+									<p>
+										The way in which reasoning with implications is often done uses a rule of inference known as <term>modus ponens</term> which runs roughly:
+									</p>
+									<ul>
+										<li>If <m>P</m>, then <m>Q</m>.</li>
+										<li><m>P</m>,</li>
+										<li>Therefore, <m>Q</m></li>
+									</ul>
+									
+									<p>
+										A closely related rule of inference is known as <term>modus tollens</term>, and runs thusly:
+									</p>
+									<ul>
+										<li>If <m>P</m>, then <m>Q</m>.</li>
+										<li>Not <m>Q</m>,</li>
+										<li>Therefore, not <m>P</m>.</li>
+									</ul>
+						 
+						 
+										
+										<p>
+											We have seen thus far a way of formalizing logic so that we can think about the truth of a statement purely syntactically (structurally) without regard for the semantic meaning of the statements under consideration.
+											In the late 19th century, mathematicians developed what became known as <term>formal systems</term>, consisting of axioms, which were strings of symbols, such as
+											<me>
+												\exists B \forall C, (C\in B \Leftrightarrow C\subseteq A),
+											</me>
+											along with a <term>logical calculus</term>, which govern the rules of inference that can be used on the axioms to deduce new theorems.
+										</p>
+										
+										<p>
+											Further, mathematicians had long assumed there were consistent foundational axioms for their discipline.
+											Newly discovered paradoxes challenged this view.
+										</p>
+										<exploration>
+											<title>Russell's Paradox</title>
+											<p>
+												In a certain town lives a barber who only cuts the hair of <em>all</em> people who do not cut their own hair.
+												Who cuts the barber's hair?
+											</p>
+											<solution>
+												<p>
+													This is a paradox: if the barber cuts his own hair, we reach a contradiction, as he only cuts the hair of those who do not cut their own hair. On the other hand, if the barber does not cut his own hair, he does by definition.
+												</p>
+												<p>
+													This sort of self-referential paradox is exactly the sort that we'll study later in this section that led to the foundational crisis referred to in the section title.
+												</p>
+											</solution>
+										</exploration>
+										
+										<p>
+											Two main schools of mathematical philosophy sprung up in the wake of these discoveries.
+											The <term>formalists</term> argued that statements of mathematics and logic are really just about the rules and consequences for manipulating symbols and strings of letters.
+											That is, mathematics does not have a subject matter at all--just empty symbols, which may be given an interpretation in particular situations and thus have meaning.
+										</p>
+										<p>
+											The response came from the <term>intuitionists</term>.
+											Intuitionism is an approach that consideres mathematics to be purely the result of the constructive mental activity of humans rather than the discovery of any principles which we can reasonably claim exist in an objective reality.
+											Thus, in some sense, mathematics is up to whoever is doing the mathematics.
+											To the intuitionists, the formalists were reducing mathematics to a meaningless game with symbols.
+										</p>
+										
+										<principle>
+											<p>
+												Do you resonate more with a formalist approach to mathematics, or an intuitionist approach?
+												Relatedly: do you believe mathematics is something humans invent, or something we discover in the creation?
+												Why?
+											</p>
+										</principle>
+						
+						
+										<p>
+											In 1900, at the second International Congress of Mathematicians in Paris, the esteemed mathematician David Hilbert posed 23 theretofore unanswered problems in mathematics that he thought were important to guide the development of mathematics in the 20th century.
+											We've already seen one of them (the 8th): the Goldbach conjecture.
+											Most of Hilbert's problems have been solved, but three are unresolved, two are thought to be too vague to ever get consensus on what a solution would look like, and one is the subject of much debate.
+										</p>
+										<p>					
+											In an attempt to resolve the issues raised by paradoxes like Russell's Paradox, Hilbert posed this problem, the second on the list:
+										</p>
+										<blockquote>
+											But above all I wish to designate the following as the most important among the numerous questions which can be asked with regard to the axioms: To prove that they are not contradictory, that is, that a definite number of logical steps based upon them can never lead to contradictory results….
+										</blockquote>
+										
+										<p>
+											That is, Hilbert wanted mathematicians to prove that the axioms on which mathematics was founded did not lead to a contradiction.
+											The resolution to this problem is surprising, and to begin to explore it, we will turn to the infinite.
+										</p>
+					</subsection>
 					
 					
 				</section>
