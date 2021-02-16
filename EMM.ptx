@@ -75,6 +75,7 @@
 <rename element="principle">Discussion</rename>
 <rename element="heuristic">Cube Move</rename>
 <rename element="insight">Screencast</rename>
+<rename element="hypothesis">Warmup</rename>
   </docinfo>
   <book>
     <title>Explorations in Modern Mathematics</title>
@@ -960,46 +961,31 @@
 	
 				</exploration>
 				
+				<insight>
+					<video ee="hrbgaxr" />
+				</insight>
+				
 				
 			</section>
 			
 		</chapter>
 
 		
-	</part>
+	
 	
 
 	
-	<part xml:id="Part-Truth">
-		<title>Truth</title>
-		
-		<introduction>
-			<p>
-				Throughout scripture, Christians are exhorted in various ways and to various activities regarding <em>truth</em>.
-				We are told that knowledge of "the truth" will "set [us] free"<fn>John 8:32</fn>, Christ calls Himself "the way, the truth, and the life"<fn>John 14:6</fn>, and says that his mission is to testify to the truth<fn>John 18:37; to which Pilate asks: "What is truth?"</fn>. Further, Paul exhorts believers to think on "whatever is true"<fn>Phil. 4:8</fn>.
-				But what <em>is</em> truth? Can mathematics help us better apprehend and understand it?
-			</p>
-
-				<p>
-					Mathematics is often thought of as one of the last bastions of objective truth.
-					One widely accepted cultural norm is that if a statement is quantitative, or can be arrived at via a sequence of logical deductions, it is often considered "true", whereas statements that cannot be presented in such a way live in the realm of opinion. But what do mathematicians mean when they talk of a statement being "true"? The answer might surprise you.
-				</p>
-				
-				<p>
-					In this unit, we'll explore inductive and deductive reasoning, as well as formal logic. We'll explore the shortcomings of mathematical thinking in addition to its strengths.
-				</p>
-				
-				<p>
-					This chapter is heavily influenced by <em><url href="https://www.artofmathematics.org/books/truth-reasoning-certainty-and-proof">Discovering the Art of Mathematics: Truth, Reasoning, Certainty, and Proof</url></em> by Fleron, Hotchkiss, Ecke, and von Renesse.
-				</p>
-
-
-
-			</introduction>
+	
 			
 			
 			<chapter xml:id="Week-04">
 				<title>Week 4: Feb. 1-5</title>
+				
+				<introduction>
+					<p>
+						This week is about wrapping  up the Cube. We'll learn all the moves we need to solve it, and then spend time practicing. We'll take some time on Wednesday to discuss the first chunk of M4HF as well, and then you'll have the option of taking the <url href="https://dordt.instructure.com/courses/3078129/assignments/30469497">Cube checkpoint</url> on Friday.
+					  </p>
+				</introduction>
 				
 				<section xml:id="Feb-01">
 					<title>Feb. 1: Magic Cube Moves III</title>
@@ -1071,6 +1057,10 @@
 						</ul>
 		
 					</p>
+					
+					<insight>
+						<video ee="hfwqujw" />
+					</insight>
 		
 		
 				</conclusion>
@@ -1079,12 +1069,11 @@
 				</section>
 				
 				<section xml:id="Feb-03">
-					<title>Feb. 3: Truth and Inductive Reasoning</title>
+					<title>Feb. 3: More Practice with the Cube</title>
 					
 					<introduction>
-						
 						<p>
-							Today we'll attempt to define truth, and then explore inductive reasoning. But first, we start with a discussion of the reading.
+							Today we'll start with the reading discussion below. After that has run its course, we'll spend time continuing to practice the Cube moves we have.
 						</p>
 					</introduction>
 					
@@ -1103,6 +1092,106 @@
 							</ul>
 						</statement>
 					</principle>
+					
+					
+					
+					
+					
+					<insight>
+					<video ee="qalnahn" />
+					</insight>
+					
+					
+				</section>
+				
+				
+				<section xml:id="Feb-05">
+					<title>Feb. 5: Thematic Checkpoint 1</title>
+					
+					<p>
+						Today you'll have the opportunity to take your first thematic checkpoint. If you're not ready, don't worry! You can delay a bit (but not indefnitely). More information on the <url href="https://dordt.instructure.com/courses/3078129/assignments/30469497">assignment page</url>.
+					</p>
+					
+					
+					
+					
+				</section>
+				
+			</chapter>
+			</part>
+			
+			<part xml:id="Part-Truth">
+				<title>Truth</title>
+				
+				<introduction>
+					<p>
+						Throughout scripture, Christians are exhorted in various ways and to various activities regarding <em>truth</em>.
+						We are told that knowledge of "the truth" will "set [us] free"<fn>John 8:32</fn>, Christ calls Himself "the way, the truth, and the life"<fn>John 14:6</fn>, and says that his mission is to testify to the truth<fn>John 18:37; to which Pilate asks: "What is truth?"</fn>. Further, Paul exhorts believers to think on "whatever is true"<fn>Phil. 4:8</fn>.
+						But what <em>is</em> truth? Can mathematics help us better apprehend and understand it?
+					</p>
+		
+						<p>
+							Mathematics is often thought of as one of the last bastions of objective truth.
+							One widely accepted cultural norm is that if a statement is quantitative, or can be arrived at via a sequence of logical deductions, it is often considered "true", whereas statements that cannot be presented in such a way live in the realm of opinion. But what do mathematicians mean when they talk of a statement being "true"? The answer might surprise you.
+						</p>
+						
+						<p>
+							In this unit, we'll explore inductive and deductive reasoning, as well as formal logic. We'll explore the shortcomings of mathematical thinking in addition to its strengths.
+						</p>
+						
+						<p>
+							This chapter is heavily influenced by <em><url href="https://www.artofmathematics.org/books/truth-reasoning-certainty-and-proof">Discovering the Art of Mathematics: Truth, Reasoning, Certainty, and Proof</url></em> by Fleron, Hotchkiss, Ecke, and von Renesse.
+						</p>
+						
+						<assemblage>
+							<title>Learning Goals</title>
+							<p>
+								<statement>
+									In this thematic unit, we will explore the following big ideas.
+									<ul>
+										<li>Inductive vs. deductive reasoning, truth vs. fact, and the strengths and weaknesses of each</li>
+										<li>Axiomatic systems, logical connectives, and formal logic</li>
+										<li>The search for complete and consistent logical foundations for mathematics in the late 19th/early 20th centuries</li>
+										<li>Set theory and infinite cardinalities, including Russell's paradox and the continuum hypothesis</li>
+										<li>The consequences of Godel's theorems</li>
+									</ul>
+								</statement>
+							</p>
+						</assemblage>
+		
+		
+		
+					</introduction>
+			
+			
+			<chapter xml:id="Week-05">
+				<title>Week 5: Feb. 8-12</title>
+				
+				<introduction>
+					<p>
+						This week, our focus is squarely on deductive reasoning.
+						We'll explore axioms and consider what our own unproved assumptions are.
+						We'll consider formal logic (that is, reasonign about compound statements whose truth values depend only on their structure and constituent elementary statements).
+						We'll close the week with some time spent playing the social deduction game, <em>The Resistance</em>, and considering some deductive puzzles based on it.
+					  </p>
+					  <p>
+					  	If you haven't passed your Cube checkpoint yet, make sure you're working on it! And please schedule a time to attempt it soon.
+						  Also, the second reflection on M4HF is due next week, so start reading Chapters 6-7 now.
+					  </p>
+				</introduction>
+				
+				<section xml:id="Feb-08">
+					<title>Feb. 8: Truth, Inductive Reasoning, and Reasoning from Axioms</title>
+					
+					
+					<introduction>
+						
+						<p>
+							Today we'll attempt to define truth, and then explore inductive reasoning. But first, we start with a discussion of the reading.
+						</p>
+					</introduction>
+					
+					
 				
 					<principle>
 						<statement>
@@ -1131,10 +1220,10 @@
 						<title>What's my world?</title>
 						<statement>
 							<p>
-								In the game <em>What's my World?</em>, one person thinks of a single law that defines a hypothetical world (e.g., ``My world does not contain things that start with the letter `C'.''). The other players attempt to guess this governing law by taking turns asking questions of the creator, such as ``Does your world contain dogs? Does it contain cats?'' and so on. When one of the guessers believe they can identify the governing law, they ask the creator.
+								In the game <em>What's my World?</em>, one person thinks of a single law that defines a hypothetical world (e.g., <q>My world does not contain things that start with the letter 'C'.</q>). The other players attempt to guess this governing law by taking turns asking questions of the creator, such as <q>Does your world contain dogs? Does it contain cats?</q> and so on. When one of the guessers believe they can identify the governing law, they ask the creator.
 							</p>
 							<p>
-								Play a few rounds of this game, taking turns in the role of creator. <em>Other than asking the creator directly</em>, how could you be certain that you had determined the law of the world?
+								Play a few rounds of this game, taking turns in the role of creator. <em>Other than asking the creator directly</em>, how could you be <em>certain</em> that you had determined the law of the world?
 							</p>
 						</statement>
 						
@@ -1475,6 +1564,19 @@
 	
 					</activity>
 					
+					
+					<insight>
+						<title>Today's Screencast</title>
+						<video ee="zjfdndg" />
+					</insight>
+					
+					
+					
+				</section>
+				
+				<section xml:id="Feb-10">
+					<title>Feb. 10: Statements and Logical Connectives</title>
+					
 					<activity>
 						<statement>
 							<p>
@@ -1500,58 +1602,7 @@
 	
 					</activity>
 	
-					<p>
-						Mathematicians tend to be most interested in determining when a given property <em>always</em> holds for whatever collection of objects it purports to describe.
-						Such properties are usually established <em>deductively</em>; we'll look at this next time.
-					</p>
 					
-					<insight>
-					
-					</insight>
-					
-					
-				</section>
-				
-				
-				<section xml:id="Feb-05">
-					<title>Feb. 5: Thematic Checkpoint 1</title>
-					
-					<p>
-						Today you'll have the opportunity to take your first thematic checkpoint. If you're not ready, don't worry! You can delay a bit (but not indefnitely). More information on the <url href="https://dordt.instructure.com/courses/3078129/assignments/30469497">assignment page</url>.
-					</p>
-					
-					
-				</section>
-				
-			</chapter>
-			
-			
-			<chapter xml:id="Week-05">
-				<title>Week 5: Feb. 8-12</title>
-				
-				<introduction>
-					<p>
-						This week, our focus is squarely on deductive reasoning.
-						We'll explore axioms and consider what our own unproved assumptions are.
-						We'll consider formal logic (that is, reasonign about compound statements whose truth values depend only on their structure and constituent elementary statements).
-						We'll close the week with some time spent playing the social deduction game, <em>The Resistance</em>, and considering some deductive puzzles based on it.
-					  </p>
-					  <p>
-					  	If you haven't passed your Cube checkpoint yet, make sure you're working on it! And please schedule a time to attempt it soon.
-						  Also, the second reflection on M4HF is due next week, so start reading Chapters 6-7 now.
-					  </p>
-				</introduction>
-				
-				<section xml:id="Feb-08">
-					<title>Feb. 8: Reasoning from Axioms</title>
-					
-					<introduction>
-						<p>
-							We saw last time that inductive reasoning was the process of drawing general conclusions from (usually empirical, observational) evidence.
-							When we have more/stronger evidence, we have more certainty in the correctness of our conclusions.
-						</p>
-	
-					</introduction>
 					
 					
 					
@@ -1735,12 +1786,497 @@
 					</activity>
 					
 					
+				
+				<insight>
+					<video ee="mbkylus" />
+				</insight>
 					
 					
 				</section>
 				
-				<section xml:id="Feb-10">
-					<title>Feb. 10: Statements and Logical Connectives</title>
+				
+				<section xml:id="Feb-12">
+					<title>Feb. 12: The Resistance</title>
+					
+					
+					
+					
+					<p>
+						Today, we continue exploring logical/deductive reasoning. We'll first do it in the context of a game and related puzzles<fn>The puzzles are courtesy of <url href="https://www.taylor.edu/employees/faculty/derek-thompson">Derek Thompson</url> of Taylor University.</fn>.
+						Given time, we'll start setting the stage for what became known as the <em>foundational crisis of mathematics</em>.
+					</p>
+					
+					<subsection>
+						<title>The Resistance</title>
+						
+						<p>
+							To set the stage for a few puzzles, we'll play the social deduction game, <em><url href="https://boardgamegeek.com/boardgame/41114/resistance">The Resistance</url></em>.
+							If you've ever played Werewolf or Mafia, this won't be too much of a stretch.
+						</p>
+						<p>
+							The Resistance is set in a futuristic world where Rebels are trying to overthrow a sinister government, but Spies have invaded The Resistance.
+							The Spies know who the other Spies are, but the Rebels don't know who anyone is.
+							In the game, 5-10 players will pick teams to go on 5 <q>missions</q>.
+							The Rebels win if three missions are successful.
+							The Spies are trying to be put on the missions in order to sabotage them.
+							If three missions are unsuccessful, the Spies win.
+						</p>
+						
+						<subsubsection>
+							<title>Setting up a mission</title>
+							
+							<p>
+								At the beginning of the game, the Spies reveal themselves to each other, while the Rebels know no one's identity but their own.
+								A leader is then nominated, who proposes a team to go on a mission (the teams vary in size from round to round).
+								The group votes simultaneously and openly about whether to approve the proposed team for the mission.
+								If the team is rejected, leadership is passed clockwise; otherwise, the team goes on the mission.
+								If five teams are rejected in the same round, the Spies win <em>the entire game</em> automatically.
+							</p>
+						
+						</subsubsection>
+						
+						<subsubsection>
+							<title>Going on a mission</title>
+							
+							<p>
+								There is nothing to <em>do</em> on a mission; each participant simply decides whether the mission <em>Succeeds</em> or <em>Fails</em> by playing the appropriate card.
+								Rebels <em>must</em> play a Pass card; Spies may choose either card.
+								If <em>any</em> card is a Fail card, the mission fails (unless playing with 7+, in which case two Fail cards are required).
+								Players are free to say whatever they like, whether it is true or false.
+								However, players may <em>not</em> reveal their identity card that indicates if they are a Spy or a Rebel.
+							</p>
+						
+						</subsubsection>
+						
+						<subsubsection>
+							<title>Playing the Game</title>
+							
+							<example>
+								<statement>
+									<p>
+										Two people, Amanda and Bob, are elected to go on a mission.
+										One Pass card is played, while one Fail card is played.
+										
+										If Amanda is a Rebel, what can we (validly) conclude about Bob? Is this sound?
+									</p>
+								</statement>
+							</example>
+							
+							<p>
+								Now, let's get into groups and play! Remember:
+							</p>
+							<ol>
+								<li>Leader proposes a team for the mission.</li>
+								<li> Everyone votes whether or not to accept the team for the mission.</li>
+								<li>If the mission is not accepted, leadership rotates and the new leader proposes a team.</li>
+								<li>If the mission is a go, those on the mission vote for it to succeed or fail.</li>
+								<li>Rebels win if three missions succeed; Spies win if three fail or five consecutive teams are not accepted for the mission.</li>
+								<li>Once you get the hang of the structure, try to think strategically and logically about the choices you're presented.</li>
+							</ol>
+							
+							
+						
+						</subsubsection>
+						
+						<subsubsection>
+							<title>Explorations</title>
+							
+							<exploration>
+								<statement>
+									<p>
+										Suppose there are six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (then there are two spies).
+									</p>
+									<p>
+										Amanda and Bob go on the first mission; one Fail card and one Success card appear.
+									</p>
+									<p>
+										Carla, Derek, and Fred go on the second mission; one Fail card and two Success cards appear.
+									</p>
+									<p>
+										Who is definitely a Rebel?
+									</p>
+								</statement>
+							</exploration>
+							
+							<exploration>
+								<statement>
+									<p>
+										Again, suppose there are six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (then there are two spies).
+									</p>
+									<p>
+										Amanda and Derek go on the first mission; two Success cards appear.
+									</p>
+									<p>
+										Carla, Fred, and Derek go on the second mission; one Fail card and two Success cards appear.
+									</p>
+									<p>
+										Derek, Bob, Ellie, and Amanda go on the third mission; two Fail cards and two Success cards appear.
+									</p>
+									<p>
+										Who is definitely a Spy?
+									</p>
+								</statement>
+							</exploration>
+							
+							<exploration>
+								<statement>
+									<p>
+										Suppose there are six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (then there are two spies).
+									</p>
+									<p>
+										We introduce a new rule: when voting on a mission, Spies vote yes <em>if and only if</em> a Spy is on the proposed team.
+										The voting for round one went like this:
+									</p>
+									<table>
+										  <tabular halign="center">
+											<row bottom="medium">
+											  <cell right="medium">
+											  </cell>
+											  <cell right="medium">
+												Amanda
+											  </cell>
+											  <cell right="medium">
+												Bob
+											  </cell>
+											  <cell right="medium">
+												Carla
+											  </cell>
+											  <cell right="medium">
+												Derek
+											  </cell>
+											  <cell right="medium">
+												Ellie
+											  </cell>
+											  <cell>
+												Fred
+											  </cell>
+											</row>
+											<row bottom="medium">
+											  <cell halign="left" right="medium">
+												Team 1: Amanda, Derek
+											  </cell>
+											  <cell right="medium">
+												Y
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell>
+												N
+											  </cell>
+											</row>
+											<row>
+											  <cell halign="left" right="medium">
+												Team 2: Bob, Derek
+											  </cell>
+											  <cell right="medium">
+												Y
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell right="medium">
+												Y
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell right="medium">
+												N
+											  </cell>
+											  <cell>
+												N
+											  </cell>
+											</row>
+										  </tabular>
+										</table>
+										<p>
+											A team has not been picked yet, but Derek claims he knows exactly who the two spies are. Who are they?
+										</p>
+								</statement>
+							</exploration>
+							
+						
+						</subsubsection>
+						
+						<subsubsection>
+							<title>A New Wrinkle: The Inquisitor</title>
+							
+							<p>
+								The game can also be played with an additional role, known as the Inquisitor. 
+							</p>
+							<ol>
+								<li>At the beginning of the game, the Inquisitor token is given to the player to the right of the leader.</li>
+								<li>Immediately after the 2nd, 3rd, and 4th mission is resolved, the player with the Inquisitor token will choose one player to examine.</li>
+								<li>The player being examined passes their Character card to the Inquisitor.</li>
+								<li>The Inquisitor may discuss but cannot reveal/show the Character card passed.</li>
+								<li>The player being examined receives the Inquisitor token.
+								 A player that uses the Inquisitor cannot have the Inquisitor used on them.</li>
+							</ol>
+							
+							<exploration>
+								<statement>
+									<p>
+										Again, assume we have six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (two are spies). Assume further that Rebels always tell the truth and Spies always lie.
+									</p>
+									<ul>
+										<li><em>Round 1</em>: Amanda and Derek go on the first mission; Two Success cards appear.</li>
+										<li><em>Round 2</em>: At the start of Round 2, Ellie looks at Derek's card and says he is a Spy. Amanda, Ellie, and Fred go on the second mission. One Fail and two Success cards appear.</li>
+										<li><em>Round 3</em>: At the start of Round 3, Derek looks at Carla's card and says she is a Spy.  
+										Carla, Bob, Amanda, and Fred go on the third mission. One Fail card and three Success cards appear.</li>
+										<li><em>Round 4</em>: At the start of Round 4, Carla looks at Fred's card and says he is a Rebel.
+										One of the Rebels pipes up that (s)he knows who everyone is!</li>
+									</ul>
+									<p>
+										Who are the Spies? Who are the Rebels?
+									</p>
+								</statement>
+							</exploration>
+						
+						</subsubsection>
+						
+					</subsection>
+					
+					<subsection>
+						<title>The Foundational Crisis of Mathematics</title>
+					
+						<exploration>
+										<statement>
+											<p>
+												Let <m>P</m> and <m>Q</m> be statements.
+												The <term>contrapositive</term> of the implication <m>P\Rightarrow Q</m> is the implication <m>(\neg Q) \Rightarrow (\neg P)</m>.
+												Complete <xref ref="table-contrap" />. Is the contrapositive equivalent to anything we've looked at thus far?
+											</p>
+											<table xml:id="table-contrap">
+											  <title>
+												The contrapositive of <m> P\Rightarrow Q</m>.
+											  </title>
+											  <tabular>
+												<row bottom="medium">
+												  <cell right="medium">
+													<m>P</m>
+												  </cell>
+												  <cell right="medium">
+													<m>Q</m>
+												  </cell>
+												  <cell right="medium">
+													<m>\neg P​</m>
+												  </cell>
+												  <cell right="medium">
+													<m>\neg Q​</m>
+												  </cell>
+												  <cell>
+													<m>(\neg Q) \Rightarrow (\neg P)</m>
+												  </cell>
+												</row>
+												<row>
+												  <cell halign="center" right="medium">
+													T
+												  </cell>
+												  <cell halign="center" right="medium">
+													T
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell halign="center">
+													<line>
+													</line>
+													<line>
+													</line>
+												  </cell>
+												</row>
+												<row>
+												  <cell halign="center" right="medium">
+													T
+												  </cell>
+												  <cell halign="center" right="medium">
+													F
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell halign="center">
+													<line>
+													</line>
+													<line>
+													</line>
+												  </cell>
+												</row>
+												<row>
+												  <cell halign="center" right="medium">
+													F
+												  </cell>
+												  <cell halign="center" right="medium">
+													T
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell halign="center">
+													<line>
+													</line>
+													<line>
+													</line>
+												  </cell>
+												</row>
+												<row>
+												  <cell halign="center" right="medium">
+													F
+												  </cell>
+												  <cell halign="center" right="medium">
+													F
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell right="medium">
+												  </cell>
+												  <cell halign="center">
+													<line>
+													</line>
+													<line>
+													</line>
+												  </cell>
+												</row>
+											  </tabular>
+											</table>
+										</statement>
+									</exploration>
+									
+									
+									
+									<activity>
+										<statement>
+											<p>
+												Write the contrapositives of the following statements. Be ready to explain why the contrapositives are equivalent to the original implications.
+											</p>
+											<ol>
+												<li>If a kitten loves fish, then it is teachable.</li>
+												<li>If a kitten does not have a tail, then it will play with a gorilla.</li>
+												<li>If a kitten has green eyes, then it is not teachable.</li>
+												<li>If today is Wednesday, then we have math class.</li>
+											</ol>
+										</statement>
+						
+									</activity>
+									
+						 
+									<p>
+										The way in which reasoning with implications is often done uses a rule of inference known as <term>modus ponens</term> which runs roughly:
+									</p>
+									<ul>
+										<li>If <m>P</m>, then <m>Q</m>.</li>
+										<li><m>P</m>,</li>
+										<li>Therefore, <m>Q</m></li>
+									</ul>
+									
+									<p>
+										A closely related rule of inference is known as <term>modus tollens</term>, and runs thusly:
+									</p>
+									<ul>
+										<li>If <m>P</m>, then <m>Q</m>.</li>
+										<li>Not <m>Q</m>,</li>
+										<li>Therefore, not <m>P</m>.</li>
+									</ul>
+						 
+						 
+										
+										<p>
+											We have seen thus far a way of formalizing logic so that we can think about the truth of a statement purely syntactically (structurally) without regard for the semantic meaning of the statements under consideration.
+											In the late 19th century, mathematicians developed what became known as <term>formal systems</term>, consisting of axioms, which were strings of symbols, such as
+											<me>
+												\exists B \forall C, (C\in B \Leftrightarrow C\subseteq A),
+											</me>
+											along with a <term>logical calculus</term>, which govern the rules of inference that can be used on the axioms to deduce new theorems.
+										</p>
+										
+										<p>
+											Further, mathematicians had long assumed there were consistent foundational axioms for their discipline.
+											Newly discovered paradoxes challenged this view.
+										</p>
+										<exploration>
+											<title>Russell's Paradox</title>
+											<p>
+												In a certain town lives a barber who only cuts the hair of <em>all</em> people who do not cut their own hair.
+												Who cuts the barber's hair?
+											</p>
+											<solution>
+												<p>
+													This is a paradox: if the barber cuts his own hair, we reach a contradiction, as he only cuts the hair of those who do not cut their own hair. On the other hand, if the barber does not cut his own hair, he does by definition.
+												</p>
+												<p>
+													This sort of self-referential paradox is exactly the sort that we'll study later in this section that led to the foundational crisis referred to in the section title.
+												</p>
+											</solution>
+										</exploration>
+										
+										<p>
+											Two main schools of mathematical philosophy sprung up in the wake of these discoveries.
+											The <term>formalists</term> argued that statements of mathematics and logic are really just about the rules and consequences for manipulating symbols and strings of letters.
+											That is, mathematics does not have a subject matter at all--just empty symbols, which may be given an interpretation in particular situations and thus have meaning.
+										</p>
+										<p>
+											The response came from the <term>intuitionists</term>.
+											Intuitionism is an approach that consideres mathematics to be purely the result of the constructive mental activity of humans rather than the discovery of any principles which we can reasonably claim exist in an objective reality.
+											Thus, in some sense, mathematics is up to whoever is doing the mathematics.
+											To the intuitionists, the formalists were reducing mathematics to a meaningless game with symbols.
+										</p>
+										
+										<principle>
+											<p>
+												Do you resonate more with a formalist approach to mathematics, or an intuitionist approach?
+												Relatedly: do you believe mathematics is something humans invent, or something we discover in the creation?
+												Why?
+											</p>
+										</principle>
+						
+						
+										<p>
+											In 1900, at the second International Congress of Mathematicians in Paris, the esteemed mathematician David Hilbert posed 23 theretofore unanswered problems in mathematics that he thought were important to guide the development of mathematics in the 20th century.
+											We've already seen one of them (the 8th): the Goldbach conjecture.
+											Most of Hilbert's problems have been solved, but three are unresolved, two are thought to be too vague to ever get consensus on what a solution would look like, and one is the subject of much debate.
+										</p>
+										<p>					
+											In an attempt to resolve the issues raised by paradoxes like Russell's Paradox, Hilbert posed this problem, the second on the list:
+										</p>
+										<blockquote>
+											But above all I wish to designate the following as the most important among the numerous questions which can be asked with regard to the axioms: To prove that they are not contradictory, that is, that a definite number of logical steps based upon them can never lead to contradictory results….
+										</blockquote>
+										
+										<p>
+											That is, Hilbert wanted mathematicians to prove that the axioms on which mathematics was founded did not lead to a contradiction.
+											The resolution to this problem is surprising, and to begin to explore it, we will turn to the infinite.
+										</p>
+					</subsection>
+					
+					<video ee="adqwhab" />
+					
+					
+				</section>
+				
+			</chapter>
+			
+			
+			
+			<chapter xml:id="Week-06">
+				<title>Week 6: Feb. 15-19</title>
+				
+				
+				
+				<section xml:id="Feb-17">
+					<title>Feb. 17: An Interlude in the Infinite</title>
 					
 					<p>
 						Today we carefully describe the fundamental aspects of matheamtical reasoning, beginning with a visit to Smullyan Island<fn>Named for American mathematician and logician, <url href="https://en.wikipedia.org/wiki/Raymond_Smullyan">Raymond Smullyan</url>.</fn>.
@@ -2216,520 +2752,855 @@
 	
 				</activity>
 					
-					
-				</section>
-				
-				
-				<section xml:id="Feb-12">
-					<title>Feb. 12: The Resistance</title>
+					<p>
+						Last time, we learned about the push from mathematicians in the late 19th/early 20th century were trying to show that the axioms, the very foundations on which mathematics was built, were both <em>complete</em> (the truth of every sensible statement could be decided via deductions from the axioms) and <em>consistent</em> (one could never deduce contradictory statements from the axioms).
+					</p>
 					
 					<p>
-						Today, we continue exploring logical/deductive reasoning. We'll first do it in the context of a game and related puzzles<fn>The puzzles are courtesy of <url href="https://www.taylor.edu/employees/faculty/derek-thompson">Derek Thompson</url> of Taylor University.</fn>.
-						Given time, we'll start setting the stage for what became known as the <em>foundational crisis of mathematics</em>.
+						For reasons which are hopefully clear, we'll assume that the axioms are consistent, that is, no contradictions will arise from them. (If contradictions <em>can</em> arise, we are in trouble indeed.)
+						But if the axioms are consistent, can it be shown that they're complete?
+						To answer this question, we dive into the realm of infinity.
 					</p>
 					
 					<subsection>
-						<title>The Resistance</title>
-						
+						<title>Infinite Sets</title>
+					
+					
+					<definition>
 						<p>
-							To set the stage for a few puzzles, we'll play the social deduction game, <em><url href="https://boardgamegeek.com/boardgame/41114/resistance">The Resistance</url></em>.
-							If you've ever played Werewolf or Mafia, this won't be too much of a stretch.
+							Let <m>S</m> and <m>T</m> be <term>sets</term>, which we may think of as collections of objects.
+							We say that <m>S</m> and <m>T</m> have the same <term>cardinality</term> if there is a one-to-one correspondence between the objects of <m>S</m> and those of <m>T</m>, i.e., if each element of <m>S</m> can be paired up with one and only one unique element of <m>T</m>.
+							In this case, we write <m>|S| = |T|</m>.
 						</p>
-						<p>
-							The Resistance is set in a futuristic world where Rebels are trying to overthrow a sinister government, but Spies have invaded The Resistance.
-							The Spies know who the other Spies are, but the Rebels don't know who anyone is.
-							In the game, 5-10 players will pick teams to go on 5 <q>missions</q>.
-							The Rebels win if three missions are successful.
-							The Spies are trying to be put on the missions in order to sabotage them.
-							If three missions are unsuccessful, the Spies win.
-						</p>
-						
-						<subsubsection>
-							<title>Setting up a mission</title>
-							
+					</definition>
+					
+					<activity>
+						<statement>
 							<p>
-								At the beginning of the game, the Spies reveal themselves to each other, while the Rebels know no one's identity but their own.
-								A leader is then nominated, who proposes a team to go on a mission (the teams vary in size from round to round).
-								The group votes simultaneously and openly about whether to approve the proposed team for the mission.
-								If the team is rejected, leadership is passed clockwise; otherwise, the team goes on the mission.
-								If five teams are rejected in the same round, the Spies win <em>the entire game</em> automatically.
-							</p>
-						
-						</subsubsection>
-						
-						<subsubsection>
-							<title>Going on a mission</title>
-							
-							<p>
-								There is nothing to <em>do</em> on a mission; each participant simply decides whether the mission <em>Succeeds</em> or <em>Fails</em> by playing the appropriate card.
-								Rebels <em>must</em> play a Pass card; Spies may choose either card.
-								If <em>any</em> card is a Fail card, the mission fails (unless playing with 7+, in which case two Fail cards are required).
-								Players are free to say whatever they like, whether it is true or false.
-								However, players may <em>not</em> reveal their identity card that indicates if they are a Spy or a Rebel.
-							</p>
-						
-						</subsubsection>
-						
-						<subsubsection>
-							<title>Playing the Game</title>
-							
-							<example>
-								<statement>
-									<p>
-										Two people, Amanda and Bob, are elected to go on a mission.
-										One Pass card is played, while one Fail card is played.
-										
-										If Amanda is a Rebel, what can we (validly) conclude about Bob? Is this sound?
-									</p>
-								</statement>
-							</example>
-							
-							<p>
-								Now, let's get into groups and play! Remember:
+								Let <m>S = \{1,2,3,4\}</m>, <m>T=\{\square,\circ,\bigstar,\triangle\}</m>, and <m>U = \{\diamondsuit,\spadesuit,\clubsuit\}</m>.
 							</p>
 							<ol>
-								<li>Leader proposes a team for the mission.</li>
-								<li> Everyone votes whether or not to accept the team for the mission.</li>
-								<li>If the mission is not accepted, leadership rotates and the new leader proposes a team.</li>
-								<li>If the mission is a go, those on the mission vote for it to succeed or fail.</li>
-								<li>Rebels win if three missions succeed; Spies win if three fail or five consecutive teams are not accepted for the mission.</li>
-								<li>Once you get the hang of the structure, try to think strategically and logically about the choices you're presented.</li>
+								<li>Can you find a one-to-one correspondence between <m>S</m> and <m>T</m>? Describe it, or explain why none exist.</li>
+								<li>Can you find a one-to-one correspondence between <m>S</m> and <m>U</m>? Describe it, or explain why none exist.</li>
+								<li>Can you find a one-to-one correspondence between <m>T</m> and <m>U</m>? Describe it, or explain why none exist.</li>
 							</ol>
-							
-							
-						
-						</subsubsection>
-						
-						<subsubsection>
-							<title>Explorations</title>
-							
-							<exploration>
-								<statement>
-									<p>
-										Suppose there are six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (then there are two spies).
-									</p>
-									<p>
-										Amanda and Bob go on the first mission; one Fail card and one Success card appear.
-									</p>
-									<p>
-										Carla, Derek, and Fred go on the second mission; one Fail card and two Success cards appear.
-									</p>
-									<p>
-										Who is definitely a Rebel?
-									</p>
-								</statement>
-							</exploration>
-							
-							<exploration>
-								<statement>
-									<p>
-										Again, suppose there are six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (then there are two spies).
-									</p>
-									<p>
-										Amanda and Derek go on the first mission; two Success cards appear.
-									</p>
-									<p>
-										Carla, Fred, and Derek go on the second mission; one Fail card and two Success cards appear.
-									</p>
-									<p>
-										Derek, Bob, Ellie, and Amanda go on the third mission; two Fail cards and two Success cards appear.
-									</p>
-									<p>
-										Who is definitely a Spy?
-									</p>
-								</statement>
-							</exploration>
-							
-							<exploration>
-								<statement>
-									<p>
-										Suppose there are six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (then there are two spies).
-									</p>
-									<p>
-										We introduce a new rule: when voting on a mission, Spies vote yes <em>if and only if</em> a Spy is on the proposed team.
-										The voting for round one went like this:
-									</p>
-									<table>
-										  <tabular halign="center">
-											<row bottom="medium">
-											  <cell right="medium">
-											  </cell>
-											  <cell right="medium">
-												Amanda
-											  </cell>
-											  <cell right="medium">
-												Bob
-											  </cell>
-											  <cell right="medium">
-												Carla
-											  </cell>
-											  <cell right="medium">
-												Derek
-											  </cell>
-											  <cell right="medium">
-												Ellie
-											  </cell>
-											  <cell>
-												Fred
-											  </cell>
-											</row>
-											<row bottom="medium">
-											  <cell halign="left" right="medium">
-												Team 1: Amanda, Derek
-											  </cell>
-											  <cell right="medium">
-												Y
-											  </cell>
-											  <cell right="medium">
-												N
-											  </cell>
-											  <cell right="medium">
-												N
-											  </cell>
-											  <cell right="medium">
-												N
-											  </cell>
-											  <cell right="medium">
-												N
-											  </cell>
-											  <cell>
-												N
-											  </cell>
-											</row>
-											<row>
-											  <cell halign="left" right="medium">
-												Team 2: Bob, Derek
-											  </cell>
-											  <cell right="medium">
-												Y
-											  </cell>
-											  <cell right="medium">
-												N
-											  </cell>
-											  <cell right="medium">
-												Y
-											  </cell>
-											  <cell right="medium">
-												N
-											  </cell>
-											  <cell right="medium">
-												N
-											  </cell>
-											  <cell>
-												N
-											  </cell>
-											</row>
-										  </tabular>
-										</table>
-										<p>
-											A team has not been picked yet, but Derek claims he knows exactly who the two spies are. Who are they?
-										</p>
-								</statement>
-							</exploration>
-							
-						
-						</subsubsection>
-						
-						<subsubsection>
-							<title>A New Wrinkle: The Inquisitor</title>
-							
+						</statement>
+					</activity>
+					
+					<p>
+						In order to explore infinity further, we need to set some notation.
+					</p>
+		
+					<definition xml:id="def-number_sets">
+						<p>
+							We define the following sets of numbers.
+						</p>
+						<ol>
+							<li>The <term>natural numbers</term> are given by <m>\mathbb{N} = \{1, 2, 3, \ldots\}</m>.</li>
+							<li>The <term>whole numbers</term> are given by <m>\mathbb{W} = \{0,1,2,3,\ldots\}</m>.</li>
+							<li>The <term>integers</term> are given by <m>\mathbb{Z} = \{\ldots, -3, -2, -1, 0, 1, 2, 3, \ldots\}</m>.</li>
+							<li>The <term>even integers</term> are given by <m>2\mathbb{Z} = \{\ldots, -6, -4, -2, 0, 2, 4, 6, \ldots\}</m>.</li>
+							<li>The set of <term>rational numbers</term> is denoted by <m>\mathbb{Q}</m> and consists of all fractions <m>\frac{a}{b}</m>, where <m>a,b</m> are integers and <m>b\ne 0</m>.</li>
+							<li>The set of <term>real numbers</term> is denoted by <m>\mathbb{R}</m> and is given by all positive and negative infinite decimals (alternatively, every point on the number line).</li>
+						</ol>
+						</definition>
+		
+					<activity>
+						<statement>
 							<p>
-								The game can also be played with an additional role, known as the Inquisitor. 
+								For the numbers that follow, identify all sets described in <xref ref="def-number_sets" /> they live in.
 							</p>
 							<ol>
-								<li>At the beginning of the game, the Inquisitor token is given to the player to the right of the leader.</li>
-								<li>Immediately after the 2nd, 3rd, and 4th mission is resolved, the player with the Inquisitor token will choose one player to examine.</li>
-								<li>The player being examined passes their Character card to the Inquisitor.</li>
-								<li>The Inquisitor may discuss but cannot reveal/show the Character card passed.</li>
-								<li>The player being examined receives the Inquisitor token.
-								 A player that uses the Inquisitor cannot have the Inquisitor used on them.</li>
+								<li> <m>7</m></li>
+								<li><m>-2</m></li>
+								<li><m>\pi</m></li>
+								<li><m>\frac{4}{3}</m></li>
+								<li><m>0</m></li>
 							</ol>
-							
-							<exploration>
-								<statement>
-									<p>
-										Again, assume we have six players: Amanda, Bob, Carla, Derek, Ellie, and Fred (two are spies). Assume further that Rebels always tell the truth and Spies always lie.
-									</p>
-									<ul>
-										<li><em>Round 1</em>: Amanda and Derek go on the first mission; Two Success cards appear.</li>
-										<li><em>Round 2</em>: At the start of Round 2, Ellie looks at Derek's card and says he is a Spy. Amanda, Ellie, and Fred go on the second mission. One Fail and two Success cards appear.</li>
-										<li><em>Round 3</em>: At the start of Round 3, Derek looks at Carla's card and says she is a Spy.  
-										Carla, Bob, Amanda, and Fred go on the third mission. One Fail card and three Success cards appear.</li>
-										<li><em>Round 4</em>: At the start of Round 4, Carla looks at Fred's card and says he is a Rebel.
-										One of the Rebels pipes up that (s)he knows who everyone is!</li>
-									</ul>
-									<p>
-										Who are the Spies? Who are the Rebels?
-									</p>
-								</statement>
-							</exploration>
-						
-						</subsubsection>
-						
+						</statement>
+					</activity>
+					
+					<exploration>
+						<title>Hilbert's Grand Hotel</title>
+						<statement>
+							<p>
+								Hilbert's Grand Hotel is a full-service luxury hotel, having as many rooms as there are natural numbers. The room numbers are <m>1, 2, 3, 4, 5, \ldots</m>.  Suppose that every room is completely filled.
+							</p>
+							<ol>
+								<li>A weary traveler arrives late in the night looking for a place to stay. Coud the manager find a way to give the traveler her own private room without having to ask anyone to leave the hotel?</li>
+								<li>What if two travelers arrive? Three?</li>
+								<li>What if infinitely many travelers arrive?</li>
+								<li>What if Hilbert's Grand Hotel is empty and an infinite number of busses, each with an infinite number of passengers, arrived. Can room be found for all of them?</li>
+							</ol>
+						</statement>
+					</exploration>
+									
+		
+					
+		
+					<exploration xml:id="expl-countable">
+						<statement>
+							<p>
+								For the following pairs of sets, determine whether a one-to-one correspondence between the two sets exists. If it does, describe it. If it does not, give a justification.
+							</p>
+							<ol>
+								<li><m>\mathbb{N}</m> and <m>\mathbb{W}</m></li>
+								<li><m>\mathbb{W}</m> and <m>\mathbb{Z}</m></li>
+								<li><m>\mathbb{Z}</m> and <m>2\mathbb{Z}</m></li>
+								<li><m>\mathbb{N}</m> and <m>2\mathbb{Z}</m></li>
+								<li>(Challenge) <m>\mathbb{N}</m> and <m>\mathbb{Q}</m></li>
+							</ol>
+						</statement>
+					</exploration>
+					
+					<exploration xml:id="expl-uncountable">
+						<statement>
+							<p>
+								Let's explore the relationship between the cardinalities of <m>\mathbb{N}</m> and <m>\mathbb{R}</m> by considering the interval <m>[0,1]</m> consisting of all real numbers (points on the number line) <m>x</m> satisfying <m>0 \le x \le 1</m>.
+								We will use the notation <m>0.a_1 a_2 a_3 \ldots</m> to denote the infinite decimal with tenths place value <m>a_1</m>, hundredths <m>a_2</m>, and so on.
+							</p>
+							<ol>
+								<li>What is the relationship between <m>|\mathbb{R}|</m> and <m>|[0,1]|</m>?</li>
+								<li>Suppose we have a one-to-one correspondence between <m>\mathbb{N}</m> and <m>[0,1]</m>. Explain why this means that we can write 
+									<md>
+										<mrow>1 \amp \leftrightarrow 0.d_{11}d_{12}d_{13}\ldots</mrow>
+										<mrow>2 \amp \leftrightarrow 0.d_{21}d_{22}d_{23}\ldots</mrow>
+										<mrow>3 \amp \leftrightarrow 0.d_{31}d_{32}d_{33}\ldots</mrow>
+										<mrow> \amp \vdots </mrow>
+									</md>
+									where <m>d_{ij}</m> is the <m>j</m>th decimal digit of the <m>i</m>th number on the list.
+									</li>
+								<li>Define a real number <m>M = 0.e_1 e_2 e_3 \ldots</m> where <m>e_j = 2</m> if <m>d_{jj} \ge 5</m> and <m>e_j = 7</m> if <m>d_{jj} \lt 5</m>. Suppose the first three numbers on the list above are
+									<md>
+										<mrow> \amp 0.4548430426\ldots</mrow>
+										<mrow> \amp 0.4007677961\ldots</mrow>
+										<mrow> \amp 0.4702962689\ldots</mrow>
+									</md>
+									What is <m>M</m> in this case?
+								</li>
+								<li>In general, is it true that <m>0 \le M \le 1</m>?</li>
+								<li>Where is <m>M</m> on the list in Question 2?</li>
+								<li>What does your answer to the previous question suggest about the one-to-one correspondence we wrote down in Question 2?</li>
+								<li>What does your answer to the previous question suggest about the relationship between <m>|\mathbb{N}|</m> and <m>|[0,1]|</m>? Between <m>|\mathbb{N}|</m> and <m>|\mathbb{R}|</m>?</li>
+							</ol>
+						</statement>
+					</exploration>
+		
+					
+					<principle xml:id="discussion-undecidable">
+						<p>
+							Given your responses to <xref ref="expl-countable" /> and <xref ref="expl-uncountable" />, do you think there is a set <m>S</m> such that <m>|S| \gt |\mathbb{N}|</m> and <m>|S| \lt |\mathbb{R}|</m>? Why or why not?
+						</p>
+					</principle>
 					</subsection>
 					
 					<subsection>
-						<title>The Foundational Crisis of Mathematics</title>
-					
-						<exploration>
-										<statement>
-											<p>
-												Let <m>P</m> and <m>Q</m> be statements.
-												The <term>contrapositive</term> of the implication <m>P\Rightarrow Q</m> is the implication <m>(\neg Q) \Rightarrow (\neg P)</m>.
-												Complete <xref ref="table-contrap" />. Is the contrapositive equivalent to anything we've looked at thus far?
-											</p>
-											<table xml:id="table-contrap">
-											  <title>
-												The contrapositive of <m> P\Rightarrow Q</m>.
-											  </title>
-											  <tabular>
-												<row bottom="medium">
-												  <cell right="medium">
-													<m>P</m>
-												  </cell>
-												  <cell right="medium">
-													<m>Q</m>
-												  </cell>
-												  <cell right="medium">
-													<m>\neg P​</m>
-												  </cell>
-												  <cell right="medium">
-													<m>\neg Q​</m>
-												  </cell>
-												  <cell>
-													<m>(\neg Q) \Rightarrow (\neg P)</m>
-												  </cell>
-												</row>
-												<row>
-												  <cell halign="center" right="medium">
-													T
-												  </cell>
-												  <cell halign="center" right="medium">
-													T
-												  </cell>
-												  <cell right="medium">
-												  </cell>
-												  <cell right="medium">
-												  </cell>
-												  <cell halign="center">
-													<line>
-													</line>
-													<line>
-													</line>
-												  </cell>
-												</row>
-												<row>
-												  <cell halign="center" right="medium">
-													T
-												  </cell>
-												  <cell halign="center" right="medium">
-													F
-												  </cell>
-												  <cell right="medium">
-												  </cell>
-												  <cell right="medium">
-												  </cell>
-												  <cell halign="center">
-													<line>
-													</line>
-													<line>
-													</line>
-												  </cell>
-												</row>
-												<row>
-												  <cell halign="center" right="medium">
-													F
-												  </cell>
-												  <cell halign="center" right="medium">
-													T
-												  </cell>
-												  <cell right="medium">
-												  </cell>
-												  <cell right="medium">
-												  </cell>
-												  <cell halign="center">
-													<line>
-													</line>
-													<line>
-													</line>
-												  </cell>
-												</row>
-												<row>
-												  <cell halign="center" right="medium">
-													F
-												  </cell>
-												  <cell halign="center" right="medium">
-													F
-												  </cell>
-												  <cell right="medium">
-												  </cell>
-												  <cell right="medium">
-												  </cell>
-												  <cell halign="center">
-													<line>
-													</line>
-													<line>
-													</line>
-												  </cell>
-												</row>
-											  </tabular>
-											</table>
-										</statement>
-									</exploration>
-									
-									
-									
-									<activity>
-										<statement>
-											<p>
-												Write the contrapositives of the following statements. Be ready to explain why the contrapositives are equivalent to the original implications.
-											</p>
-											<ol>
-												<li>If a kitten loves fish, then it is teachable.</li>
-												<li>If a kitten does not have a tail, then it will play with a gorilla.</li>
-												<li>If a kitten has green eyes, then it is not teachable.</li>
-												<li>If today is Wednesday, then we have math class.</li>
-											</ol>
-										</statement>
+						<title>The Incompleteness Theorems</title>
 						
-									</activity>
-									
-						 
-									<p>
-										The way in which reasoning with implications is often done uses a rule of inference known as <term>modus ponens</term> which runs roughly:
-									</p>
-									<ul>
-										<li>If <m>P</m>, then <m>Q</m>.</li>
-										<li><m>P</m>,</li>
-										<li>Therefore, <m>Q</m></li>
-									</ul>
-									
-									<p>
-										A closely related rule of inference is known as <term>modus tollens</term>, and runs thusly:
-									</p>
-									<ul>
-										<li>If <m>P</m>, then <m>Q</m>.</li>
-										<li>Not <m>Q</m>,</li>
-										<li>Therefore, not <m>P</m>.</li>
-									</ul>
-						 
-						 
-										
-										<p>
-											We have seen thus far a way of formalizing logic so that we can think about the truth of a statement purely syntactically (structurally) without regard for the semantic meaning of the statements under consideration.
-											In the late 19th century, mathematicians developed what became known as <term>formal systems</term>, consisting of axioms, which were strings of symbols, such as
-											<me>
-												\exists B \forall C, (C\in B \Leftrightarrow C\subseteq A),
-											</me>
-											along with a <term>logical calculus</term>, which govern the rules of inference that can be used on the axioms to deduce new theorems.
-										</p>
-										
-										<p>
-											Further, mathematicians had long assumed there were consistent foundational axioms for their discipline.
-											Newly discovered paradoxes challenged this view.
-										</p>
-										<exploration>
-											<title>Russell's Paradox</title>
-											<p>
-												In a certain town lives a barber who only cuts the hair of <em>all</em> people who do not cut their own hair.
-												Who cuts the barber's hair?
-											</p>
-											<solution>
-												<p>
-													This is a paradox: if the barber cuts his own hair, we reach a contradiction, as he only cuts the hair of those who do not cut their own hair. On the other hand, if the barber does not cut his own hair, he does by definition.
-												</p>
-												<p>
-													This sort of self-referential paradox is exactly the sort that we'll study later in this section that led to the foundational crisis referred to in the section title.
-												</p>
-											</solution>
-										</exploration>
-										
-										<p>
-											Two main schools of mathematical philosophy sprung up in the wake of these discoveries.
-											The <term>formalists</term> argued that statements of mathematics and logic are really just about the rules and consequences for manipulating symbols and strings of letters.
-											That is, mathematics does not have a subject matter at all--just empty symbols, which may be given an interpretation in particular situations and thus have meaning.
-										</p>
-										<p>
-											The response came from the <term>intuitionists</term>.
-											Intuitionism is an approach that consideres mathematics to be purely the result of the constructive mental activity of humans rather than the discovery of any principles which we can reasonably claim exist in an objective reality.
-											Thus, in some sense, mathematics is up to whoever is doing the mathematics.
-											To the intuitionists, the formalists were reducing mathematics to a meaningless game with symbols.
-										</p>
-										
-										<principle>
-											<p>
-												Do you resonate more with a formalist approach to mathematics, or an intuitionist approach?
-												Relatedly: do you believe mathematics is something humans invent, or something we discover in the creation?
-												Why?
-											</p>
-										</principle>
+						<p>
+							In 1931, the Austrian mathematical logician Kurt Godel resolved Hilbert's question in an unexpected way in his two <term>incompleteness theorems</term>.
+						</p>
+						
+						<theorem>
+							<title>Godel's First Incompleteness Theorem</title>
+							<statement>
+								<p>
+									Any sufficiently strong consistent formal system contains undecidable statements.
+								</p>
+							</statement>
+						</theorem>
+						
+						<p>
+							That is, there are sensible statements that one can make which cannot be proved from within the system. In that case, we may adopt the undecidable statement or its negation as an additional axiom without causing any contradiction.
+							The statement suggested by <xref ref="discussion-undecidable" /> is just such an undecidable statement.
+						</p>
+						
+						<theorem>
+							<title>Godel's Second Incompleteness Theorem</title>
+							<statement>
+								<p>
+									The consistency of a consistent system cannot be established within the system.
+								</p>
+							</statement>
+						</theorem>
+						
+						<p>
+							We thus obtain limitations on the formal axiomatic approach to mathematics. Any consistent set of axioms and rules of inference strong enough to include arithmetic must contain undecidable statements. Furthermore, no sufficiently strong formal system can establish its own consistency!
+						</p>
 						
 						
-										<p>
-											In 1900, at the second International Congress of Mathematicians in Paris, the esteemed mathematician David Hilbert posed 23 theretofore unanswered problems in mathematics that he thought were important to guide the development of mathematics in the 20th century.
-											We've already seen one of them (the 8th): the Goldbach conjecture.
-											Most of Hilbert's problems have been solved, but three are unresolved, two are thought to be too vague to ever get consensus on what a solution would look like, and one is the subject of much debate.
-										</p>
-										<p>					
-											In an attempt to resolve the issues raised by paradoxes like Russell's Paradox, Hilbert posed this problem, the second on the list:
-										</p>
-										<blockquote>
-											But above all I wish to designate the following as the most important among the numerous questions which can be asked with regard to the axioms: To prove that they are not contradictory, that is, that a definite number of logical steps based upon them can never lead to contradictory results….
-										</blockquote>
-										
-										<p>
-											That is, Hilbert wanted mathematicians to prove that the axioms on which mathematics was founded did not lead to a contradiction.
-											The resolution to this problem is surprising, and to begin to explore it, we will turn to the infinite.
-										</p>
+						<principle>
+							<statement>
+								<p>
+									Godel's theorems leave mathematicians and students of mathematics in a precarious state. Consider the following questions for discussion.
+								</p>
+								<ol>
+									<li>Godel's first theorem implies that that are mathematical  questions that do not have <q>one right answer</q>. What do you think of this when you consider the nature of mathematics and the ideas you've grown up with regarding what sort of discipline mathematics is?
+									</li>
+									<li>Godel's second theorem implies that the consistency of mathematics is taken as an article of faith. Yet our society seems to have an elevated role for quantitative arguments (e.g., how does one refute a statistic?). How can these theorems help us to think about the proper place of mathematics in society?</li>
+								</ol>
+							</statement>
+						</principle>
+						
+						
 					</subsection>
 					
-					
 				</section>
 				
-			</chapter>
-			
-			
-			
-			<chapter xml:id="Week-06">
-				<title>Week 6: Feb. 15-19</title>
 				
-				
-				
-				<section xml:id="Feb-17">
-					<title>Feb. 17</title>
-					
-					
-				</section>
 				
 				
 				<section xml:id="Feb-19">
-					<title>Feb. 19</title>
+					<title>Feb. 19: More on Infinity and Incompleteness</title>
 					
 					
 				</section>
 				
 			</chapter>
+			</part>
 			
-			
+			<part>
+				<title>Justice</title>
 			
 			<chapter xml:id="Week-07">
 				<title>Week 7: Feb. 22-26</title>
 				
+				<introduction>
+					<p>
+						This week, we start a unit on justice, and begin to consider ways in which mathematics can be used to build a more just society.
+						Our first topic in this vein deals with representation in U.S. government.
+						On Wednesday, we'll look at the idea of apportionment: given a number of seats in the U.S. House, how should they be doled out to states based on population?
+						We'll consider multiple methods for doing so, as well as their consequences in the electoral college and for the process of drawing district lines in the states (though this won't come until next week).
+					  </p>
+					  <p>
+					  	However, the week starts on Monday with our thematic checkpoint over our Truth unit, which will take the form of a 50-point exam.
+						  As always, let me know if you have any questions.
+					  </p>
+				</introduction>
+				
 				<section xml:id="Feb-22">
-					<title>Feb. 22</title>
+					<title>Feb. 22: Thematic Checkpoint 2</title>
+					
+					<p>
+						Today in class we are taking TCP 2, which will be a short exam over inductive/deductive reasoning, logic, and proof.
+					</p>
 					
 					
 				</section>
 				
 				<section xml:id="Feb-24">
-					<title>Feb. 24</title>
+					<title>Feb. 24: Reading Discussion II and Apportionment</title>
+					
+					
+					<introduction>
+						
+						<p>
+							Today we begin a short exploration of matheamtics and democracy. There are <em>lots</em> of different topics we could cover, but of special relevance to us this year is the notion of apportionment and the electoral college.
+						</p>
+						<p>
+							Apportionment is the process by which the 435 seats in the U.S. House of Representatives are divided amongst the states. Every ten  years, following a census, Congress must pass a new apportionment bill. They will do so this year. A state's apportionment in Congress is also directly tied to its power in the electoral college, so the electoral vote after the 2024 presidential election will likely look different than it did following the 2020 election.
+						</p>
+						<p>
+							The states then go through a redistricting process, modifying the geographic areas represented by their House members based on the new apportionment and their new understanding of their population's geographic distribution. There has been a lot of talk in the political (and mathematical) news about <em>gerrymandering</em>, the process of drawing district lines to favor one group over another. Given time, we'll explore this as well.
+						</p>
+						
+					</introduction>
+					
+					<subsection>
+						<title>Reading Discussion</title>
+						
+						<principle>
+							<statement>
+								<p>
+									Discuss the reading with those sitting nearby. You may consider the following questions as a starting place, but feel free to follow the discussion wherever it leads.
+								</p>
+								<ul>
+									<li>What mathematical laws, truths, or ideas do you rely on in your everyday life?</li>
+									<li>Many things in the universe change over time. Do you find it surprising that the laws and theorems of mathematics do not change? Are there similar unchanging truths in other areas of inquiry?</li>
+									<li>Has shallow knowledge of a topic or idea ever led you astray? How did you feel? How did you respond?</li>
+									<li>What does knowing the <q>whole truth</q> of an idea/topic look like? To what degree is knowing the whole truth possible?</li>
+									<li>How can matheamtical thinking equip you to converse with and respect people who hold different views than you on a subject?</li>
+								</ul>
+							</statement>
+						</principle>
+						
+						
+					</subsection>
+					
+					
+					<subsection>
+						<title>Apportionment</title>
+						
+						
+						<hypothesis>
+							<statement>
+								<p>
+									Round off the following fifteen numbers (i.e., turn  them into whole numbers) so that the sum of the rounded numbers equals the sum of the unrounded numbers (which is exactly 105):
+								</p>
+								<table>
+									  <tabular>
+										<row>
+										  <cell>
+											6.408,
+										  </cell>
+										  <cell>
+											1.594,
+										  </cell>
+										  <cell>
+											2.226,
+										  </cell>
+										  <cell>
+											1.987,
+										  </cell>
+										  <cell>
+											8.622,
+										  </cell>
+										  <cell>
+											12.814,
+										  </cell>
+										  <cell>
+											3.826,
+										  </cell>
+										  <cell>
+											4.965,
+										  </cell>
+										</row>
+										<row>
+										  <cell>
+											9.175,
+										  </cell>
+										  <cell>
+											10.651,
+										  </cell>
+										  <cell>
+											1.864,
+										  </cell>
+										  <cell>
+											6.716,
+										  </cell>
+										  <cell>
+											2.301,
+										  </cell>
+										  <cell>
+											20.158,
+										  </cell>
+										  <cell>
+											11.693
+										  </cell>
+										  <cell>
+										  </cell>
+										</row>
+									  </tabular>
+									</table>
+									<p>
+										What rounding method did you use? Describe in detail how you decided which numbers to round up to the next whole number, and which to round down to the previous whole number.
+									</p>
+							</statement>
+						</hypothesis>
+						
+						<p>
+							<url href="https://www.archives.gov/founding-docs/constitution-transcript">Article 1, Section 2 of the U.S. Constitution</url> states that representatives should be allocated to states based on population, but gives no method for doing so.
+							The question of method is a thorny one, and has changed throughout history. Let's look at the first method for apportionment passed by Congress, due to Alexander Hamilton.
+							To understand Hamilton's method, we need one bit of terminology: the <term>standard quota</term>.
+						</p>
+						
+						<definition>
+							<statement>
+								<p>
+									The <term>standard quota</term> of a state is the exact number of seats it is entitled to, decimal and all.
+									It is found by multiplying the state's proportion of the U.S. population by the number of seats in the legislature.
+								</p>
+							</statement>
+						</definition>
+						
+						
+						
+						<assemblage>
+							<title>Hamilton's Apportionment Method</title>
+							<p>
+								<statement>
+									<ol>
+										<li>Find the standard quota for each state.</li>
+										<li>Give each state a number of seats equal to its standard quota, rounded down (but at least 1).</li>
+										<li>See how many seats are left to be allocated. Give those seats, one at a time, to the states whose standard quotas have the largest decimal parts.</li>
+									</ol>
+								</statement>
+							</p>
+						</assemblage>
+						
+						
+						<table xml:id="table-1790-population">
+							  <title>
+								Population totals by state, Census of 1790
+							  </title>
+							  <tabular>
+								<row bottom="medium">
+								  <cell right="medium">
+									State
+								  </cell>
+								  <cell halign="right">
+									Population
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									Connecticut
+								  </cell>
+								  <cell halign="right">
+									237,655
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									Delaware
+								  </cell>
+								  <cell halign="right">
+									59,096
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									Georgia
+								  </cell>
+								  <cell halign="right">
+									82,548
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									Kentucky
+								  </cell>
+								  <cell halign="right">
+									73,677
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									Maryland
+								  </cell>
+								  <cell halign="right">
+									319,728
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									Massachusetts
+								  </cell>
+								  <cell halign="right">
+									475,199
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									New Hampshire
+								  </cell>
+								  <cell halign="right">
+									141,899
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									New Jersey
+								  </cell>
+								  <cell halign="right">
+									184,139
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									New York
+								  </cell>
+								  <cell halign="right">
+									340,241
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									North Carolina
+								  </cell>
+								  <cell halign="right">
+									395,005
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									Pennsylvania
+								  </cell>
+								  <cell halign="right">
+									433,611
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									Rhode Island
+								  </cell>
+								  <cell halign="right">
+									69,112
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									South Carolina
+								  </cell>
+								  <cell halign="right">
+									249,073
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									Vermont
+								  </cell>
+								  <cell halign="right">
+									85,341
+								  </cell>
+								</row>
+								<row bottom="medium">
+								  <cell right="medium">
+									Virginia
+								  </cell>
+								  <cell halign="right">
+									747,550
+								  </cell>
+								</row>
+								<row>
+								  <cell right="medium">
+									Total:
+								  </cell>
+								  <cell halign="right">
+									3,893,874
+								  </cell>
+								</row>
+							  </tabular>
+							</table>
+						
+						
+						<activity xml:id="act-hamilton">
+							<statement>
+								<p>
+									Use Hamilton's method to apportion 105 seats to the fifteen states with population figures shown in <xref ref="table-1790-population" />.
+									Which states were winners under Hamilton's method? Which were losers? What would it even mean to win/lose?
+								</p>
+								<p>
+									Then, for the standard quotas you determined for Maryland and Delaware, calculate the percentage that each state's decimal part is of its entire standard quota.
+								</p>
+							</statement>
+						</activity>
+						
+						<exploration>
+							<statement>
+								<p>
+									For the standard quotas of each state in <xref ref="act-hamilton" />, which state's decimal part makes up the largest percentage of its entire standard quota? The smallest?									
+								</p>
+								
+								<p>
+									In light of this, which state do you think was treated best in the apportionment from <xref ref="act-hamilton" />? Worst?
+								</p>
+								<p>
+									Finally, articulate a critique of Hamilton's method.
+								</p>
+							</statement>
+						</exploration>
+						
+						<p>
+							Interestingly, Hamilton's method, passed by Congress, was the subject of the first presidential veto.
+							No one knows exactly why President Washington vetoed it, but as we have seen, there are some problems with Hamiilton's method.
+							For one, decimal parts are not really comparable. That is, similar decimal parts can represent very different numbers of people, depending on the populations of the states.
+						</p>
+						<p>
+							The method eventually passed by Congress and signed by Washington is due to Thomas Jefferson. We'll take a look at his method next time. But we're not done with Hamilton. <url href="https://youtu.be/ZPrAKuOBWzw?t=544">Just you wait</url>.
+						</p>
+										
+						
+						
+						
+					</subsection>
 					
 					
 				</section>
 				
 				
 				<section xml:id="Feb-26">
-					<title>Feb. 26</title>
+					<title>Feb. 26: Divisor Methods</title>
+					
+					
+					
+						<p>
+							The method that was ultimately approved by Congress and signed by Washington for the 1794 apportionment was due to Thomas Jefferson, and involved the calculation of the <term>standard divisor</term>.
+						</p>
+						
+						<definition>
+							<statement>
+								<p>
+									If <m>m</m> seats are to be apportioned among a total population of <m>N</m> people, the <term>standard divisor</term> <m>D</m> is given by the formula <m>D = \frac{N}{m}</m>.
+									For a state with population <m>P</m>, the state's <term>standard quota</term> is the number <m>\frac{P}{D}</m>.
+								</p>
+							</statement>
+						</definition>
+						
+						<exploration>
+							<statement>
+								<ol>
+									<li>Recall the state population totals from the 1790 Census, presented again in <xref ref="table-1790-census" />. Calculate the standard divisor for the 1790 Census.</li>
+									<li>Describe in words what the standard divisor <em>means</em>.</li>
+									<li>Using the data below, calculate the standard quotas for each state.</li>
+								</ol>
+									
+								<table xml:id="table-1790-census">
+										  <title>
+											Population totals by state, Census of 1790
+										  </title>
+										  <tabular>
+											<row bottom="medium">
+											  <cell right="medium">
+												State
+											  </cell>
+											  <cell halign="right">
+												Population
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												Connecticut
+											  </cell>
+											  <cell halign="right">
+												237,655
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												Delaware
+											  </cell>
+											  <cell halign="right">
+												59,096
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												Georgia
+											  </cell>
+											  <cell halign="right">
+												82,548
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												Kentucky
+											  </cell>
+											  <cell halign="right">
+												73,677
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												Maryland
+											  </cell>
+											  <cell halign="right">
+												319,728
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												Massachusetts
+											  </cell>
+											  <cell halign="right">
+												475,199
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												New Hampshire
+											  </cell>
+											  <cell halign="right">
+												141,899
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												New Jersey
+											  </cell>
+											  <cell halign="right">
+												184,139
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												New York
+											  </cell>
+											  <cell halign="right">
+												340,241
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												North Carolina
+											  </cell>
+											  <cell halign="right">
+												395,005
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												Pennsylvania
+											  </cell>
+											  <cell halign="right">
+												433,611
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												Rhode Island
+											  </cell>
+											  <cell halign="right">
+												69,112
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												South Carolina
+											  </cell>
+											  <cell halign="right">
+												249,073
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												Vermont
+											  </cell>
+											  <cell halign="right">
+												85,341
+											  </cell>
+											</row>
+											<row bottom="medium">
+											  <cell right="medium">
+												Virginia
+											  </cell>
+											  <cell halign="right">
+												747,550
+											  </cell>
+											</row>
+											<row>
+											  <cell right="medium">
+												Total:
+											  </cell>
+											  <cell halign="right">
+												3,893,874
+											  </cell>
+											</row>
+										  </tabular>
+										</table>	
+							</statement>
+						</exploration>
+						
+						<p>
+							Jefferson's apportionment method is known as a <em>divisor method</em> because it works by modifying the standard divisor.
+						</p>
+						
+						<assemblage>
+							<title>Jefferson's Method</title>
+							<p>
+								<statement>
+									<ol>
+										<li>Find the standard quota for each state.</li>
+										<li>Round each standard quota down to the nearest whole number (but at least 1). If the sum of the rounded quotas equals the total number of seats being apportioned, we're done. Otherwise, continue to the next step.</li>
+										<li>Choose a <em>modified</em> divisor different from the standard divisor, and use it to calculate modified quotas for each state by dividing the state's population by the modified divisor.</li>
+										<li>Round each modified quota down to the nearest whole number (but at least 1). Sum the rounded modified quotas and check to see if the sum equals the number of seats to be apportioned. If so, we're done. Otherwise, repeat Step 3 with a different modified divisor.</li>
+									</ol>
+								</statement>
+							</p>
+						</assemblage>
+						
+						<p>
+							Note that you may need to try Steps 3 and 4 a few times to get the sum of the quotas to equal the number of seats being apportioned.
+							However, Jefferson's method has the advantage of rounding all the quotas the in the same way, potentially making it easier to understand and implement.
+						</p>
+						
+						<activity>
+							<statement>
+								<p>
+									Use Jefferson's method to carry out the apportionment of 1794<fn>You might find <url href="https://docs.google.com/spreadsheets/d/1i5hEDQi1qVi9P0wY_CncNx06KOOyGE98RosP-e7cKhA/edit?usp=sharing">this Google sheet</url> helpful.</fn>.
+									For each modified divisor that you try, write down the apportionment that results.
+									Finally, describe how you knew whether to modfiy the divisor by making it larger or smaller based on the sum of the rounded modified quotas.
+								</p>
+							</statement>
+						</activity>
+						
+						<question>
+							<statement>
+								<p>
+									Why will Step 2 of Jefferson's method always result in too few seats being apportioned? What will this cause you to always do to the standard quota to get to Step 3?
+									What will the effect be for small states vs. large states?
+								</p>
+							</statement>
+						</question>
+						
+						<exploration>
+							<statement>
+								<p>
+									In 1820, the Census recorded populations of 1,368,775 for New York and 8,969,878 for the entire U.S.
+									Based on these numbers and the other states recorded, a total of 213 House seats were to be apportioned for the election of 1822.
+								</p>
+								<ol>
+									<li>Using the 1820 Census data, calculate the standard divisor and New York's standard quota.</li>
+									<li>In the apportionment of 1822, Jefferson's method with a modified divisor of 39,900 was used. Find New York's modified quota, and the final number of seats the state was given. Was this fair? Why or why not?</li>
+								</ol>
+							</statement>
+						</exploration>
+						
+						<p>
+							As one can imagine, this caused some consternation at the time.
+							Unfortunately (though perhaps unsurprisingly), Congress did nothing. Perhaps they hoped the problem wouldn't happen again.
+							But then it did, in the very next apportionment, in 1832.
+							Further, it turns out that if Jefferson's method had continued to be used, something similar would have happened in every apportionment since 1852.
+						</p>
+						
+						<principle>
+							<statement>
+								<p>
+									An alternative to Jefferson's method was proposed by John Adams, except rather than rounding the quotas down, he rounded up.
+									Explain why this is no better than Jefferson's method.
+								</p>
+							</statement>
+						</principle>
+						
+						<definition>
+							<statement>
+								<p>
+									The <term>quota rule</term> states that, in an apportionment, each state should be given a number of seats equal to its standard quota, rounded up or down<mdash />no more, no less.
+									An apportionment method is said to <term>violate quota</term> if it can produce apportionments which fail the quota rule<aside>As Jefferson's method did with NY in 1822.</aside>
+								</p>
+							</statement>
+						</definition>
+						
+						<p>
+							So, both Jefferson's method and Adams' method violate quota.
+							The method used in 1842 was due to Daniel Webster, and modifies Jefferson and Adams only slightly.
+							Rather than rounding the quotas always up or always down, Webster proposed that they should be rounded conventionally (i.e., a decimal part less than 0.5 gets rounded down, while a decimal part at least 0.5 gets rounded up)
+						</p>
+						<p>
+							It turns out that Webster's method can also violate quota, though this is much less likely. In fact, if Webster's method had been used in every apportionment from 1794 to 2012, it would not have violated quota once.
+							As it happened, though, Webster's method was only used in 1842.
+							Perhaps Congress was wary of continuing to use a method that could violate quota after 1822 and 1832.
+						</p>
+						<p>
+							In 1850, Samuel Vinton proposed what turned out to be Hamilton's method all over again, though no one remembered it as such<fn>Who tells your story, indeed.</fn>
+							It happens that Hamilton's method cannot violate quota (why?).
+							It was used for the apportionments of 1852 and 1862, though by 1872, Congress illegally and unconstitutionally apportioned seats based on no method at all.
+							This had consequences for the presidential election of 1876, where Hayes defeated Tilden based on the electoral college, whereas if Hamilton's method had been used in 1872, Tilden would have easily won.
+						</p>
+						<p>
+							Congress went back to Hamilton's method in 1882, but not for long.
+							Next time we'll look at some paradoxes that can arise from the apportionment process.
+						</p>
+						
+						
+							
+						
+						
+									
+									
+									
+						
+						
 					
 					
 				</section>
